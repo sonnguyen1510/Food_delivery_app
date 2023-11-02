@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "m0cI0I1zOEuQ7PYQoPgjjQF7zDTdehKvMhupgSB4VD0=",
+  "Hash": "3lENtYL6MG62p7avXreqbsNFzq3TasA723BdJOA103c=",
   "Source": "FoodDelivery",
   "BasePath": "/",
   "Mode": "Root",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\NguyenXuanSon\\Documents\\GitHub\\Food_delivery_app\\FoodDelivery\\FoodDelivery\\obj\\Debug\\net7.0-windows10.0.19041.0\\win10-x64\\scopedcss\\projectbundle\\FoodDelivery.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\NguyenXuanSon\\Documents\\GitHub\\Food_delivery_app\\FoodDelivery\\FoodDelivery\\wwwroot\\chart-simple-svgrepo-com.svg",
+      "SourceId": "FoodDelivery",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\NguyenXuanSon\\Documents\\GitHub\\Food_delivery_app\\FoodDelivery\\FoodDelivery\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "chart-simple-svgrepo-com.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\chart-simple-svgrepo-com.svg"
     },
     {
       "Identity": "C:\\Users\\NguyenXuanSon\\Documents\\GitHub\\Food_delivery_app\\FoodDelivery\\FoodDelivery\\wwwroot\\css\\app.css",
@@ -272,6 +289,40 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
+      "Identity": "C:\\Users\\NguyenXuanSon\\Documents\\GitHub\\Food_delivery_app\\FoodDelivery\\FoodDelivery\\wwwroot\\home-svgrepo-com.svg",
+      "SourceId": "FoodDelivery",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\NguyenXuanSon\\Documents\\GitHub\\Food_delivery_app\\FoodDelivery\\FoodDelivery\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "home-svgrepo-com.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\home-svgrepo-com.svg"
+    },
+    {
+      "Identity": "C:\\Users\\NguyenXuanSon\\Documents\\GitHub\\Food_delivery_app\\FoodDelivery\\FoodDelivery\\wwwroot\\icons8-add-file-64.png",
+      "SourceId": "FoodDelivery",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\NguyenXuanSon\\Documents\\GitHub\\Food_delivery_app\\FoodDelivery\\FoodDelivery\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "icons8-add-file-64.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\icons8-add-file-64.png"
+    },
+    {
       "Identity": "C:\\Users\\NguyenXuanSon\\Documents\\GitHub\\Food_delivery_app\\FoodDelivery\\FoodDelivery\\wwwroot\\index.html",
       "SourceId": "FoodDelivery",
       "SourceType": "Discovered",
@@ -287,6 +338,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\index.html"
+    },
+    {
+      "Identity": "C:\\Users\\NguyenXuanSon\\Documents\\GitHub\\Food_delivery_app\\FoodDelivery\\FoodDelivery\\wwwroot\\user_default.png",
+      "SourceId": "FoodDelivery",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\NguyenXuanSon\\Documents\\GitHub\\Food_delivery_app\\FoodDelivery\\FoodDelivery\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "user_default.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\user_default.png"
+    },
+    {
+      "Identity": "C:\\Users\\NguyenXuanSon\\Documents\\GitHub\\Food_delivery_app\\FoodDelivery\\FoodDelivery\\wwwroot\\user-alt-1-svgrepo-com.svg",
+      "SourceId": "FoodDelivery",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\NguyenXuanSon\\Documents\\GitHub\\Food_delivery_app\\FoodDelivery\\FoodDelivery\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "user-alt-1-svgrepo-com.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\user-alt-1-svgrepo-com.svg"
     }
   ]
 }

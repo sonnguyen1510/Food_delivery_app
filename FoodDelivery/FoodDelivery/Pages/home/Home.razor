@@ -1,7 +1,52 @@
-﻿@page "/home"
+﻿@page "/"
 
-<h3>Component1</h3>
+<div class= "container">
+    <div class="user-detail-container">
+        <div class="user-avatar">
+            <img src="user_default.png" />
+        </div>
+        <div class="user-detail">
+            <p class="status-day">@DayStatus</p>
+            <p class="user-name">@Username</p>
+        </div>
+        <div class="add-transaction" @onclick="addTransiaction"><img class="add-transaction-img" src="icons8-add-file-64.png" /></div>
+    </div> 
+    
+    <div class="transaction-display-container">
+           <div class="display-transaction">
+               <div >
+                   <p style="color : white">Balance</p>
+                   <p class="balance-display">$@Balance</p>
+               </div>
+               <div>
+
+               </div>
+           </div>
+           <div class="income-expense-view">
+            <div class="income-container">
+                <div class="income-title">
+                    <p style="color : green">Income</p>
+                </div>
+                <div class="income-amount">
+
+                </div>
+            </div>
+            <div>
+
+            </div>
+           </div>
+    </div>
+</div>
 
 @code {
+    public String Username = "Billy";
+    public String DayStatus = "Morning";
+    public String Balance = "7872.20";
+    //public String  UserImage = ;
 
+
+    public void addTransiaction()
+    {
+        
+    }
 }

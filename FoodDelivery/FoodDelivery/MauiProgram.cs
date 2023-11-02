@@ -1,4 +1,4 @@
-﻿using FoodDelivery.Data;
+﻿
 using Microsoft.Extensions.Logging;
 
 namespace FoodDelivery
@@ -21,8 +21,6 @@ namespace FoodDelivery
 		builder.Services.AddBlazorWebViewDeveloperTools();
 		builder.Logging.AddDebug();
 #endif
-
-            builder.Services.AddSingleton<WeatherForecastService>();
 
             return builder.Build();
         }

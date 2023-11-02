@@ -54,9 +54,19 @@
     </ItemGroup>
 
     <ItemGroup>
+      <Folder Include="Data\" />
       <Folder Include="Function\" />
-      <Folder Include="Pages\analysis\" />
-      <Folder Include="Pages\Account\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <MauiImage Include="wwwroot\user_default.png" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Include="wwwroot\chart-simple-svgrepo-com.svg" />
+      <None Include="wwwroot\home-svgrepo-com.svg" />
+      <None Include="wwwroot\user-alt-1-svgrepo-com.svg" />
+      <None Include="wwwroot\user_default.png" />
     </ItemGroup>
 
 </Project>

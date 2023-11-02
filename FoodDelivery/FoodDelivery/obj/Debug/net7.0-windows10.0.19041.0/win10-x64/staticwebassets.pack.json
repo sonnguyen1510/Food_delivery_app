@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\FoodDelivery.styles.css"
     },
     {
+      "Id": "C:\\Users\\NguyenXuanSon\\Documents\\GitHub\\Food_delivery_app\\FoodDelivery\\FoodDelivery\\wwwroot\\chart-simple-svgrepo-com.svg",
+      "PackagePath": "staticwebassets\\chart-simple-svgrepo-com.svg"
+    },
+    {
       "Id": "C:\\Users\\NguyenXuanSon\\Documents\\GitHub\\Food_delivery_app\\FoodDelivery\\FoodDelivery\\wwwroot\\css\\app.css",
       "PackagePath": "staticwebassets\\css\\app.css"
     },
@@ -57,8 +61,24 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\NguyenXuanSon\\Documents\\GitHub\\Food_delivery_app\\FoodDelivery\\FoodDelivery\\wwwroot\\home-svgrepo-com.svg",
+      "PackagePath": "staticwebassets\\home-svgrepo-com.svg"
+    },
+    {
+      "Id": "C:\\Users\\NguyenXuanSon\\Documents\\GitHub\\Food_delivery_app\\FoodDelivery\\FoodDelivery\\wwwroot\\icons8-add-file-64.png",
+      "PackagePath": "staticwebassets\\icons8-add-file-64.png"
+    },
+    {
       "Id": "C:\\Users\\NguyenXuanSon\\Documents\\GitHub\\Food_delivery_app\\FoodDelivery\\FoodDelivery\\wwwroot\\index.html",
       "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\NguyenXuanSon\\Documents\\GitHub\\Food_delivery_app\\FoodDelivery\\FoodDelivery\\wwwroot\\user-alt-1-svgrepo-com.svg",
+      "PackagePath": "staticwebassets\\user-alt-1-svgrepo-com.svg"
+    },
+    {
+      "Id": "C:\\Users\\NguyenXuanSon\\Documents\\GitHub\\Food_delivery_app\\FoodDelivery\\FoodDelivery\\wwwroot\\user_default.png",
+      "PackagePath": "staticwebassets\\user_default.png"
     },
     {
       "Id": "obj\\Debug\\net7.0-windows10.0.19041.0\\win10-x64\\staticwebassets\\msbuild.FoodDelivery.Microsoft.AspNetCore.StaticWebAssets.props",
