@@ -1,13 +1,14 @@
 .container[b-yrtcwlzyez] {
     display: flex;
     flex-direction: column;
-    align-items :start
+    align-items: start;
 }
 p[b-yrtcwlzyez]{
     margin : 0px;
 }
 
 .user-detail-container[b-yrtcwlzyez] {
+    position : relative;
     width : 100%;
     display: flex;
     flex-direction: row;
@@ -80,14 +81,13 @@ p[b-yrtcwlzyez]{
 }
 
 .transaction-display-container[b-yrtcwlzyez] {
-    display :flex;
-    flex-direction : column;
-    align-items : center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     position: relative;
     width: 100%;
+    height:185px;
     margin: 25px;
-    
-    
 }
 
 .display-transaction[b-yrtcwlzyez] {
@@ -95,14 +95,45 @@ p[b-yrtcwlzyez]{
     height: 160px;
     background-color: #38cfcc;
     border-radius: 30px;
-    padding: 30px;
+    padding-left: 20px;
+    padding-right :20px;
+    padding-top : 10px;
     position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-between;
+}
+.display-transaction-detail[b-yrtcwlzyez]{
+    padding: 20px;
 }
 
-.balance-display[b-yrtcwlzyez]{
-    font-size : 30px;
-    font-weight :bold;
-    color : white;
+.display-transaction-daypicker[b-yrtcwlzyez] {
+    width: 100px;
+    border: 0px;
+    background-color: transparent;
+    color: white;
+    accent-color :white;
+}
+
+.balance-display[b-yrtcwlzyez] {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+
+.number-style[b-yrtcwlzyez] {
+    font-weight : bold;
+}
+
+.income-money[b-yrtcwlzyez] {
+    color: green;
+    font-size : 20px;
+}
+
+.expense-money[b-yrtcwlzyez] {
+    color: red;
+    font-size: 20px;
 }
 
 .income-expense-view[b-yrtcwlzyez] {
@@ -114,36 +145,94 @@ p[b-yrtcwlzyez]{
     background-color: white;
     box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
+
+    display : flex;
+    flex-direction : row;
+    align-items : center;
+    justify-content : space-around;
 }
 
-income-container[b-yrtcwlzyez] {
-
+.income-container[b-yrtcwlzyez] {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
-income-title[b-yrtcwlzyez]{
-
+.title[b-yrtcwlzyez]{
+    font-size : 15px;
 }
 
-income-amount[b-yrtcwlzyez]{
-
-}
-
-income-icon[b-yrtcwlzyez]{
-
-}
-
-expense-container[b-yrtcwlzyez]{
-
-}
-
-expense-title[b-yrtcwlzyez]{
+.income-amount[b-yrtcwlzyez]{
 
 }
 
-expense-amount[b-yrtcwlzyez]{
+.income-icon[b-yrtcwlzyez]{
+    
+}
+
+.income-info[b-yrtcwlzyez] {
+    margin-left : 20px
+}
+
+.expense-container[b-yrtcwlzyez] {
+    display: flex;
+    flex-direction: row;
+    justify-content : center;
+    align-items : center;
+}
+
+
+.expense-amount[b-yrtcwlzyez]{
 
 }
 
-expense-icon[b-yrtcwlzyez]{
+.expense-icon[b-yrtcwlzyez]{
 
+}
+
+.expense[b-yrtcwlzyez] {
+    margin-left : 20px;
+}
+
+.transaction-list-container[b-yrtcwlzyez] {
+    position: relative;
+    margin-left : 25px;
+    height:195px;
+    width: 100%;
+    overflow :auto;
+}
+
+
+
+
+.transaction-list-daypicker[b-yrtcwlzyez]{
+    display : flex;
+    flex-direction : row;
+    justify-content : space-between;
+    margin-left :20px;
+    margin-right : 20px;
+
+}
+
+.transaction-list-display[b-yrtcwlzyez]{
+
+}
+
+.trans-title[b-yrtcwlzyez]{
+    font-weight : bold;
+    font-size : 18px;
+}
+
+.daypicker-dialog[b-yrtcwlzyez]{
+   width : 210px;
+}
+
+.daypicker[b-yrtcwlzyez]{
+    display : flex;
+    flex-direction : row;
+}
+
+.daypicker-title[b-yrtcwlzyez] {
+    margin-left : 10px;
+    margin-right : 10px;
 }

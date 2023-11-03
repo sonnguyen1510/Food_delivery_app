@@ -1,13 +1,14 @@
 .container {
     display: flex;
     flex-direction: column;
-    align-items :start
+    align-items: start;
 }
 p{
     margin : 0px;
 }
 
 .user-detail-container {
+    position : relative;
     width : 100%;
     display: flex;
     flex-direction: row;
@@ -80,35 +81,158 @@ p{
 }
 
 .transaction-display-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     position: relative;
     width: 100%;
+    height:185px;
     margin: 25px;
-    display: flex;
-    flex-direction : cp-reverse;
 }
 
 .display-transaction {
     width: 100%;
-    height: 180px;
+    height: 160px;
     background-color: #38cfcc;
     border-radius: 30px;
-    padding: 30px;
+    padding-left: 20px;
+    padding-right :20px;
+    padding-top : 10px;
     position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-between;
+}
+.display-transaction-detail{
+    padding: 20px;
 }
 
-.balance-display{
-    font-size : 30px;
-    font-weight :bold;
-    color : white;
+.display-transaction-daypicker {
+    width: 100px;
+    border: 0px;
+    background-color: transparent;
+    color: white;
+    accent-color :white;
+}
+
+.balance-display {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+
+.number-style {
+    font-weight : bold;
+}
+
+.income-money {
+    color: green;
+    font-size : 20px;
+}
+
+.expense-money {
+    color: red;
+    font-size: 20px;
 }
 
 .income-expense-view {
     position: absolute;
-    
-    left: 50%;
-    transform: translateX(-50%);
-    width: 50%;
-    height: 50px;
+    margin-top: 120px;
+    width: 90%;
+    height: 70px;
     border-radius: 30px;
-    background-color: red;
+    background-color: white;
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+
+    display : flex;
+    flex-direction : row;
+    align-items : center;
+    justify-content : space-around;
+}
+
+.income-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.title{
+    font-size : 15px;
+}
+
+.income-amount{
+
+}
+
+.income-icon{
+    
+}
+
+.income-info {
+    margin-left : 20px
+}
+
+.expense-container {
+    display: flex;
+    flex-direction: row;
+    justify-content : center;
+    align-items : center;
+}
+
+
+.expense-amount{
+
+}
+
+.expense-icon{
+
+}
+
+.expense {
+    margin-left : 20px;
+}
+
+.transaction-list-container {
+    position: relative;
+    margin-left : 25px;
+    height:195px;
+    width: 100%;
+    overflow :auto;
+}
+
+
+
+
+.transaction-list-daypicker{
+    display : flex;
+    flex-direction : row;
+    justify-content : space-between;
+    margin-left :20px;
+    margin-right : 20px;
+
+}
+
+.transaction-list-display{
+
+}
+
+.trans-title{
+    font-weight : bold;
+    font-size : 18px;
+}
+
+.daypicker-dialog{
+   width : 210px;
+}
+
+.daypicker{
+    display : flex;
+    flex-direction : row;
+}
+
+.daypicker-title {
+    margin-left : 10px;
+    margin-right : 10px;
 }

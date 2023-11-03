@@ -760,6 +760,15 @@
     <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\FoodDelivery\FoodDelivery\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\scopedcss\projectbundle\FoodDelivery.bundle.scp.css">
       <PackagePath>wwwroot\FoodDelivery.bundle.scp.css</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\FoodDelivery\FoodDelivery\Pages\Home\home.razor.js">
+      <PackagePath>wwwroot\Pages\Home\home.razor.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\FoodDelivery\FoodDelivery\wwwroot\Bill.png">
+      <PackagePath>wwwroot\Bill.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\FoodDelivery\FoodDelivery\wwwroot\Bussiness.png">
+      <PackagePath>wwwroot\Bussiness.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\FoodDelivery\FoodDelivery\wwwroot\chart-simple-svgrepo-com.svg">
       <PackagePath>wwwroot\chart-simple-svgrepo-com.svg</PackagePath>
     </AppxPackagedFile>
@@ -799,8 +808,20 @@
     <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\FoodDelivery\FoodDelivery\wwwroot\css\open-iconic\README.md">
       <PackagePath>wwwroot\css\open-iconic\README.md</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\FoodDelivery\FoodDelivery\wwwroot\down-arrow-svgrepo-com.svg">
+      <PackagePath>wwwroot\down-arrow-svgrepo-com.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\FoodDelivery\FoodDelivery\wwwroot\Excercise.png">
+      <PackagePath>wwwroot\Excercise.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\FoodDelivery\FoodDelivery\wwwroot\favicon.ico">
       <PackagePath>wwwroot\favicon.ico</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\FoodDelivery\FoodDelivery\wwwroot\Food&amp;Dring.png">
+      <PackagePath>wwwroot\Food&amp;Dring.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\FoodDelivery\FoodDelivery\wwwroot\Health.png">
+      <PackagePath>wwwroot\Health.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\FoodDelivery\FoodDelivery\wwwroot\home-svgrepo-com.svg">
       <PackagePath>wwwroot\home-svgrepo-com.svg</PackagePath>
@@ -810,6 +831,24 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\FoodDelivery\FoodDelivery\wwwroot\index.html">
       <PackagePath>wwwroot\index.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\FoodDelivery\FoodDelivery\wwwroot\Learning.png">
+      <PackagePath>wwwroot\Learning.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\FoodDelivery\FoodDelivery\wwwroot\Money.png">
+      <PackagePath>wwwroot\Money.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\FoodDelivery\FoodDelivery\wwwroot\Movie.png">
+      <PackagePath>wwwroot\Movie.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\FoodDelivery\FoodDelivery\wwwroot\Salary.png">
+      <PackagePath>wwwroot\Salary.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\FoodDelivery\FoodDelivery\wwwroot\Shoping.png">
+      <PackagePath>wwwroot\Shoping.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\FoodDelivery\FoodDelivery\wwwroot\up-arrow-svgrepo-com.svg">
+      <PackagePath>wwwroot\up-arrow-svgrepo-com.svg</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\FoodDelivery\FoodDelivery\wwwroot\user_default.png">
       <PackagePath>wwwroot\user_default.png</PackagePath>

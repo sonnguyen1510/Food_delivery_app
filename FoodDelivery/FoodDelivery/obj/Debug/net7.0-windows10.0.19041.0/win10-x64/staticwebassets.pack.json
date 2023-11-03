@@ -1,8 +1,52 @@
 {
   "Files": [
     {
+      "Id": "C:\\Users\\NguyenXuanSon\\Documents\\GitHub\\Food_delivery_app\\FoodDelivery\\FoodDelivery\\Pages\\Home\\home.razor.js",
+      "PackagePath": "staticwebassets\\Pages\\Home\\home.razor.js"
+    },
+    {
       "Id": "C:\\Users\\NguyenXuanSon\\Documents\\GitHub\\Food_delivery_app\\FoodDelivery\\FoodDelivery\\obj\\Debug\\net7.0-windows10.0.19041.0\\win10-x64\\scopedcss\\bundle\\FoodDelivery.styles.css",
       "PackagePath": "staticwebassets\\FoodDelivery.styles.css"
+    },
+    {
+      "Id": "C:\\Users\\NguyenXuanSon\\Documents\\GitHub\\Food_delivery_app\\FoodDelivery\\FoodDelivery\\wwwroot\\Bill.png",
+      "PackagePath": "staticwebassets\\Bill.png"
+    },
+    {
+      "Id": "C:\\Users\\NguyenXuanSon\\Documents\\GitHub\\Food_delivery_app\\FoodDelivery\\FoodDelivery\\wwwroot\\Bussiness.png",
+      "PackagePath": "staticwebassets\\Bussiness.png"
+    },
+    {
+      "Id": "C:\\Users\\NguyenXuanSon\\Documents\\GitHub\\Food_delivery_app\\FoodDelivery\\FoodDelivery\\wwwroot\\Excercise.png",
+      "PackagePath": "staticwebassets\\Excercise.png"
+    },
+    {
+      "Id": "C:\\Users\\NguyenXuanSon\\Documents\\GitHub\\Food_delivery_app\\FoodDelivery\\FoodDelivery\\wwwroot\\Food&Dring.png",
+      "PackagePath": "staticwebassets\\Food&Dring.png"
+    },
+    {
+      "Id": "C:\\Users\\NguyenXuanSon\\Documents\\GitHub\\Food_delivery_app\\FoodDelivery\\FoodDelivery\\wwwroot\\Health.png",
+      "PackagePath": "staticwebassets\\Health.png"
+    },
+    {
+      "Id": "C:\\Users\\NguyenXuanSon\\Documents\\GitHub\\Food_delivery_app\\FoodDelivery\\FoodDelivery\\wwwroot\\Learning.png",
+      "PackagePath": "staticwebassets\\Learning.png"
+    },
+    {
+      "Id": "C:\\Users\\NguyenXuanSon\\Documents\\GitHub\\Food_delivery_app\\FoodDelivery\\FoodDelivery\\wwwroot\\Money.png",
+      "PackagePath": "staticwebassets\\Money.png"
+    },
+    {
+      "Id": "C:\\Users\\NguyenXuanSon\\Documents\\GitHub\\Food_delivery_app\\FoodDelivery\\FoodDelivery\\wwwroot\\Movie.png",
+      "PackagePath": "staticwebassets\\Movie.png"
+    },
+    {
+      "Id": "C:\\Users\\NguyenXuanSon\\Documents\\GitHub\\Food_delivery_app\\FoodDelivery\\FoodDelivery\\wwwroot\\Salary.png",
+      "PackagePath": "staticwebassets\\Salary.png"
+    },
+    {
+      "Id": "C:\\Users\\NguyenXuanSon\\Documents\\GitHub\\Food_delivery_app\\FoodDelivery\\FoodDelivery\\wwwroot\\Shoping.png",
+      "PackagePath": "staticwebassets\\Shoping.png"
     },
     {
       "Id": "C:\\Users\\NguyenXuanSon\\Documents\\GitHub\\Food_delivery_app\\FoodDelivery\\FoodDelivery\\wwwroot\\chart-simple-svgrepo-com.svg",
@@ -57,6 +101,10 @@
       "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
     },
     {
+      "Id": "C:\\Users\\NguyenXuanSon\\Documents\\GitHub\\Food_delivery_app\\FoodDelivery\\FoodDelivery\\wwwroot\\down-arrow-svgrepo-com.svg",
+      "PackagePath": "staticwebassets\\down-arrow-svgrepo-com.svg"
+    },
+    {
       "Id": "C:\\Users\\NguyenXuanSon\\Documents\\GitHub\\Food_delivery_app\\FoodDelivery\\FoodDelivery\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
@@ -71,6 +119,10 @@
     {
       "Id": "C:\\Users\\NguyenXuanSon\\Documents\\GitHub\\Food_delivery_app\\FoodDelivery\\FoodDelivery\\wwwroot\\index.html",
       "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\NguyenXuanSon\\Documents\\GitHub\\Food_delivery_app\\FoodDelivery\\FoodDelivery\\wwwroot\\up-arrow-svgrepo-com.svg",
+      "PackagePath": "staticwebassets\\up-arrow-svgrepo-com.svg"
     },
     {
       "Id": "C:\\Users\\NguyenXuanSon\\Documents\\GitHub\\Food_delivery_app\\FoodDelivery\\FoodDelivery\\wwwroot\\user-alt-1-svgrepo-com.svg",

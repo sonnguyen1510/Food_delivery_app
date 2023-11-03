@@ -1,0 +1,5 @@
+C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\FoodDelivery\FoodDelivery\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\Food_Delivery.csproj.AssemblyReference.cache
+C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\FoodDelivery\FoodDelivery\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\Food_Delivery.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\FoodDelivery\FoodDelivery\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\Food_Delivery.AssemblyInfoInputs.cache
+C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\FoodDelivery\FoodDelivery\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\Food_Delivery.AssemblyInfo.cs
+C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\FoodDelivery\FoodDelivery\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\Food_Delivery.csproj.CoreCompileInputs.cache
