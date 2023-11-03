@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\FoodDelivery\FoodDelivery\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-11-03T04:30:36.403</Modified>
+      <Modified>2023-11-03T04:44:03.634</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\FoodDelivery\FoodDelivery\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2023-11-03T04:30:36.159</Modified>
+      <Modified>2023-11-03T04:44:03.399</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\FoodDelivery\FoodDelivery\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\FoodDelivery.runtimeconfig.json">
       <PackagePath>FoodDelivery.runtimeconfig.json</PackagePath>
@@ -44,11 +44,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\FoodDelivery\FoodDelivery\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\FoodDelivery.dll">
       <PackagePath>FoodDelivery.dll</PackagePath>
-      <Modified>2023-11-03T04:30:35.327</Modified>
+      <Modified>2023-11-03T04:44:02.602</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\FoodDelivery\FoodDelivery\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>FoodDelivery.exe</PackagePath>
-      <Modified>2023-11-03T04:30:35.437</Modified>
+      <Modified>2023-11-03T04:44:02.727</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\FoodDelivery\FoodDelivery\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\FoodDelivery.deps.json">
       <PackagePath>FoodDelivery.deps.json</PackagePath>

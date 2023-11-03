@@ -1,5 +1,5 @@
 ﻿@page "/"
-
+@using FoodDelivery.Object
 
 <div class= "container">
     <div class="user-detail-container">
@@ -66,9 +66,13 @@
              </div>
         </div>
         <div class="transaction-list-display">
-            @foreach data {
-
+            @foreach (var transaction in data)
+            {
+                <div class="m-2 p-2">
+                    t
+                </div>
             }
+
         </div>
     </div>
 </div>
@@ -78,7 +82,7 @@
     public String DayStatus = "Morning";
     public double Balance = 7872.20;
     private DateTime CurrentMonth = DateTime.Now;
-    private List<Transaction> data;
+    private List<UserTransaction> data;
 
     private string formattedMonth
     {
