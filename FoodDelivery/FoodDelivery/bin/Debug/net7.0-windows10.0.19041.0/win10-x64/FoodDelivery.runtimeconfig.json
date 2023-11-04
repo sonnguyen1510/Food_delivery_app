@@ -7,6 +7,10 @@
         "version": "7.0.13"
       },
       {
+        "name": "Microsoft.WindowsDesktop.App",
+        "version": "7.0.13"
+      },
+      {
         "name": "Microsoft.Maui.Core",
         "version": "**FromWorkload**"
       },
@@ -20,6 +24,7 @@
       }
     ],
     "configProperties": {
+      "System.Reflection.NullabilityInfoContext.IsSupported": true,
       "System.Runtime.Serialization.EnableUnsafeBinaryFormatterSerialization": false
     }
   }

@@ -294,3 +294,4 @@ C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\FoodDelivery\FoodDeliv
 C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\FoodDelivery\FoodDelivery\obj\Debug\net7.0-ios\ios-arm64\FoodDelivery.pdb
 C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\FoodDelivery\FoodDelivery\obj\Debug\net7.0-ios\ios-arm64\FoodDelivery.genruntimeconfig.cache
 C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\FoodDelivery\FoodDelivery\obj\Debug\net7.0-ios\ios-arm64\ref\FoodDelivery.dll
+C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\FoodDelivery\FoodDelivery\obj\Debug\net7.0-ios\ios-arm64\scopedcss\Shared\Bottomnav.razor.rz.scp.css

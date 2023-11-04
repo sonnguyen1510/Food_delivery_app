@@ -1,5 +1,7 @@
 ﻿@page "/"
-@using FoodDelivery.Object
+@using FoodDelivery.Connection;
+@using FoodDelivery.Connection.Model;
+@inject ApplicationDbContext DbContext;
 
 <div class= "container">
     <div class="user-detail-container">
@@ -66,10 +68,17 @@
              </div>
         </div>
         <div class="transaction-list-display">
-            @foreach (var transaction in data)
+            @foreach (var item in TransactionList)
             {
-                <div class="m-2 p-2">
-                    t
+                <div class="user-detail-container">
+                    <div class="user-avatar">
+                        <img src="@Icon(item.TransIcon)" />
+                    </div>
+                    <div class="user-detail">
+                        <p class="user-name">@item.Title</p>
+                        <p class="status-day">@item.CreTime @item.CreDate</p>       
+                    </div>
+                    
                 </div>
             }
 
@@ -78,11 +87,28 @@
 </div>
 
 @code {
+
+
     public String Username = "Billy";
     public String DayStatus = "Morning";
     public double Balance = 7872.20;
     private DateTime CurrentMonth = DateTime.Now;
-    private List<UserTransaction> data;
+
+    /* Unmerged change from project 'FoodDelivery (net7.0-windows10.0.19041.0)'
+        Before:
+        private List<Connection.UserTransaction> data;
+        After:
+        private List<UserTransaction> data;
+
+    */
+    // Inject the DbContext
+    public List<UserTransaction> TransactionList;
+
+    protected override async Task OnInitializedAsync()
+    {
+        TransactionList = DbContext.UserTransactions.ToList();
+    }
+
 
     private string formattedMonth
     {
@@ -124,6 +150,36 @@
 
     public void addTransiaction()
     {
-        
+
+    }
+
+    public String Icon(String iconType)
+    {
+        switch (iconType)
+        {
+            case "Food&Dring":
+                return "Food&Dring.png";
+            case "Bussiness":
+                return "Bussiness.png";
+            case "Excercise":
+                return "Excercise.png";
+            case "Health":
+                return "Health.png";
+            case "Learning":
+                return "Learning.png";
+            case "Money":
+                return "Money.png";
+            case "Movie":
+                return "Movie.png";
+            case "Salary":
+                return "Salary.png";
+            case "Shopping":
+                return "Shopping.png";
+            case "Bill":
+                return "Bill.png";
+            default :
+                return null;
+
+        }
     }
 }

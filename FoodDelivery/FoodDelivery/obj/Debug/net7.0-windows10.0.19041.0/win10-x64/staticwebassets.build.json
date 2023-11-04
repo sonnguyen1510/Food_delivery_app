@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Aes7ACyqI3bb+VhCY/YBUtr6j3va8ZeACF5vO1v/7RM=",
+  "Hash": "YPxfA15QhH76UaxDY7RzmmOYcC+EErfSOFBZI4DG5Lg=",
   "Source": "FoodDelivery",
   "BasePath": "/",
   "Mode": "Root",
@@ -527,12 +527,12 @@
       "OriginalItemSpec": "wwwroot\\Salary.png"
     },
     {
-      "Identity": "C:\\Users\\NguyenXuanSon\\Documents\\GitHub\\Food_delivery_app\\FoodDelivery\\FoodDelivery\\wwwroot\\Shoping.png",
+      "Identity": "C:\\Users\\NguyenXuanSon\\Documents\\GitHub\\Food_delivery_app\\FoodDelivery\\FoodDelivery\\wwwroot\\Shopping.png",
       "SourceId": "FoodDelivery",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\NguyenXuanSon\\Documents\\GitHub\\Food_delivery_app\\FoodDelivery\\FoodDelivery\\wwwroot\\",
       "BasePath": "/",
-      "RelativePath": "Shoping.png",
+      "RelativePath": "Shopping.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -541,7 +541,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Shoping.png"
+      "OriginalItemSpec": "wwwroot\\Shopping.png"
     },
     {
       "Identity": "C:\\Users\\NguyenXuanSon\\Documents\\GitHub\\Food_delivery_app\\FoodDelivery\\FoodDelivery\\wwwroot\\up-arrow-svgrepo-com.svg",
