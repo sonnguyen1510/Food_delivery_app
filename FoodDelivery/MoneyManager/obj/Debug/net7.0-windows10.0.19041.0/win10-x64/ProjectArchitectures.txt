@@ -1,1 +1,1 @@
-C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\FoodDelivery\FoodDelivery\FoodDelivery.csproj;x64
+C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\FoodDelivery\MoneyManager\MoneyManager.csproj;x64

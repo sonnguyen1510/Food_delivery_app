@@ -1,4 +1,4 @@
-﻿namespace FoodDelivery
+﻿namespace MoneyManager
 {
     public partial class MainPage : ContentPage
     {

@@ -9,8 +9,12 @@ namespace MoneyManager.Database.Server
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)
         {
+            Database.Migrate();
         }
 
-        public DbSet<UserTransaction> UserTransactions { get; set; }
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) => optionsBuilder.UseSqlite();
+        
+
+        public DbSet<UserTransaction> Transactions { get; set; }
     }
 }

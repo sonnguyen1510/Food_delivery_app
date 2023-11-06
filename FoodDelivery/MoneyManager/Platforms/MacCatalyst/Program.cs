@@ -1,7 +1,7 @@
 ﻿using ObjCRuntime;
 using UIKit;
 
-namespace FoodDelivery
+namespace MoneyManager
 {
     public class Program
     {

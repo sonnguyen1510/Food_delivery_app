@@ -10,7 +10,7 @@
   <Identity Name="55B4B9D4-82B6-41BB-8B3E-0021CFA97048" Publisher="CN=User Name" Version="1.0.0.1" ProcessorArchitecture="x64" />
   <mp:PhoneIdentity PhoneProductId="5CECC14C-7D7B-40C2-8EAA-C71EE269ECCF" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
-    <DisplayName>FoodDelivery</DisplayName>
+    <DisplayName>MoneyManager</DisplayName>
     <PublisherDisplayName>User Name</PublisherDisplayName>
     <Logo>appiconStoreLogo.png</Logo>
   </Properties>
@@ -23,9 +23,9 @@
     <Resource Language="EN-US" />
   </Resources>
   <Applications>
-    <Application Id="App" Executable="FoodDelivery.exe" EntryPoint="Windows.FullTrustApplication">
-      <uap:VisualElements DisplayName="FoodDelivery" Description="FoodDelivery" Square150x150Logo="appiconMediumTile.png" Square44x44Logo="appiconLogo.png" BackgroundColor="transparent">
-        <uap:DefaultTile Square71x71Logo="appiconSmallTile.png" Wide310x150Logo="appiconWideTile.png" Square310x310Logo="appiconLargeTile.png" ShortName="FoodDelivery">
+    <Application Id="App" Executable="MoneyManager.exe" EntryPoint="Windows.FullTrustApplication">
+      <uap:VisualElements DisplayName="MoneyManager" Description="MoneyManager" Square150x150Logo="appiconMediumTile.png" Square44x44Logo="appiconLogo.png" BackgroundColor="transparent">
+        <uap:DefaultTile Square71x71Logo="appiconSmallTile.png" Wide310x150Logo="appiconWideTile.png" Square310x310Logo="appiconLargeTile.png" ShortName="MoneyManager">
           <uap:ShowNameOnTiles>
             <uap:ShowOn Tile="square150x150Logo" />
             <uap:ShowOn Tile="wide310x150Logo" />
@@ -39,7 +39,7 @@
     <rescap:Capability Name="runFullTrust" />
   </Capabilities>
   <build:Metadata>
-    <build:Item Name="Microsoft.UI.Xaml.Markup.Compiler.dll" Version="1.0.0.0" />
+    <build:Item Name="XamlCompiler.exe" Version="1.0.0.0" />
     <build:Item Name="makepri.exe" Version="10.0.22621.755 (WinBuild.160101.0800)" />
   </build:Metadata>
 </Package>

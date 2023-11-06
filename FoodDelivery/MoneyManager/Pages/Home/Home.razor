@@ -2,7 +2,7 @@
 
 @using MoneyManager.Database.Server;
 @using MoneyManager.Database.Server.Model;
-@inject ApplicationDbContext DbContext;
+@inject ApplicationDbSQliteContext DbContext;
 
 <div class= "container">
     <div class="user-detail-container">
@@ -105,10 +105,7 @@
     // Inject the DbContext
     public List<UserTransaction> TransactionList;
 
-    protected override async Task OnInitializedAsync()
-    {
-        TransactionList = DbContext.UserTransactions.ToList();
-    }
+    
 
 
     private string formattedMonth

@@ -22,7 +22,7 @@ namespace MoneyManager
             builder.Configuration.AddJsonFile("Appsetting.json");
 
             builder.Services.AddMauiBlazorWebView();
-            builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(
+            builder.Services.AddDbContext<ApplicationDbSQliteContext>(options => options.UseSqlServer(
                 builder.Configuration.GetConnectionString("UserDatabase")
             ));
 

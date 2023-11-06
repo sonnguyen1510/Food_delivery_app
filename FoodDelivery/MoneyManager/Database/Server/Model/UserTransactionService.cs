@@ -10,13 +10,13 @@ namespace MoneyManager.Database.Server.Model
 {
     public class UserTransactionService
     {
-        private readonly ApplicationDbContext _context;
+        private readonly ApplicationDbSQliteContext _context;
 
-        public UserTransactionService(ApplicationDbContext context)
+        public UserTransactionService(ApplicationDbSQliteContext context)
         {
             _context = context;
         }
 
-        public async Task<List<UserTransaction>> getAllTransactions() => await _context.UserTransactions.ToListAsync();
+        //public async Task<List<UserTransaction>> getAllTransactions() => await _context.UserTransactions.ToListAsync();
     }
 }

@@ -1,7 +1,7 @@
 ﻿using Android.App;
 using Android.Runtime;
 
-namespace FoodDelivery
+namespace MoneyManager
 {
     [Application]
     public class MainApplication : MauiApplication

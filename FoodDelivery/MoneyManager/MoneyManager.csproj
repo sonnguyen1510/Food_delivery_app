@@ -58,7 +58,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Database\SQLite\Model\" />
       <Folder Include="Function\" />
     </ItemGroup>
 

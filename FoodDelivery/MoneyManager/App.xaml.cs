@@ -1,4 +1,6 @@
-﻿namespace FoodDelivery
+﻿
+
+namespace MoneyManager
 {
     public partial class App : Application
     {

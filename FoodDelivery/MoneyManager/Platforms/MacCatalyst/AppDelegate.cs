@@ -1,6 +1,6 @@
 ﻿using Foundation;
 
-namespace FoodDelivery
+namespace MoneyManager
 {
     [Register("AppDelegate")]
     public class AppDelegate : MauiUIApplicationDelegate
