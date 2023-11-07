@@ -5,7 +5,7 @@ VisualStudioVersion = 17.7.34221.43
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MoneyStatistic", "MoneyStatistic\MoneyStatistic.csproj", "{82D0D750-34E5-4E35-8269-03F2BE9755D0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoneyManagerService", "MoneyManagerService\MoneyManagerService.csproj", "{41718030-16EF-4D8A-BC5A-FA826777E85A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MoneyManagerService", "MoneyManagerService\MoneyManagerService.csproj", "{41718030-16EF-4D8A-BC5A-FA826777E85A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -604,11 +604,7 @@ C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneySt
 C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\staticwebassets.pack.json
 C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\staticwebassets.build.json
 C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\staticwebassets.development.json
-C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\scopedcss\Pages\Home\Home.razor.rz.scp.css
-C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\scopedcss\Shared\Bottomnav.razor.rz.scp.css
-C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\scopedcss\Shared\MainLayout.razor.rz.scp.css
 C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\scopedcss\bundle\MoneyStatistic.styles.css
-C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\scopedcss\projectbundle\MoneyStatistic.bundle.scp.css
 C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\staticwebassets.publish.json
 C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\mauiimage.inputs
 C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\mauifont.inputs
