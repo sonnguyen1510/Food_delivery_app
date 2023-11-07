@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace MoneyManagerService.EF.MoneyManagerService;
+namespace Models.EF.MoneyManagerService;
 
 public partial class UserTransaction
 {
-    public string Id { get; set; } = null!;
+    public decimal Id { get; set; }
 
     public string? Title { get; set; }
 
@@ -19,5 +19,9 @@ public partial class UserTransaction
 
     public decimal? Amount { get; set; }
 
+    public decimal? UserId { get; set; }
+
     public bool? Status { get; set; }
+
+    public virtual User? User { get; set; }
 }

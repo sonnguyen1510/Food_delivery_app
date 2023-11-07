@@ -1,8 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
+using Models.EF.MoneyManagerService;
 
-namespace MoneyManagerService.EF.MoneyManagerService;
+namespace MoneyManagerService;
 
 public partial class MoneyManagerContext : DbContext
 {
@@ -15,6 +16,8 @@ public partial class MoneyManagerContext : DbContext
     {
     }
 
+    public virtual DbSet<User> Users { get; set; }
+
     public virtual DbSet<UserTransaction> UserTransactions { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -23,15 +26,44 @@ public partial class MoneyManagerContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
+        modelBuilder.Entity<User>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PK__User__3214EC07A040F6CA");
+
+            entity.ToTable("User");
+
+            entity.HasIndex(e => e.Username, "UQ__User__536C85E42E11EC90").IsUnique();
+
+            entity.Property(e => e.Id)
+                .ValueGeneratedOnAdd()
+                .HasColumnType("numeric(18, 0)");
+            entity.Property(e => e.Email)
+                .HasMaxLength(55)
+                .IsUnicode(false);
+            entity.Property(e => e.Fullname)
+                .HasMaxLength(55)
+                .IsUnicode(false);
+            entity.Property(e => e.Password)
+                .HasMaxLength(55)
+                .IsUnicode(false);
+            entity.Property(e => e.Phone)
+                .HasMaxLength(55)
+                .IsUnicode(false);
+            entity.Property(e => e.Status).HasColumnName("status");
+            entity.Property(e => e.Username)
+                .HasMaxLength(55)
+                .IsUnicode(false);
+        });
+
         modelBuilder.Entity<UserTransaction>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("PK__UserTran__3214EC07D033E135");
+            entity.HasKey(e => e.Id).HasName("PK__UserTran__3214EC07C046E699");
 
             entity.ToTable("UserTransaction");
 
             entity.Property(e => e.Id)
-                .HasMaxLength(55)
-                .IsUnicode(false);
+                .ValueGeneratedOnAdd()
+                .HasColumnType("numeric(18, 0)");
             entity.Property(e => e.Amount).HasColumnType("numeric(10, 2)");
             entity.Property(e => e.CreDate).HasColumnType("date");
             entity.Property(e => e.Status).HasColumnName("status");
@@ -44,6 +76,11 @@ public partial class MoneyManagerContext : DbContext
             entity.Property(e => e.TransType)
                 .HasMaxLength(55)
                 .IsUnicode(false);
+            entity.Property(e => e.UserId).HasColumnType("numeric(18, 0)");
+
+            entity.HasOne(d => d.User).WithMany(p => p.UserTransactions)
+                .HasForeignKey(d => d.UserId)
+                .HasConstraintName("UserTrans");
         });
 
         OnModelCreatingPartial(modelBuilder);

@@ -1,4 +1,10 @@
-using MoneyManagerService.EF.MoneyManagerService;
+//using MoneyManagerService.EF.MoneyManagerService;
+
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.Configuration;
+using MoneyManagerService;
+using MoneyManagerService.Midleware;
+using System.Net;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,6 +17,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<MoneyManagerContext>();
 
 
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -19,6 +26,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+app.UseMiddleware<Middleware>();
 
 app.UseHttpsRedirection();
 

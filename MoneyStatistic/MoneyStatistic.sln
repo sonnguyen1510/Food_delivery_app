@@ -6,6 +6,11 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MoneyStatistic", "MoneyStatistic\MoneyStatistic.csproj", "{82D0D750-34E5-4E35-8269-03F2BE9755D0}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MoneyManagerService", "MoneyManagerService\MoneyManagerService.csproj", "{41718030-16EF-4D8A-BC5A-FA826777E85A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{2811D1F0-9167-40B2-8F1D-1F09008B103A} = {2811D1F0-9167-40B2-8F1D-1F09008B103A}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models", "Models\Models.csproj", "{2811D1F0-9167-40B2-8F1D-1F09008B103A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,6 +28,10 @@ Global
 		{41718030-16EF-4D8A-BC5A-FA826777E85A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{41718030-16EF-4D8A-BC5A-FA826777E85A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{41718030-16EF-4D8A-BC5A-FA826777E85A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2811D1F0-9167-40B2-8F1D-1F09008B103A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2811D1F0-9167-40B2-8F1D-1F09008B103A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2811D1F0-9167-40B2-8F1D-1F09008B103A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2811D1F0-9167-40B2-8F1D-1F09008B103A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
