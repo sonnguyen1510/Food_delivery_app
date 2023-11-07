@@ -1,7 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
-using MoneyStatistic.Database.Service;
-using MoneyStatistic.Database.Service.Model;
+
 
 
 namespace MoneyStatistic
@@ -17,10 +16,7 @@ namespace MoneyStatistic
                 {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                 });
-            builder.Services.AddScoped<UserTransactionService>();
-
-            builder.Services.AddDbContext<ApplicationDbContext>(item=>item.UseSqlServer("Server=7-166;Database=MoneyManager;Trusted_Connection=True"));
-
+           
             builder.Services.AddMauiBlazorWebView();
             
 

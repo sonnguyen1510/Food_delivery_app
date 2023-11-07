@@ -1,11 +1,10 @@
 ﻿@page "/"
 
-@using MoneyStatistic.Database.Service;
-@using MoneyStatistic.Database;
-@using MoneyStatistic.Database.Service.Model;
-    
-@inject ApplicationDbContext DbContext;
-@inject UserTransactionService usertransactions;
+@using Database.MoneyManagerService
+
+@using System.Net.Http; 
+@using System.Net.Http.Json;
+
 
 <head>
     <link rel="stylesheet" href="./css/Home.css">
@@ -62,32 +61,57 @@
                 </div>
             </div>
         </div>
-
+        <div class="transaction-list-daypicker">
+            <div class="">
+                <p class="trans-title"> Transaction</p>
+            </div>
+            <div class="daypicker">
+                <p class="daypicker-title">From</p>
+                <input class="daypicker-dialog" type="date" @bind="selectedStartDate" @oninput="HandleStartDateChange" />
+                <p class="daypicker-title">To</p>
+                <input class="daypicker-dialog" type="date" @bind="selectedEndDate" @oninput="HandleEndDateChange" />
+            </div>
+        </div>
         <div class="transaction-list-container">
-            <div class="transaction-list-daypicker">
-                <div class="">
-                    <p class="trans-title"> Transaction</p>
-                </div>
-                <div class="daypicker">
-                    <p class="daypicker-title">From</p>
-                    <input class="daypicker-dialog" type="date" @bind="selectedStartDate" @oninput="HandleStartDateChange" />
-                    <p class="daypicker-title">To</p>
-                    <input class="daypicker-dialog" type="date" @bind="selectedEndDate" @oninput="HandleEndDateChange" />
-                </div>
+            
+           `<div class="transaction-list-display">
+                @if (userTransactions != null)
+                {
+                    @foreach (var item in userTransactions)
+                    {
+                        <div class="user-detail-container divider">
+                            <div class="user-avatar transaction-icon">
+                                <img src="@Icon(item.TransIcon)" />
+                            </div>
+                            <div class="user-detail">
+                                <p class="user-name">@item.Title</p>
+                                <p class="status-day">@item.CreTime @item.CreDate?.ToString("yyyy-MM-dd")</p>
+                            </div>
+
+                        </div>
+                    }
+                }
             </div>
 
+            
         </div>
     </div>
-    
+    <script src="Js/home.js"></script>
 </body>
 
 @code {
+    private bool eventHandlerRegistered = false;
+    public double Income = 5000;
+    public double Expense = 2000;
 
-
+    private DateTime selectedStartDate = DateTime.Now;
+    private String selectedStringStartDate;
     public String Username = "Billy";
     public String DayStatus = "Morning";
     public double Balance = 7872.20;
     private DateTime CurrentMonth = DateTime.Now;
+    private List<UserTransaction> userTransactions;
+    HttpClient client = new HttpClient();
 
     /* Unmerged change from project 'FoodDelivery (net7.0-windows10.0.19041.0)'
         Before:
@@ -97,22 +121,6 @@
 
 
 
-        <div class="transaction-list-display">
-            @foreach (var item in TransactionList)
-            {
-                <div class="user-detail-container">
-                    <div class="user-avatar">
-                        <img src="@Icon(item.TransIcon)" />
-                    </div>
-                    <div class="user-detail">
-                        <p class="user-name">@item.Title</p>
-                        <p class="status-day">@item.CreTime @item.CreDate</p>
-                    </div>
-
-                </div>
-            }
-
-        </div>
 
         private List<UserTransaction> TransactionList = new List<UserTransaction>();
 
@@ -122,11 +130,33 @@
     }
 
 
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            // Attach the window resize event handler
+            if (!eventHandlerRegistered)
+            {
+                eventHandlerRegistered = true;
+                await JS.InvokeVoidAsync("registerWindowResizeHandler");
+            }
+        }
+    }
     */
     // Inject the DbContext
-
     
 
+    protected override async Task OnInitializedAsync()
+    {
+        // Define the API endpoint URL
+        var apiUrl = "https://localhost:7040/transaction/GetAllTransaction";
+
+        // Send an HTTP GET request to the API
+        userTransactions = await client.GetFromJsonAsync<List<UserTransaction>>(apiUrl);
+    }
+    
+    
 
     private string formattedMonth
     {
@@ -143,12 +173,7 @@
         }
     }
 
-    //public String  UserImage = ;
-    public double Income = 5000;
-    public double Expense = 2000;
-
-    private DateTime selectedStartDate = DateTime.Now;
-    private String selectedStringStartDate;
+    
 
     private void HandleStartDateChange(ChangeEventArgs e)
     {

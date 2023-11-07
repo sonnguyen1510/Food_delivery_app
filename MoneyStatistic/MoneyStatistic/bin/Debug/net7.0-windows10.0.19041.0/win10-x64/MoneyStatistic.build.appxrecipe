@@ -1726,9 +1726,6 @@
     <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\wwwroot\css\MainLayout.css">
       <PackagePath>wwwroot\css\MainLayout.css</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\wwwroot\css\open-iconic\FONT-LICENSE">
-      <PackagePath>wwwroot\css\open-iconic\FONT-LICENSE</PackagePath>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\wwwroot\css\open-iconic\font\css\open-iconic-bootstrap.min.css">
       <PackagePath>wwwroot\css\open-iconic\font\css\open-iconic-bootstrap.min.css</PackagePath>
     </AppxPackagedFile>
@@ -1746,6 +1743,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\wwwroot\css\open-iconic\font\fonts\open-iconic.woff">
       <PackagePath>wwwroot\css\open-iconic\font\fonts\open-iconic.woff</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\wwwroot\css\open-iconic\FONT-LICENSE">
+      <PackagePath>wwwroot\css\open-iconic\FONT-LICENSE</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\wwwroot\css\open-iconic\ICON-LICENSE">
       <PackagePath>wwwroot\css\open-iconic\ICON-LICENSE</PackagePath>
@@ -1803,6 +1803,177 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\wwwroot\user-alt-1-svgrepo-com.svg">
       <PackagePath>wwwroot\user-alt-1-svgrepo-com.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-100.png">
+      <PackagePath>splashSplashScreen.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-125.png">
+      <PackagePath>splashSplashScreen.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-150.png">
+      <PackagePath>splashSplashScreen.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-200.png">
+      <PackagePath>splashSplashScreen.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-400.png">
+      <PackagePath>splashSplashScreen.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Regular.ttf">
+      <PackagePath>OpenSans-Regular.ttf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
+      <PackagePath>appicon.ico</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-100.png">
+      <PackagePath>appiconLargeTile.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-125.png">
+      <PackagePath>appiconLargeTile.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-150.png">
+      <PackagePath>appiconLargeTile.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-200.png">
+      <PackagePath>appiconLargeTile.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-400.png">
+      <PackagePath>appiconLargeTile.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-16.png">
+      <PackagePath>appiconLogo.altform-lightunplated_targetsize-16.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-24.png">
+      <PackagePath>appiconLogo.altform-lightunplated_targetsize-24.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-256.png">
+      <PackagePath>appiconLogo.altform-lightunplated_targetsize-256.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-32.png">
+      <PackagePath>appiconLogo.altform-lightunplated_targetsize-32.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-48.png">
+      <PackagePath>appiconLogo.altform-lightunplated_targetsize-48.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-16.png">
+      <PackagePath>appiconLogo.altform-unplated_targetsize-16.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-24.png">
+      <PackagePath>appiconLogo.altform-unplated_targetsize-24.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-256.png">
+      <PackagePath>appiconLogo.altform-unplated_targetsize-256.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-32.png">
+      <PackagePath>appiconLogo.altform-unplated_targetsize-32.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-48.png">
+      <PackagePath>appiconLogo.altform-unplated_targetsize-48.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-100.png">
+      <PackagePath>appiconLogo.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-125.png">
+      <PackagePath>appiconLogo.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-150.png">
+      <PackagePath>appiconLogo.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-200.png">
+      <PackagePath>appiconLogo.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-400.png">
+      <PackagePath>appiconLogo.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-16.png">
+      <PackagePath>appiconLogo.targetsize-16.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-24.png">
+      <PackagePath>appiconLogo.targetsize-24.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-256.png">
+      <PackagePath>appiconLogo.targetsize-256.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-32.png">
+      <PackagePath>appiconLogo.targetsize-32.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-48.png">
+      <PackagePath>appiconLogo.targetsize-48.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-100.png">
+      <PackagePath>appiconMediumTile.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-125.png">
+      <PackagePath>appiconMediumTile.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-150.png">
+      <PackagePath>appiconMediumTile.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-200.png">
+      <PackagePath>appiconMediumTile.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-400.png">
+      <PackagePath>appiconMediumTile.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-100.png">
+      <PackagePath>appiconSmallTile.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-125.png">
+      <PackagePath>appiconSmallTile.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-150.png">
+      <PackagePath>appiconSmallTile.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-200.png">
+      <PackagePath>appiconSmallTile.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-400.png">
+      <PackagePath>appiconSmallTile.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-100.png">
+      <PackagePath>appiconStoreLogo.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-125.png">
+      <PackagePath>appiconStoreLogo.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-150.png">
+      <PackagePath>appiconStoreLogo.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-200.png">
+      <PackagePath>appiconStoreLogo.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-400.png">
+      <PackagePath>appiconStoreLogo.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-100.png">
+      <PackagePath>appiconWideTile.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-125.png">
+      <PackagePath>appiconWideTile.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-150.png">
+      <PackagePath>appiconWideTile.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-200.png">
+      <PackagePath>appiconWideTile.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
+      <PackagePath>appiconWideTile.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
+      <PackagePath>dotnet_bot.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
+      <PackagePath>dotnet_bot.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
+      <PackagePath>dotnet_bot.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
+      <PackagePath>dotnet_bot.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
+      <PackagePath>dotnet_bot.scale-400.png</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
