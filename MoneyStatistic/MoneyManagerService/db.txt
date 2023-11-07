@@ -1,0 +1,1 @@
+﻿Scaffold-DbContext "Server=7-166;Database=MoneyManager;Trusted_Connection=True;TrustServerCertificate=True" Microsoft.EntityFrameworkCore.SqlServer -OutputDir EF/MoneyManagerService -t User -f
