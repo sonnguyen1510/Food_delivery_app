@@ -1708,6 +1708,9 @@
     <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\wwwroot\chart-simple-svgrepo-com.svg">
       <PackagePath>wwwroot\chart-simple-svgrepo-com.svg</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\wwwroot\css\AddTransaction.css">
+      <PackagePath>wwwroot\css\AddTransaction.css</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\wwwroot\css\app.css">
       <PackagePath>wwwroot\css\app.css</PackagePath>
     </AppxPackagedFile>
@@ -1756,6 +1759,9 @@
     <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\wwwroot\down-arrow-svgrepo-com.svg">
       <PackagePath>wwwroot\down-arrow-svgrepo-com.svg</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\wwwroot\down-arrow-svgrepo-com-transitem.svg">
+      <PackagePath>wwwroot\down-arrow-svgrepo-com-transitem.svg</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\wwwroot\Excercise.png">
       <PackagePath>wwwroot\Excercise.png</PackagePath>
     </AppxPackagedFile>
@@ -1797,6 +1803,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\wwwroot\up-arrow-svgrepo-com.svg">
       <PackagePath>wwwroot\up-arrow-svgrepo-com.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\wwwroot\up-arrow-svgrepo-com-transitem.svg">
+      <PackagePath>wwwroot\up-arrow-svgrepo-com-transitem.svg</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\wwwroot\user_default.png">
       <PackagePath>wwwroot\user_default.png</PackagePath>

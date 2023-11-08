@@ -53,6 +53,10 @@
       "PackagePath": "staticwebassets\\chart-simple-svgrepo-com.svg"
     },
     {
+      "Id": "C:\\Users\\NguyenXuanSon\\Documents\\GitHub\\Food_delivery_app\\MoneyStatistic\\MoneyStatistic\\wwwroot\\css\\AddTransaction.css",
+      "PackagePath": "staticwebassets\\css\\AddTransaction.css"
+    },
+    {
       "Id": "C:\\Users\\NguyenXuanSon\\Documents\\GitHub\\Food_delivery_app\\MoneyStatistic\\MoneyStatistic\\wwwroot\\css\\Bottomnav.css",
       "PackagePath": "staticwebassets\\css\\Bottomnav.css"
     },
@@ -113,6 +117,10 @@
       "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
     },
     {
+      "Id": "C:\\Users\\NguyenXuanSon\\Documents\\GitHub\\Food_delivery_app\\MoneyStatistic\\MoneyStatistic\\wwwroot\\down-arrow-svgrepo-com-transitem.svg",
+      "PackagePath": "staticwebassets\\down-arrow-svgrepo-com-transitem.svg"
+    },
+    {
       "Id": "C:\\Users\\NguyenXuanSon\\Documents\\GitHub\\Food_delivery_app\\MoneyStatistic\\MoneyStatistic\\wwwroot\\down-arrow-svgrepo-com.svg",
       "PackagePath": "staticwebassets\\down-arrow-svgrepo-com.svg"
     },
@@ -131,6 +139,10 @@
     {
       "Id": "C:\\Users\\NguyenXuanSon\\Documents\\GitHub\\Food_delivery_app\\MoneyStatistic\\MoneyStatistic\\wwwroot\\index.html",
       "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\NguyenXuanSon\\Documents\\GitHub\\Food_delivery_app\\MoneyStatistic\\MoneyStatistic\\wwwroot\\up-arrow-svgrepo-com-transitem.svg",
+      "PackagePath": "staticwebassets\\up-arrow-svgrepo-com-transitem.svg"
     },
     {
       "Id": "C:\\Users\\NguyenXuanSon\\Documents\\GitHub\\Food_delivery_app\\MoneyStatistic\\MoneyStatistic\\wwwroot\\up-arrow-svgrepo-com.svg",

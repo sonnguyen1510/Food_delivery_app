@@ -60,6 +60,7 @@ wwwroot\appsetting.json
 wwwroot\Bill.png
 wwwroot\Bussiness.png
 wwwroot\chart-simple-svgrepo-com.svg
+wwwroot\css\AddTransaction.css
 wwwroot\css\app.css
 wwwroot\css\bootstrap\bootstrap.min.css
 wwwroot\css\bootstrap\bootstrap.min.css.map
@@ -76,6 +77,7 @@ wwwroot\css\open-iconic\FONT-LICENSE
 wwwroot\css\open-iconic\ICON-LICENSE
 wwwroot\css\open-iconic\README.md
 wwwroot\down-arrow-svgrepo-com.svg
+wwwroot\down-arrow-svgrepo-com-transitem.svg
 wwwroot\Excercise.png
 wwwroot\favicon.ico
 wwwroot\Food&Dring.png
@@ -90,5 +92,6 @@ wwwroot\Movie.png
 wwwroot\Salary.png
 wwwroot\Shopping.png
 wwwroot\up-arrow-svgrepo-com.svg
+wwwroot\up-arrow-svgrepo-com-transitem.svg
 wwwroot\user_default.png
 wwwroot\user-alt-1-svgrepo-com.svg

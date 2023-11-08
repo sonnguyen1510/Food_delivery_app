@@ -74,21 +74,41 @@
         </div>
         <div class="transaction-list-container">
             
-           `<div class="transaction-list-display">
+           <div class="transaction-list-display">
                 @if (userTransactions != null)
                 {
                     @foreach (var item in userTransactions)
                     {
-                        <div class="user-detail-container divider">
-                            <div class="user-avatar transaction-icon">
-                                <img src="@Icon(item.TransIcon)" />
+                        <div class="transaction-item-container divider">
+                            <div class="transaction-item-info-container">
+                                <div class="transaction-icon-container">
+                                    <div class="transaction-icon">
+                                        <img src="@Icon(item.TransIcon)" />
+                                    </div>
+                                </div>
+                                <div class="user-detail">
+                                    <p class="user-name">@item.Title</p>
+                                    <p class="status-day">@item.CreTime @item.CreDate?.ToString("yyyy-MM-dd")</p>
+                                </div>
                             </div>
-                            <div class="user-detail">
-                                <p class="user-name">@item.Title</p>
-                                <p class="status-day">@item.CreTime @item.CreDate?.ToString("yyyy-MM-dd")</p>
-                            </div>
-
-                        </div>
+                             <div class="transaction-item-amount-container">
+                                @if (item.TransType.Equals("income"))
+                                {
+                                    <div class="income-transaction-item-container">
+                                        <p class="number-style income-money">$@item.Amount</p><img src="up-arrow-svgrepo-com-transitem.svg" />
+                                        
+                                    </div>
+                                }
+                                else
+                                {
+                                    <div class="expense-transaction-item-container">
+                                        <p class="number-style expense-money">$@item.Amount</p>
+                                        <img src="down-arrow-svgrepo-com-transitem.svg">
+                                    </div>
+                                }
+                             </div>
+                         </div>
+                        
                     }
                 }
             </div>
@@ -193,7 +213,7 @@
 
     public void addTransiaction()
     {
-
+        
     }
 
     public String Icon(String iconType)
