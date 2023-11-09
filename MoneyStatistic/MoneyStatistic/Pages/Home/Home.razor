@@ -116,7 +116,32 @@
             
         </div>
     </div>
-    <script src="Js/home.js"></script>
+    <!-- Modal -->
+    
+    @if (showDialog)
+        {
+            <div class="modal">
+                <div class="modal-content">
+                    <div class="modal-title-container">
+                        <p class="modal-title">Add Transaction</p>
+                    </div>
+                    <div class="modal-daypicker-container">
+                        <div class="header">
+                            <button @onclick="DecrementMonth">Previous</button>
+                            <h2>@currentDate.ToString("MMMM yyyy")</h2>
+                            <button @onclick="IncrementMonth">Next</button>
+                        </div>
+                        <div class="days">
+                            @for (int day = 1; day <= DateTime.DaysInMonth(currentDate.Year, currentDate.Month); day++)
+                            {
+                                <button @onclick="SelectDay(day)">@day</button>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+       }
+    
 </body>
 
 @code {
@@ -132,8 +157,8 @@
     private DateTime CurrentMonth = DateTime.Now;
     private List<UserTransaction> userTransactions;
     HttpClient client = new HttpClient();
-
-    /* Unmerged change from project 'FoodDelivery (net7.0-windows10.0.19041.0)'
+    private bool showDialog = false;
+        /* Unmerged change from project 'FoodDelivery (net7.0-windows10.0.19041.0)'
         Before:
         private List<Connection.UserTransaction> data;
         After:
@@ -144,28 +169,35 @@
 
         private List<UserTransaction> TransactionList = new List<UserTransaction>();
 
-    protected async override void OnInitialized()
-    {
+        protected async override void OnInitialized()
+        {
         TransactionList = await Task.Run(() => usertransactions.getAllTransactions());
     }
 
 
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
-    {
-        if (firstRender)
-        {
+            {
+            if (firstRender)
+            {
             // Attach the window resize event handler
             if (!eventHandlerRegistered)
-            {
+                {
                 eventHandlerRegistered = true;
                 await JS.InvokeVoidAsync("registerWindowResizeHandler");
-            }
         }
+    }
     }
     */
     // Inject the DbContext
-    
+
+    [Inject]
+    private NavigationManager NavigationManager { get; set; }
+
+    private void NavigateToNewPage()
+    {
+        NavigationManager.NavigateTo("/add_transaction");
+    }
 
     protected override async Task OnInitializedAsync()
     {
@@ -175,8 +207,8 @@
         // Send an HTTP GET request to the API
         userTransactions = await client.GetFromJsonAsync<List<UserTransaction>>(apiUrl);
     }
-    
-    
+
+
 
     private string formattedMonth
     {
@@ -193,7 +225,7 @@
         }
     }
 
-    
+
 
     private void HandleStartDateChange(ChangeEventArgs e)
     {
@@ -213,7 +245,8 @@
 
     public void addTransiaction()
     {
-        
+        showDialog = !showDialog;
+        Console.WriteLine("Here");
     }
 
     public String Icon(String iconType)
@@ -245,4 +278,24 @@
 
         }
     }
+
+    //-MODAL
+    private DateTime currentDate = DateTime.Now;
+
+    private void IncrementMonth()
+    {
+        currentDate = currentDate.AddMonths(1);
+    }
+
+    private void DecrementMonth()
+    {
+        currentDate = currentDate.AddMonths(-1);
+    }
+
+    private void SelectDay(int day)
+    {
+        // Handle the selected day here
+        Console.WriteLine($"Selected day: {day}/{currentDate.Month}/{currentDate.Year}");
+    }
+
 }

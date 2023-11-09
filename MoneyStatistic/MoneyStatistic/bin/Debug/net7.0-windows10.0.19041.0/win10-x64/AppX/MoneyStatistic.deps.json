@@ -22,6 +22,7 @@
           "Microsoft.Maui.Graphics": "7.0.96",
           "Microsoft.Maui.Graphics.Win2D.WinUI.Desktop": "7.0.96",
           "Microsoft.WindowsAppSDK": "1.2.221209.1",
+          "bootstrap": "5.3.2",
           "runtimepack.Microsoft.NETCore.App.Runtime.win-x64": "7.0.13",
           "runtimepack.Microsoft.WindowsDesktop.App.Runtime.win-x64": "7.0.13",
           "runtimepack.Microsoft.Maui.Core.Runtime.win": "7.0.96",
@@ -1056,6 +1057,7 @@
           }
         }
       },
+      "bootstrap/5.3.2": {},
       "Humanizer.Core/2.14.1": {},
       "Microsoft.AspNetCore.Authorization/7.0.11": {
         "dependencies": {
@@ -1968,6 +1970,13 @@
       "sha512": "sha512-eHEiCO/8+MfNc9nH5dVew/+FvxdaGrkRL4OMNwIz0W79+wtJyEoeRlXJ3SrXhoy9XR58geBYKmzMR83VO7bcAw==",
       "path": "azure.identity/1.7.0",
       "hashPath": "azure.identity.1.7.0.nupkg.sha512"
+    },
+    "bootstrap/5.3.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-m0/GEaLwE35B8P1xScFhwAsQi5o6kWPzOVPdGkoFwv+5YjmbgXFPQai71N5APwRCU52ZO4vHYWJ5DYSqKKgivw==",
+      "path": "bootstrap/5.3.2",
+      "hashPath": "bootstrap.5.3.2.nupkg.sha512"
     },
     "Humanizer.Core/2.14.1": {
       "type": "package",

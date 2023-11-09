@@ -10,7 +10,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MoneyManagerService", "Mone
 		{2811D1F0-9167-40B2-8F1D-1F09008B103A} = {2811D1F0-9167-40B2-8F1D-1F09008B103A}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models", "Models\Models.csproj", "{2811D1F0-9167-40B2-8F1D-1F09008B103A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Models", "Models\Models.csproj", "{2811D1F0-9167-40B2-8F1D-1F09008B103A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

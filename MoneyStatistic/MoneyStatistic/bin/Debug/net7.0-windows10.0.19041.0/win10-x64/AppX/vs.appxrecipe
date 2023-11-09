@@ -30,25 +30,25 @@
     <AppXManifest Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-11-08T04:38:11.195</Modified>
+      <Modified>2023-11-09T03:34:56.880</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2023-11-08T03:52:44.497</Modified>
+      <Modified>2023-11-09T02:36:25.739</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\MoneyStatistic.runtimeconfig.json">
       <PackagePath>MoneyStatistic.runtimeconfig.json</PackagePath>
-      <Modified>2023-11-08T03:04:02.902</Modified>
+      <Modified>2023-11-09T02:36:25.501</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\MoneyStatistic.dll">
       <PackagePath>MoneyStatistic.dll</PackagePath>
-      <Modified>2023-11-08T04:38:09.254</Modified>
+      <Modified>2023-11-09T03:18:15.248</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>MoneyStatistic.exe</PackagePath>
-      <Modified>2023-11-08T04:38:09.376</Modified>
+      <Modified>2023-11-09T03:18:15.475</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\NguyenXuanSon\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.13\runtimes\win-x64\lib\net7.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -2232,7 +2232,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\MoneyStatistic.deps.json">
       <PackagePath>MoneyStatistic.deps.json</PackagePath>
-      <Modified>2023-11-08T04:38:10.841</Modified>
+      <Modified>2023-11-09T03:34:56.490</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\NguyenXuanSon\.nuget\packages\humanizer.core\2.14.1\lib\net6.0\Humanizer.dll">
       <PackagePath>Humanizer.dll</PackagePath>
@@ -2262,6 +2262,182 @@
       <PackagePath>AboutAssets.txt</PackagePath>
       <Modified>2023-11-07T01:52:09.124</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\.nuget\packages\bootstrap\5.3.2\contentFiles\any\any\wwwroot\css\bootstrap.css">
+      <PackagePath>wwwroot\css\bootstrap.css</PackagePath>
+      <Modified>2023-09-14T15:48:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\.nuget\packages\bootstrap\5.3.2\contentFiles\any\any\wwwroot\css\bootstrap.css.map">
+      <PackagePath>wwwroot\css\bootstrap.css.map</PackagePath>
+      <Modified>2023-09-14T15:48:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\.nuget\packages\bootstrap\5.3.2\contentFiles\any\any\wwwroot\css\bootstrap.min.css">
+      <PackagePath>wwwroot\css\bootstrap.min.css</PackagePath>
+      <Modified>2023-09-14T15:48:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\.nuget\packages\bootstrap\5.3.2\contentFiles\any\any\wwwroot\css\bootstrap.min.css.map">
+      <PackagePath>wwwroot\css\bootstrap.min.css.map</PackagePath>
+      <Modified>2023-09-14T15:48:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\.nuget\packages\bootstrap\5.3.2\contentFiles\any\any\wwwroot\css\bootstrap.rtl.css">
+      <PackagePath>wwwroot\css\bootstrap.rtl.css</PackagePath>
+      <Modified>2023-09-14T15:48:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\.nuget\packages\bootstrap\5.3.2\contentFiles\any\any\wwwroot\css\bootstrap.rtl.css.map">
+      <PackagePath>wwwroot\css\bootstrap.rtl.css.map</PackagePath>
+      <Modified>2023-09-14T15:48:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\.nuget\packages\bootstrap\5.3.2\contentFiles\any\any\wwwroot\css\bootstrap.rtl.min.css">
+      <PackagePath>wwwroot\css\bootstrap.rtl.min.css</PackagePath>
+      <Modified>2023-09-14T15:48:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\.nuget\packages\bootstrap\5.3.2\contentFiles\any\any\wwwroot\css\bootstrap.rtl.min.css.map">
+      <PackagePath>wwwroot\css\bootstrap.rtl.min.css.map</PackagePath>
+      <Modified>2023-09-14T15:48:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\.nuget\packages\bootstrap\5.3.2\contentFiles\any\any\wwwroot\css\bootstrap-grid.css">
+      <PackagePath>wwwroot\css\bootstrap-grid.css</PackagePath>
+      <Modified>2023-09-14T15:48:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\.nuget\packages\bootstrap\5.3.2\contentFiles\any\any\wwwroot\css\bootstrap-grid.css.map">
+      <PackagePath>wwwroot\css\bootstrap-grid.css.map</PackagePath>
+      <Modified>2023-09-14T15:48:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\.nuget\packages\bootstrap\5.3.2\contentFiles\any\any\wwwroot\css\bootstrap-grid.min.css">
+      <PackagePath>wwwroot\css\bootstrap-grid.min.css</PackagePath>
+      <Modified>2023-09-14T15:48:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\.nuget\packages\bootstrap\5.3.2\contentFiles\any\any\wwwroot\css\bootstrap-grid.min.css.map">
+      <PackagePath>wwwroot\css\bootstrap-grid.min.css.map</PackagePath>
+      <Modified>2023-09-14T15:48:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\.nuget\packages\bootstrap\5.3.2\contentFiles\any\any\wwwroot\css\bootstrap-grid.rtl.css">
+      <PackagePath>wwwroot\css\bootstrap-grid.rtl.css</PackagePath>
+      <Modified>2023-09-14T15:48:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\.nuget\packages\bootstrap\5.3.2\contentFiles\any\any\wwwroot\css\bootstrap-grid.rtl.css.map">
+      <PackagePath>wwwroot\css\bootstrap-grid.rtl.css.map</PackagePath>
+      <Modified>2023-09-14T15:48:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\.nuget\packages\bootstrap\5.3.2\contentFiles\any\any\wwwroot\css\bootstrap-grid.rtl.min.css">
+      <PackagePath>wwwroot\css\bootstrap-grid.rtl.min.css</PackagePath>
+      <Modified>2023-09-14T15:48:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\.nuget\packages\bootstrap\5.3.2\contentFiles\any\any\wwwroot\css\bootstrap-grid.rtl.min.css.map">
+      <PackagePath>wwwroot\css\bootstrap-grid.rtl.min.css.map</PackagePath>
+      <Modified>2023-09-14T15:48:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\.nuget\packages\bootstrap\5.3.2\contentFiles\any\any\wwwroot\css\bootstrap-reboot.css">
+      <PackagePath>wwwroot\css\bootstrap-reboot.css</PackagePath>
+      <Modified>2023-09-14T15:48:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\.nuget\packages\bootstrap\5.3.2\contentFiles\any\any\wwwroot\css\bootstrap-reboot.css.map">
+      <PackagePath>wwwroot\css\bootstrap-reboot.css.map</PackagePath>
+      <Modified>2023-09-14T15:48:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\.nuget\packages\bootstrap\5.3.2\contentFiles\any\any\wwwroot\css\bootstrap-reboot.min.css">
+      <PackagePath>wwwroot\css\bootstrap-reboot.min.css</PackagePath>
+      <Modified>2023-09-14T15:48:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\.nuget\packages\bootstrap\5.3.2\contentFiles\any\any\wwwroot\css\bootstrap-reboot.min.css.map">
+      <PackagePath>wwwroot\css\bootstrap-reboot.min.css.map</PackagePath>
+      <Modified>2023-09-14T15:48:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\.nuget\packages\bootstrap\5.3.2\contentFiles\any\any\wwwroot\css\bootstrap-reboot.rtl.css">
+      <PackagePath>wwwroot\css\bootstrap-reboot.rtl.css</PackagePath>
+      <Modified>2023-09-14T15:48:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\.nuget\packages\bootstrap\5.3.2\contentFiles\any\any\wwwroot\css\bootstrap-reboot.rtl.css.map">
+      <PackagePath>wwwroot\css\bootstrap-reboot.rtl.css.map</PackagePath>
+      <Modified>2023-09-14T15:48:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\.nuget\packages\bootstrap\5.3.2\contentFiles\any\any\wwwroot\css\bootstrap-reboot.rtl.min.css">
+      <PackagePath>wwwroot\css\bootstrap-reboot.rtl.min.css</PackagePath>
+      <Modified>2023-09-14T15:48:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\.nuget\packages\bootstrap\5.3.2\contentFiles\any\any\wwwroot\css\bootstrap-reboot.rtl.min.css.map">
+      <PackagePath>wwwroot\css\bootstrap-reboot.rtl.min.css.map</PackagePath>
+      <Modified>2023-09-14T15:48:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\.nuget\packages\bootstrap\5.3.2\contentFiles\any\any\wwwroot\css\bootstrap-utilities.css">
+      <PackagePath>wwwroot\css\bootstrap-utilities.css</PackagePath>
+      <Modified>2023-09-14T15:48:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\.nuget\packages\bootstrap\5.3.2\contentFiles\any\any\wwwroot\css\bootstrap-utilities.css.map">
+      <PackagePath>wwwroot\css\bootstrap-utilities.css.map</PackagePath>
+      <Modified>2023-09-14T15:48:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\.nuget\packages\bootstrap\5.3.2\contentFiles\any\any\wwwroot\css\bootstrap-utilities.min.css">
+      <PackagePath>wwwroot\css\bootstrap-utilities.min.css</PackagePath>
+      <Modified>2023-09-14T15:48:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\.nuget\packages\bootstrap\5.3.2\contentFiles\any\any\wwwroot\css\bootstrap-utilities.min.css.map">
+      <PackagePath>wwwroot\css\bootstrap-utilities.min.css.map</PackagePath>
+      <Modified>2023-09-14T15:48:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\.nuget\packages\bootstrap\5.3.2\contentFiles\any\any\wwwroot\css\bootstrap-utilities.rtl.css">
+      <PackagePath>wwwroot\css\bootstrap-utilities.rtl.css</PackagePath>
+      <Modified>2023-09-14T15:48:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\.nuget\packages\bootstrap\5.3.2\contentFiles\any\any\wwwroot\css\bootstrap-utilities.rtl.css.map">
+      <PackagePath>wwwroot\css\bootstrap-utilities.rtl.css.map</PackagePath>
+      <Modified>2023-09-14T15:48:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\.nuget\packages\bootstrap\5.3.2\contentFiles\any\any\wwwroot\css\bootstrap-utilities.rtl.min.css">
+      <PackagePath>wwwroot\css\bootstrap-utilities.rtl.min.css</PackagePath>
+      <Modified>2023-09-14T15:48:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\.nuget\packages\bootstrap\5.3.2\contentFiles\any\any\wwwroot\css\bootstrap-utilities.rtl.min.css.map">
+      <PackagePath>wwwroot\css\bootstrap-utilities.rtl.min.css.map</PackagePath>
+      <Modified>2023-09-14T15:48:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\.nuget\packages\bootstrap\5.3.2\contentFiles\any\any\wwwroot\js\bootstrap.bundle.js">
+      <PackagePath>wwwroot\js\bootstrap.bundle.js</PackagePath>
+      <Modified>2023-09-14T15:48:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\.nuget\packages\bootstrap\5.3.2\contentFiles\any\any\wwwroot\js\bootstrap.bundle.js.map">
+      <PackagePath>wwwroot\js\bootstrap.bundle.js.map</PackagePath>
+      <Modified>2023-09-14T15:48:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\.nuget\packages\bootstrap\5.3.2\contentFiles\any\any\wwwroot\js\bootstrap.bundle.min.js">
+      <PackagePath>wwwroot\js\bootstrap.bundle.min.js</PackagePath>
+      <Modified>2023-09-14T15:48:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\.nuget\packages\bootstrap\5.3.2\contentFiles\any\any\wwwroot\js\bootstrap.bundle.min.js.map">
+      <PackagePath>wwwroot\js\bootstrap.bundle.min.js.map</PackagePath>
+      <Modified>2023-09-14T15:48:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\.nuget\packages\bootstrap\5.3.2\contentFiles\any\any\wwwroot\js\bootstrap.esm.js">
+      <PackagePath>wwwroot\js\bootstrap.esm.js</PackagePath>
+      <Modified>2023-09-14T15:48:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\.nuget\packages\bootstrap\5.3.2\contentFiles\any\any\wwwroot\js\bootstrap.esm.js.map">
+      <PackagePath>wwwroot\js\bootstrap.esm.js.map</PackagePath>
+      <Modified>2023-09-14T15:48:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\.nuget\packages\bootstrap\5.3.2\contentFiles\any\any\wwwroot\js\bootstrap.esm.min.js">
+      <PackagePath>wwwroot\js\bootstrap.esm.min.js</PackagePath>
+      <Modified>2023-09-14T15:48:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\.nuget\packages\bootstrap\5.3.2\contentFiles\any\any\wwwroot\js\bootstrap.esm.min.js.map">
+      <PackagePath>wwwroot\js\bootstrap.esm.min.js.map</PackagePath>
+      <Modified>2023-09-14T15:48:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\.nuget\packages\bootstrap\5.3.2\contentFiles\any\any\wwwroot\js\bootstrap.js">
+      <PackagePath>wwwroot\js\bootstrap.js</PackagePath>
+      <Modified>2023-09-14T15:48:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\.nuget\packages\bootstrap\5.3.2\contentFiles\any\any\wwwroot\js\bootstrap.js.map">
+      <PackagePath>wwwroot\js\bootstrap.js.map</PackagePath>
+      <Modified>2023-09-14T15:48:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\.nuget\packages\bootstrap\5.3.2\contentFiles\any\any\wwwroot\js\bootstrap.min.js">
+      <PackagePath>wwwroot\js\bootstrap.min.js</PackagePath>
+      <Modified>2023-09-14T15:48:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\.nuget\packages\bootstrap\5.3.2\contentFiles\any\any\wwwroot\js\bootstrap.min.js.map">
+      <PackagePath>wwwroot\js\bootstrap.min.js.map</PackagePath>
+      <Modified>2023-09-14T15:48:24.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\wwwroot\appsetting.json">
       <PackagePath>wwwroot\appsetting.json</PackagePath>
       <Modified>2023-11-07T01:52:17.841</Modified>
@@ -2280,7 +2456,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\wwwroot\css\AddTransaction.css">
       <PackagePath>wwwroot\css\AddTransaction.css</PackagePath>
-      <Modified>2023-11-08T03:14:52.129</Modified>
+      <Modified>2023-11-09T01:42:35.944</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\wwwroot\css\app.css">
       <PackagePath>wwwroot\css\app.css</PackagePath>
@@ -2300,7 +2476,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\wwwroot\css\Home.css">
       <PackagePath>wwwroot\css\Home.css</PackagePath>
-      <Modified>2023-11-08T04:37:06.978</Modified>
+      <Modified>2023-11-09T02:45:24.005</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\wwwroot\css\MainLayout.css">
       <PackagePath>wwwroot\css\MainLayout.css</PackagePath>
