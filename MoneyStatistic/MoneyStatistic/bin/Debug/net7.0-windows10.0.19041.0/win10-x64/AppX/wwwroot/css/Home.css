@@ -314,6 +314,7 @@ p {
 
 
 .modal {
+    overflow :auto;
     padding: 50px;
     display: flex;
     flex-direction: column;
@@ -327,7 +328,9 @@ p {
 }
 
 .modal-content {
-    
+    display :flex;
+    flex-direction : column;
+    align-items : center;
     background-color: #fff;
     height :100%;
     overflow:inherit;
@@ -335,10 +338,18 @@ p {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
+.modal-daypicker-divider {
+    width: 100%;
+    height: 2px;
+    border: 2px;
+    border-color: black;
+    background-color: black;
+}
+
 
 .modal-title-container {
     width: 100%;
-    height: 60px;
+    height: 70px;
     background-color: #38cfcc;
     display: flex;
     flex-direction: column;
@@ -349,9 +360,157 @@ p {
 .modal-title {
     color: white;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 17px;
+    margin-top :10px;
+    margin-bottom :10px;
 }
 
-.modal-daypicker-container{
+.modal-transaction-type-container {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    
+    margin-top : 25px;
+    margin-bottom : 15px;
+}
 
+.modal-transaction {
+    height: 50px;
+    width: 50%;
+    border-radius: 20px;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+.active {
+    background-color: #38cfcc;
+    color :white;
+    
+}
+
+.inactive {
+    background-color: white
+}
+
+
+.modal-daypicker-container {
+    
+    margin-top: 10px;
+    width: 90%;
+    height: 170px;
+    border-radius: 30px;
+    background-color: white;
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px;
+    
+}
+
+.modal-daypicker-title{
+    margin :0;
+}
+
+.modal-daypicker-button-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.modal-daypicker-button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    transition: background-color 0.3s;
+}
+.white{
+    background-color : white;
+}
+
+.modal-daypicker-listofday {
+    width : 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top : 10px
+}
+.day-container{
+    display : flex ;
+    flex-direction : column;
+    justify-items :center;
+    align-items :center ;
+}
+.day-name{
+    border-bottom : 2px;
+}
+
+.daypicker-style {
+    height: 80px;
+}
+
+.modal-transaction-information-container {
+    height: min-content;
+    width: 90%;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
+.modal-transaction-information-title-size{
+    font-weight :bold;
+    font-size :17px;
+}
+.modal-input-container{
+    width :100%
+}
+
+.modal-transaction-input-field {
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border-radius :10px;
+    border :none;
+    height : 50px;
+    margin-top : 15px;
+    margin-bottom : 15px;
+    width : max-content;
+    padding-left : 10px;
+}
+
+.modal-category-list{
+    width : 90%;
+    display :flex;
+    flex-direction : row;
+    overflow :auto;
+    padding-top :10px;
+    padding-bottom :10px;
+}
+
+.modal-category-button {
+    height: 50px;
+    width: min-content;
+    border: none;
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    margin-right : 30px;
+    padding-left:10px;
+    padding-right :10px;
+    border-radius :10px;
+}
+
+.add-transaction-submit-button{
+    width : 100%;
+    height :50px;
+    border-radius : 10px;
+    margin-top :15px;
+    margin-bottom :15px;
+    border : none
 }

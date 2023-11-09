@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Zve4MryOZad/7AsQSDEYB7Noq6DCDvxha2lLInwVh6Q=",
+  "Hash": "1T4AVHEmiThRb9vrA11XntCXpvK7I2qQd/EUFFERbBY=",
   "Source": "MoneyStatistic",
   "BasePath": "/",
   "Mode": "Root",
@@ -1292,6 +1292,23 @@
       "OriginalItemSpec": "wwwroot\\Learning.png"
     },
     {
+      "Identity": "C:\\Users\\NguyenXuanSon\\Documents\\GitHub\\Food_delivery_app\\MoneyStatistic\\MoneyStatistic\\wwwroot\\left-chevron-svgrepo-com.svg",
+      "SourceId": "MoneyStatistic",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\NguyenXuanSon\\Documents\\GitHub\\Food_delivery_app\\MoneyStatistic\\MoneyStatistic\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "left-chevron-svgrepo-com.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\left-chevron-svgrepo-com.svg"
+    },
+    {
       "Identity": "C:\\Users\\NguyenXuanSon\\Documents\\GitHub\\Food_delivery_app\\MoneyStatistic\\MoneyStatistic\\wwwroot\\Money.png",
       "SourceId": "MoneyStatistic",
       "SourceType": "Discovered",
@@ -1324,6 +1341,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Movie.png"
+    },
+    {
+      "Identity": "C:\\Users\\NguyenXuanSon\\Documents\\GitHub\\Food_delivery_app\\MoneyStatistic\\MoneyStatistic\\wwwroot\\right-chevron-svgrepo-com.svg",
+      "SourceId": "MoneyStatistic",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\NguyenXuanSon\\Documents\\GitHub\\Food_delivery_app\\MoneyStatistic\\MoneyStatistic\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "right-chevron-svgrepo-com.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\right-chevron-svgrepo-com.svg"
     },
     {
       "Identity": "C:\\Users\\NguyenXuanSon\\Documents\\GitHub\\Food_delivery_app\\MoneyStatistic\\MoneyStatistic\\wwwroot\\Salary.png",

@@ -317,6 +317,14 @@
       "PackagePath": "staticwebassets\\index.html"
     },
     {
+      "Id": "C:\\Users\\NguyenXuanSon\\Documents\\GitHub\\Food_delivery_app\\MoneyStatistic\\MoneyStatistic\\wwwroot\\left-chevron-svgrepo-com.svg",
+      "PackagePath": "staticwebassets\\left-chevron-svgrepo-com.svg"
+    },
+    {
+      "Id": "C:\\Users\\NguyenXuanSon\\Documents\\GitHub\\Food_delivery_app\\MoneyStatistic\\MoneyStatistic\\wwwroot\\right-chevron-svgrepo-com.svg",
+      "PackagePath": "staticwebassets\\right-chevron-svgrepo-com.svg"
+    },
+    {
       "Id": "C:\\Users\\NguyenXuanSon\\Documents\\GitHub\\Food_delivery_app\\MoneyStatistic\\MoneyStatistic\\wwwroot\\up-arrow-svgrepo-com-transitem.svg",
       "PackagePath": "staticwebassets\\up-arrow-svgrepo-com-transitem.svg"
     },

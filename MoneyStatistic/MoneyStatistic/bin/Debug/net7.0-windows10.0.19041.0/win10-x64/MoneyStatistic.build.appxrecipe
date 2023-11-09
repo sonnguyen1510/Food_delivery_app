@@ -1921,11 +1921,17 @@
     <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\wwwroot\Learning.png">
       <PackagePath>wwwroot\Learning.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\wwwroot\left-chevron-svgrepo-com.svg">
+      <PackagePath>wwwroot\left-chevron-svgrepo-com.svg</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\wwwroot\Money.png">
       <PackagePath>wwwroot\Money.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\wwwroot\Movie.png">
       <PackagePath>wwwroot\Movie.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\wwwroot\right-chevron-svgrepo-com.svg">
+      <PackagePath>wwwroot\right-chevron-svgrepo-com.svg</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\wwwroot\Salary.png">
       <PackagePath>wwwroot\Salary.png</PackagePath>
