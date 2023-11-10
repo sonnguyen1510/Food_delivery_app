@@ -286,11 +286,11 @@
                     <div class="modal-input-container">
                         @if (TransactionType.Equals("income"))
                         {
-                            <button class="add-transaction-submit-button active">ADD INCOME</button>
+                            <button class="add-transaction-submit-button active" @onclick="addTransaction">ADD INCOME</button>
                         }
                         else
                         {
-                            <button class="add-transaction-submit-button active">ADD EXPENSE</button>
+                            <button class="add-transaction-submit-button active" @onclick="addTransaction">ADD EXPENSE</button>
                         }
 
                     </div>
@@ -318,8 +318,8 @@
     private List<UserTransaction> userTransactions;
     HttpClient client = new HttpClient();
     private bool showDialog = false;
-    
-    
+
+
     /* Unmerged change from project 'FoodDelivery (net7.0-windows10.0.19041.0)'
     Before:
     private List<Connection.UserTransaction> data;
@@ -373,6 +373,14 @@
         userTransactions = await client.GetFromJsonAsync<List<UserTransaction>>(apiUrl);
     }
 
+    private async void  ReloadTransactionList()
+    {
+        // Define the API endpoint URL
+        var apiUrl = "https://localhost:7040/transaction/GetAllTransaction";
+
+        // Send an HTTP GET request to the API
+        userTransactions = await client.GetFromJsonAsync<List<UserTransaction>>(apiUrl);
+    }
 
 
     private string formattedMonth
@@ -451,8 +459,7 @@
     private decimal TransactionAmount;
     private String CategoryChoosed = "Bussiness";
     private int CurrentDay = DateTime.Now.Day;
-    private String TransactionTimehour= "00";
-    private String TransactionTimeMinutes = "00";
+
 
     private int selectedHour { get; set; } = DateTime.Now.Hour;
     private int selectedMinute { get; set; } = DateTime.Now.Minute;
@@ -516,7 +523,7 @@
 
     private void SetHours()
     {
-        
+
     }
 
     private void SetMinutes()
@@ -560,6 +567,8 @@
         {
             // Request was successful
             var result = await response.Content.ReadFromJsonAsync<Result>();
+            ReloadTransactionList();
+            cleanAddList();
             // Handle the result
         }
         else
@@ -567,5 +576,18 @@
             // Request failed
             // Handle the error
         }
+    }
+
+
+    private void cleanAddList()
+    {
+        TransactionTitle = "";
+        TransactionType = "income";
+        CategoryChoosed = "Bussiness";
+        selectedHour = DateTime.Now.Hour;
+        selectedMinute = DateTime.Now.Minute;
+        TransactionAmount = 0;
+        CurrentDay = DateTime.Now.Day;
+        currentDate = DateTime.Now;
     }
 }

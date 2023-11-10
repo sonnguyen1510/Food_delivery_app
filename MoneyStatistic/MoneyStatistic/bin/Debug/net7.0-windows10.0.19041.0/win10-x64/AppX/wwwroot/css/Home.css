@@ -340,27 +340,5 @@ p {
     background-color: white
 }
 
-.time-picker {
-    display: flex;
-    align-items: center;
-    font-size: 18px;
-    
-}
-
-select {
-    padding: 8px;
-    border: none;
-    background-color: #38cfcc;
-    color: white;
-    border-radius: 5px;
-}
-
-    select.hour {
-        
-    }
-
-span {
-    font-weight: bold;
-}
 
 
