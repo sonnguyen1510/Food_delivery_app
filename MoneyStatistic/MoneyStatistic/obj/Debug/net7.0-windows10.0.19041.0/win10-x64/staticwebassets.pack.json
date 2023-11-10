@@ -305,6 +305,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\NguyenXuanSon\\Documents\\GitHub\\Food_delivery_app\\MoneyStatistic\\MoneyStatistic\\wwwroot\\heading-svgrepo-com.svg",
+      "PackagePath": "staticwebassets\\heading-svgrepo-com.svg"
+    },
+    {
       "Id": "C:\\Users\\NguyenXuanSon\\Documents\\GitHub\\Food_delivery_app\\MoneyStatistic\\MoneyStatistic\\wwwroot\\home-svgrepo-com.svg",
       "PackagePath": "staticwebassets\\home-svgrepo-com.svg"
     },
@@ -319,6 +323,14 @@
     {
       "Id": "C:\\Users\\NguyenXuanSon\\Documents\\GitHub\\Food_delivery_app\\MoneyStatistic\\MoneyStatistic\\wwwroot\\left-chevron-svgrepo-com.svg",
       "PackagePath": "staticwebassets\\left-chevron-svgrepo-com.svg"
+    },
+    {
+      "Id": "C:\\Users\\NguyenXuanSon\\Documents\\GitHub\\Food_delivery_app\\MoneyStatistic\\MoneyStatistic\\wwwroot\\money-bag-svgrepo-com.svg",
+      "PackagePath": "staticwebassets\\money-bag-svgrepo-com.svg"
+    },
+    {
+      "Id": "C:\\Users\\NguyenXuanSon\\Documents\\GitHub\\Food_delivery_app\\MoneyStatistic\\MoneyStatistic\\wwwroot\\money-svgrepo-com.svg",
+      "PackagePath": "staticwebassets\\money-svgrepo-com.svg"
     },
     {
       "Id": "C:\\Users\\NguyenXuanSon\\Documents\\GitHub\\Food_delivery_app\\MoneyStatistic\\MoneyStatistic\\wwwroot\\right-chevron-svgrepo-com.svg",

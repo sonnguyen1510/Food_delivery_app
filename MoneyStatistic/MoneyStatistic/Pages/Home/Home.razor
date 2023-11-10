@@ -1,80 +1,83 @@
 ﻿@page "/"
 
+@using BlazorAnimate;
 @using Database.MoneyManagerService
 
 @using System.Net.Http; 
 @using System.Net.Http.Json;
+@using MoneyStatistic.Database.JSON;
+@using MudBlazor
 
 
 <head>
-    <link rel="stylesheet" href="./css/Home.css">
+    <link rel="stylesheet" href="./css/Home.css" />
+    <link rel="stylesheet" href="./css/AddTransaction.css" />
 </head>
 <body>
-    <div class="container">
-        <div class="user-detail-container">
-            <div class="user-avatar">
-                <img src="user_default.png" />
+    <div class="screen">
+        <div class="container">
+            <div class="user-detail-container">
+                <div class="user-avatar">
+                    <img src="user_default.png" />
+                </div>
+                <div class="user-detail">
+                    <p class="status-day">@DayStatus</p>
+                    <p class="user-name">@Username</p>
+                </div>
+                <div class="add-transaction" @onclick="addTransiaction"><img class="add-transaction-img" src="icons8-add-file-64.png" /></div>
             </div>
-            <div class="user-detail">
-                <p class="status-day">@DayStatus</p>
-                <p class="user-name">@Username</p>
-            </div>
-            <div class="add-transaction" @onclick="addTransiaction"><img class="add-transaction-img" src="icons8-add-file-64.png" /></div>
-        </div>
 
-        <div class="transaction-display-container">
-            <div class="display-transaction">
-                <div class="display-transaction-detail">
-                    <p style="color : white">Balance</p>
-                    <p class="balance-display">$@Balance.ToString()</p>
-                </div>
-                <div>
-                    <input @bind=CurrentMonth class="display-transaction-daypicker" type="month">
-                </div>
-            </div>
-            <div class="income-expense-view">
-                <div class="income-container">
-                    <div class="income-info">
-                        <div>
-                            <p class="income-money title">Income</p>
-                        </div>
-                        <div class="income-amount">
-                            <p class="number-style income-money">$@Income.ToString()</p>
-                        </div>
+            <div class="transaction-display-container">
+                <div class="display-transaction">
+                    <div class="display-transaction-detail">
+                        <p style="color : white">Balance</p>
+                        <p class="balance-display">$@Balance.ToString()</p>
                     </div>
                     <div>
-                        <img src="up-arrow-svgrepo-com.svg" />
+                        <input @bind=CurrentMonth class="display-transaction-daypicker" type="month">
                     </div>
                 </div>
-                <div class="expense-container">
-                    <div class="expense-info">
+                <div class="income-expense-view">
+                    <div class="income-container">
+                        <div class="income-info">
+                            <div>
+                                <p class="income-money title">Income</p>
+                            </div>
+                            <div class="income-amount">
+                                <p class="number-style income-money">$@Income.ToString()</p>
+                            </div>
+                        </div>
                         <div>
-                            <p class="expense-money title">Expense</p>
-                        </div>
-                        <div class="expense-amount">
-                            <p class="number-style expense-money">$@Expense.ToString()</p>
+                            <img src="up-arrow-svgrepo-com.svg" />
                         </div>
                     </div>
-                    <div>
-                        <img src="down-arrow-svgrepo-com.svg">
+                    <div class="expense-container">
+                        <div class="expense-info">
+                            <div>
+                                <p class="expense-money title">Expense</p>
+                            </div>
+                            <div class="expense-amount">
+                                <p class="number-style expense-money">$@Expense.ToString()</p>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="down-arrow-svgrepo-com.svg">
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="transaction-list-daypicker">
-            <div class="">
-                <p class="trans-title"> Transaction</p>
+            <div class="transaction-list-daypicker">
+                <div class="">
+                    <p class="trans-title"> Transaction</p>
+                </div>
+                <div class="daypicker">
+                    <p class="daypicker-title">From</p>
+                    <input class="daypicker-dialog" type="date" @bind="selectedStartDate" @oninput="HandleStartDateChange" />
+                    <p class="daypicker-title">To</p>
+                    <input class="daypicker-dialog" type="date" @bind="selectedEndDate" @oninput="HandleEndDateChange" />
+                </div>
             </div>
-            <div class="daypicker">
-                <p class="daypicker-title">From</p>
-                <input class="daypicker-dialog" type="date" @bind="selectedStartDate" @oninput="HandleStartDateChange" />
-                <p class="daypicker-title">To</p>
-                <input class="daypicker-dialog" type="date" @bind="selectedEndDate" @oninput="HandleEndDateChange" />
-            </div>
-        </div>
-        <div class="transaction-list-container">
-            
-           <div class="transaction-list-display">
+            <div class="transaction-list-container">
                 @if (userTransactions != null)
                 {
                     @foreach (var item in userTransactions)
@@ -91,85 +94,133 @@
                                     <p class="status-day">@item.CreTime @item.CreDate?.ToString("yyyy-MM-dd")</p>
                                 </div>
                             </div>
-                             <div class="transaction-item-amount-container">
+                            <div class="transaction-item-amount-container">
                                 @if (item.TransType.Equals("income"))
                                 {
                                     <div class="income-transaction-item-container">
-                                        <p class="number-style income-money">$@item.Amount</p><img src="up-arrow-svgrepo-com-transitem.svg" />
-                                        
+                                        <p class="number-style income-money">+$@item.Amount</p><img src="up-arrow-svgrepo-com-transitem.svg" />
+
                                     </div>
                                 }
                                 else
                                 {
                                     <div class="expense-transaction-item-container">
-                                        <p class="number-style expense-money">$@item.Amount</p>
+                                        <p class="number-style expense-money">-$@item.Amount</p>
                                         <img src="down-arrow-svgrepo-com-transitem.svg">
                                     </div>
                                 }
-                             </div>
-                         </div>
-                        
+                            </div>
+                        </div>
+
                     }
                 }
-            </div>
 
-            
+
+
+            </div>
         </div>
     </div>
     <!-- Modal -->
     
+    
     @if (showDialog)
     {
-    <div class="modal">
-        <div class="modal-content">
+        <div class="modal">
             <div class="modal-title-container">
                 <p class="modal-title">Add Transaction</p>
+                <div class="modal-cancel-button-container">
+                    <button class="modal-cancel-button" @onclick="CloseModal">Cancel</button>
+                </div>
             </div>
-            
-            <div class="modal-transaction-type-container">
-                @if (TransactionType.Equals("income"))
-                {
-                    <button class="modal-transaction active" @onclick="SetIncome">Income</button>
-                    <button class="modal-transaction inactive" @onclick="SetExpense">Expense</button>
-                }
-                else
-                {
-                    <button class="modal-transaction inactive" @onclick="SetIncome">Income</button>
-                    <button class="modal-transaction active" @onclick="SetExpense">Expense</button>
-                }
-            </div>
-            <div class="modal-daypicker-container">
-                        <div class="modal-daypicker-button-container">
-                            <div>
+            <div class="modal-content">
+
+                <div class="modal-transaction-type-container">
+                    @if (TransactionType.Equals("income"))
+                    {
+                        <button class="modal-transaction active" @onclick="SetIncome">Income</button>
+                        <button class="modal-transaction inactive" @onclick="SetExpense">Expense</button>
+                    }
+                    else
+                    {
+                        <button class="modal-transaction inactive" @onclick="SetIncome">Income</button>
+                        <button class="modal-transaction active" @onclick="SetExpense">Expense</button>
+                    }
+                </div>
+                <div class="modal-daypicker-container">
+                    <div class="modal-daypicker-button-container">
+                        <div>
                             <h4 class="modal-daypicker-title">@currentDate.ToString("MMMM yyyy")</h4>
-                            </div>
-                            <div>
+                        </div>
+                        
+                        <div>
                             <button class="modal-daypicker-button" @onclick="DecrementWeek"><img src="left-chevron-svgrepo-com.svg" /></button>
                             <button class="modal-daypicker-button" @onclick="IncrementWeek"><img src="right-chevron-svgrepo-com.svg" /></button>
-                            </div>
                         </div>
-                        <div class="modal-daypicker-divider"></div>
-                        <div class="modal-daypicker-listofday">
-                            @foreach (var day in GetOrderedDays(currentDate))
+                    </div>
+                    <div class="modal-daypicker-divider"></div>
+                    <div class="modal-daypicker-listofday">
+                        @foreach (var day in GetOrderedDays(currentDate))
+                        {
+                            var weekDay = @day.DayOfWeek.ToString().Substring(0, 3);
+                            if (weekDay.Equals("Sun") || weekDay.Equals("Sat"))
                             {
-                                var weekDay = @day.DayOfWeek.ToString().Substring(0, 3);
-                                if (weekDay.Equals("Sun") || weekDay.Equals("Sat"))
-                                {
-                                    <div class="day-container">
-                                        <div class="day-name"><p style="color :red ">@weekDay</p></div>
-                                        <button class="modal-daypicker-button white daypicker-style"><h5>@day.Day</h5></button>
+                                <div class="day-container">
+                                    <div class="day-name"><p style="color :red ">@weekDay</p></div>
+                                    <div class="daypicker-button-container">
+                                        @if (day.Day != CurrentDay)
+                                        {
+                                            <button class="modal-daypicker-button white " @onclick = "()=>setDay(day.Day)">@day.Day</button>
+                                        }
+                                        else
+                                        {
+                                            <button class="modal-daypicker-button blue " @onclick="()=>setDay(day.Day)">@day.Day
+
+                                            </button>
+                                        }
                                     </div>
-                                }
-                                else
-                                {
-                                    <div class="day-container">
-                                        <div class="day-name"><p>@weekDay</p></div>
-                                        <button class="modal-daypicker-button white daypicker-style"><h5>@day.Day</h5></button>
-                                    </div>
-                                }
+                                </div>
                             }
-                            </div>
+                            else
+                            {
+                                <div class="day-container">
+                                    <div class="day-name"><p>@weekDay</p></div>
+                                    <div class="daypicker-button-container">
+                                        @if (day.Day != CurrentDay)
+                                        {
+                                            <button class="modal-daypicker-button white " @onclick = "()=>setDay(day.Day)"><h5>@day.Day</h5></button>
+                                        }
+                                        else
+                                        {
+                                            <button class="modal-daypicker-button blue " @onclick = "()=>setDay(day.Day)"><h5>@day.Day</h5></button>
+                                        }
+                                    </div>
+                                </div>
+                            }
+                        }
+                    </div>
+                </div>
+                <div class="modal-time-picker-container">
+                    <div>
+                        <p class="modal-transaction-information-title-size none-bold">Pick a time :</p>
+                    </div>
+                    <div class="modal-daypicker-timepicker">
+                        <div class="time-picker">
+                            <select @bind="selectedHour" class="hour">
+                                @for (int i = 0; i < 24; i++)
+                                {
+                                    <option value="@i">@i.ToString("00")</option>
+                                }
+                            </select>
+                            <p class="modal-daypicker-timepicker-sepreate-time">:</p>
+                            <select @bind="selectedMinute" class="minute">
+                                @for (int i = 0; i < 60; i += 5)
+                                {
+                                    <option value="@i">@i.ToString("00")</option>
+                                }
+                            </select>
                         </div>
+                    </div>
+                </div>
                 <div class="modal-transaction-information-container">
                     <div>
                         @if (TransactionType.Equals("income"))
@@ -182,13 +233,15 @@
                         }
                     </div>
                     <div class="modal-input-container">
-                        <input class="modal-transaction-input-field" type="text" @bind="title">
+                        <img class="modal-input-icon" src="heading-svgrepo-com.svg">
+                        <input class="modal-transaction-input-field" type="text" @bind="TransactionTitle">
                     </div>
                     <div>
                         <p class="modal-transaction-information-title-size">Amount</p>
                     </div>
                     <div class="modal-input-container">
-                        <input class="modal-transaction-input-field" type="number" @bind="amount">
+                        <img class="modal-input-icon" src="money-svgrepo-com.svg">
+                        <input class="modal-transaction-input-field" type="number" @bind="TransactionAmount">
                     </div>
                     <div>
                         @if (TransactionType.Equals("income"))
@@ -203,7 +256,7 @@
                     <div class="modal-category-list">
                         @if (TransactionType.Equals("income"))
                         {
-                            @foreach(var item in IncomeCategory)
+                            @foreach (var item in IncomeCategory)
                             {
                                 if (item.Equals(CategoryChoosed))
                                 {
@@ -239,12 +292,16 @@
                         {
                             <button class="add-transaction-submit-button active">ADD EXPENSE</button>
                         }
-                        
+
                     </div>
+                </div>
+                <div>
+                    
+                </div>
             </div>
         </div>
-     </div>
-     }
+    }
+
 </body>
 
 @code {
@@ -255,18 +312,23 @@
     private DateTime selectedStartDate = DateTime.Now;
     private String selectedStringStartDate;
     public String Username = "Billy";
-    public String DayStatus = "Morning";
+    public String DayStatus = "Good Morning";
     public double Balance = 7872.20;
     private DateTime CurrentMonth = DateTime.Now;
     private List<UserTransaction> userTransactions;
     HttpClient client = new HttpClient();
     private bool showDialog = false;
+    
+    
     /* Unmerged change from project 'FoodDelivery (net7.0-windows10.0.19041.0)'
     Before:
     private List<Connection.UserTransaction> data;
     After:
     private List<UserTransaction> data;
 
+    <input class="modal-time-input" type="text" readonly="readonly" @bind="TransactionTimehour" @onclick="SetHours">
+                        <p class="modal-daypicker-timepicker-sepreate-time">:</p>
+                        <input class="modal-time-input" type="text" readonly="readonly" @bind="TransactionTimeMinutes" @onclick="SetMinutes">
 
 
 
@@ -385,9 +447,21 @@
     //-MODAL
 
     private String TransactionType = "income";
-    private String title ;
-    private decimal amount;
+    private String TransactionTitle;
+    private decimal TransactionAmount;
     private String CategoryChoosed = "Bussiness";
+    private int CurrentDay = DateTime.Now.Day;
+    private String TransactionTimehour= "00";
+    private String TransactionTimeMinutes = "00";
+
+    private int selectedHour { get; set; } = DateTime.Now.Hour;
+    private int selectedMinute { get; set; } = DateTime.Now.Minute;
+
+    private void CloseModal()
+    {
+        showDialog = !showDialog;
+
+    }
 
     private void SetIncome()
     {
@@ -419,6 +493,11 @@
         return days;
     }
 
+    private void setDay(int day)
+    {
+        CurrentDay = day;
+    }
+
     private void IncrementWeek()
     {
         currentDate = currentDate.AddDays(7);
@@ -432,9 +511,18 @@
     private void SelectDay(int day)
     {
         // Handle the selected day here
-        Console.WriteLine($"Selected day: {day}/{currentDate.Month}/{currentDate.Year}");
+        CurrentDay = day;
     }
 
+    private void SetHours()
+    {
+        
+    }
+
+    private void SetMinutes()
+    {
+
+    }
 
     //category
 
@@ -442,10 +530,42 @@
 
     private String[] ExpenseCategory = { "Food&Dring", "Health", "Excercise", "Bill", "Shopping", "Movie", "Learning" };
 
-    
+
 
     private void pickCategory(String cate)
     {
         CategoryChoosed = cate;
+    }
+
+    private async void addTransaction()
+    {
+        // Create an instance of your data model
+        var data = new UserTransactionBody
+            {
+                Title = TransactionTitle,
+                TransType = TransactionType,
+                TransIcon = CategoryChoosed,
+                CreTime = $"{selectedHour}:{selectedMinute}:00",
+                CreDate = $"{CurrentDay}-{currentDate.Month}-{currentDate.Year}",
+                Amount = TransactionAmount,
+                UserId = 2,
+                Status = true
+            };
+
+        // Post data to the server
+        var response = await client.PostAsJsonAsync<UserTransactionBody>("https://localhost:7040/transaction/AddTransaction", data);
+
+        // Handle the response as needed
+        if (response.IsSuccessStatusCode)
+        {
+            // Request was successful
+            var result = await response.Content.ReadFromJsonAsync<Result>();
+            // Handle the result
+        }
+        else
+        {
+            // Request failed
+            // Handle the error
+        }
     }
 }

@@ -30,25 +30,25 @@
     <AppXManifest Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-11-09T09:46:47.454</Modified>
+      <Modified>2023-11-10T09:33:45.243</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2023-11-09T07:21:45.399</Modified>
+      <Modified>2023-11-10T09:30:19.111</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\MoneyStatistic.runtimeconfig.json">
       <PackagePath>MoneyStatistic.runtimeconfig.json</PackagePath>
-      <Modified>2023-11-09T02:36:25.501</Modified>
+      <Modified>2023-11-10T08:35:37.029</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\MoneyStatistic.dll">
       <PackagePath>MoneyStatistic.dll</PackagePath>
-      <Modified>2023-11-09T09:46:45.736</Modified>
+      <Modified>2023-11-10T09:33:43.512</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>MoneyStatistic.exe</PackagePath>
-      <Modified>2023-11-09T09:46:45.749</Modified>
+      <Modified>2023-11-10T09:33:43.524</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\NguyenXuanSon\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.13\runtimes\win-x64\lib\net7.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -1922,6 +1922,14 @@
       <PackagePath>Azure.Identity.dll</PackagePath>
       <Modified>2022-09-19T20:31:34.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\.nuget\packages\blazoranimate\3.0.0\lib\netstandard2.0\BlazorAnimate.dll">
+      <PackagePath>BlazorAnimate.dll</PackagePath>
+      <Modified>2020-09-10T14:11:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\.nuget\packages\microsoft.aspnet.webapi.client\6.0.0\lib\netstandard2.0\System.Net.Http.Formatting.dll">
+      <PackagePath>System.Net.Http.Formatting.dll</PackagePath>
+      <Modified>2023-10-20T20:33:52.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\NguyenXuanSon\.nuget\packages\microsoft.aspnetcore.authorization\7.0.11\lib\net7.0\Microsoft.AspNetCore.Authorization.dll">
       <PackagePath>Microsoft.AspNetCore.Authorization.dll</PackagePath>
       <Modified>2023-08-25T15:29:00.000</Modified>
@@ -2041,6 +2049,14 @@
     <AppxPackagedFile Include="C:\Users\NguyenXuanSon\.nuget\packages\microsoft.extensions.filesystemglobbing\7.0.0\lib\net7.0\Microsoft.Extensions.FileSystemGlobbing.dll">
       <PackagePath>Microsoft.Extensions.FileSystemGlobbing.dll</PackagePath>
       <Modified>2022-10-18T16:15:08.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\.nuget\packages\microsoft.extensions.localization\7.0.5\lib\net7.0\Microsoft.Extensions.Localization.dll">
+      <PackagePath>Microsoft.Extensions.Localization.dll</PackagePath>
+      <Modified>2023-03-25T02:41:18.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\.nuget\packages\microsoft.extensions.localization.abstractions\7.0.5\lib\net7.0\Microsoft.Extensions.Localization.Abstractions.dll">
+      <PackagePath>Microsoft.Extensions.Localization.Abstractions.dll</PackagePath>
+      <Modified>2023-03-25T02:41:18.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\NguyenXuanSon\.nuget\packages\microsoft.extensions.logging\7.0.0\lib\net7.0\Microsoft.Extensions.Logging.dll">
       <PackagePath>Microsoft.Extensions.Logging.dll</PackagePath>
@@ -2182,6 +2198,18 @@
       <PackagePath>Microsoft.WindowsAppRuntime.Bootstrap.Net.dll</PackagePath>
       <Modified>2022-11-08T19:31:22.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\.nuget\packages\mudblazor\6.11.0\lib\net7.0\MudBlazor.dll">
+      <PackagePath>MudBlazor.dll</PackagePath>
+      <Modified>2023-10-08T16:53:32.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\.nuget\packages\newtonsoft.json\13.0.1\lib\netstandard2.0\Newtonsoft.Json.dll">
+      <PackagePath>Newtonsoft.Json.dll</PackagePath>
+      <Modified>2021-03-17T20:03:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\.nuget\packages\newtonsoft.json.bson\1.0.2\lib\netstandard2.0\Newtonsoft.Json.Bson.dll">
+      <PackagePath>Newtonsoft.Json.Bson.dll</PackagePath>
+      <Modified>2018-11-27T23:10:18.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\NguyenXuanSon\.nuget\packages\sqlitepclraw.bundle_e_sqlite3\2.1.4\lib\netstandard2.0\SQLitePCLRaw.batteries_v2.dll">
       <PackagePath>SQLitePCLRaw.batteries_v2.dll</PackagePath>
       <Modified>2023-01-10T20:21:34.000</Modified>
@@ -2232,7 +2260,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\MoneyStatistic.deps.json">
       <PackagePath>MoneyStatistic.deps.json</PackagePath>
-      <Modified>2023-11-09T09:46:47.132</Modified>
+      <Modified>2023-11-10T09:33:44.927</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\NguyenXuanSon\.nuget\packages\humanizer.core\2.14.1\lib\net6.0\Humanizer.dll">
       <PackagePath>Humanizer.dll</PackagePath>
@@ -2261,6 +2289,14 @@
     <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
       <Modified>2023-11-07T01:52:09.124</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\.nuget\packages\blazoranimate\3.0.0\staticwebassets\aos.css">
+      <PackagePath>wwwroot\_content\BlazorAnimate\aos.css</PackagePath>
+      <Modified>2019-12-15T10:54:56.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\.nuget\packages\blazoranimate\3.0.0\staticwebassets\blazorAnimateInterop.js">
+      <PackagePath>wwwroot\_content\BlazorAnimate\blazorAnimateInterop.js</PackagePath>
+      <Modified>2019-11-04T16:11:20.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\NguyenXuanSon\.nuget\packages\bootstrap\5.3.2\contentFiles\any\any\wwwroot\css\bootstrap.css">
       <PackagePath>wwwroot\css\bootstrap.css</PackagePath>
@@ -2438,6 +2474,14 @@
       <PackagePath>wwwroot\js\bootstrap.min.js.map</PackagePath>
       <Modified>2023-09-14T15:48:24.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\.nuget\packages\mudblazor\6.11.0\staticwebassets\MudBlazor.min.css">
+      <PackagePath>wwwroot\_content\MudBlazor\MudBlazor.min.css</PackagePath>
+      <Modified>2023-10-08T16:52:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\.nuget\packages\mudblazor\6.11.0\staticwebassets\MudBlazor.min.js">
+      <PackagePath>wwwroot\_content\MudBlazor\MudBlazor.min.js</PackagePath>
+      <Modified>2023-10-08T16:52:52.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\wwwroot\appsetting.json">
       <PackagePath>wwwroot\appsetting.json</PackagePath>
       <Modified>2023-11-07T01:52:17.841</Modified>
@@ -2456,7 +2500,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\wwwroot\css\AddTransaction.css">
       <PackagePath>wwwroot\css\AddTransaction.css</PackagePath>
-      <Modified>2023-11-09T01:42:35.944</Modified>
+      <Modified>2023-11-10T09:30:51.581</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\wwwroot\css\app.css">
       <PackagePath>wwwroot\css\app.css</PackagePath>
@@ -2472,11 +2516,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\wwwroot\css\Bottomnav.css">
       <PackagePath>wwwroot\css\Bottomnav.css</PackagePath>
-      <Modified>2023-11-07T09:24:29.680</Modified>
+      <Modified>2023-11-10T07:56:57.906</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\wwwroot\css\Home.css">
       <PackagePath>wwwroot\css\Home.css</PackagePath>
-      <Modified>2023-11-09T09:45:47.477</Modified>
+      <Modified>2023-11-10T09:11:34.297</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\wwwroot\css\MainLayout.css">
       <PackagePath>wwwroot\css\MainLayout.css</PackagePath>
@@ -2538,6 +2582,10 @@
       <PackagePath>wwwroot\Food&amp;Dring.png</PackagePath>
       <Modified>2023-11-07T01:52:17.824</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\wwwroot\heading-svgrepo-com.svg">
+      <PackagePath>wwwroot\heading-svgrepo-com.svg</PackagePath>
+      <Modified>2023-11-10T09:19:41.898</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\wwwroot\Health.png">
       <PackagePath>wwwroot\Health.png</PackagePath>
       <Modified>2023-11-07T01:52:17.840</Modified>
@@ -2569,6 +2617,14 @@
     <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\wwwroot\Money.png">
       <PackagePath>wwwroot\Money.png</PackagePath>
       <Modified>2023-11-07T01:52:17.841</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\wwwroot\money-bag-svgrepo-com.svg">
+      <PackagePath>wwwroot\money-bag-svgrepo-com.svg</PackagePath>
+      <Modified>2023-11-10T09:28:34.867</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\wwwroot\money-svgrepo-com.svg">
+      <PackagePath>wwwroot\money-svgrepo-com.svg</PackagePath>
+      <Modified>2023-11-10T09:29:51.309</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\wwwroot\Movie.png">
       <PackagePath>wwwroot\Movie.png</PackagePath>

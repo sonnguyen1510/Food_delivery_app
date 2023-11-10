@@ -1,8 +1,16 @@
-﻿
+﻿.screen {
+    height :100%;
+    display: flex;
+    flex-direction :column;
+    align-items: center;
+}
 .container {
+    height: 100%;
+    width: contain;
     display: flex;
     flex-direction: column;
-    align-items: start;
+    margin-bottom: 50px;
+    position: fixed;
 }
 
 p {
@@ -10,7 +18,6 @@ p {
 }
 
 .user-detail-container {
-    position: relative;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -47,6 +54,7 @@ p {
 }
 
 .display-balance-view {
+    position : fixed;
     background-color: aqua;
     border-radius: 40px;
     margin-bottom: 100px;
@@ -81,12 +89,13 @@ p {
 }
 
 .transaction-display-container {
+    position : relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
+
     width: 100%;
-    height: 185px;
+    
     margin: 25px;
 }
 
@@ -98,7 +107,8 @@ p {
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 10px;
-    position: absolute;
+
+    position: relative;
     display: flex;
     flex-direction: row;
     align-items: start;
@@ -110,11 +120,13 @@ p {
 }
 
 .display-transaction-daypicker {
-    width: 100px;
+    position: relative;
+    width: 130px;
     border: 0px;
     background-color: transparent;
     color: white;
     accent-color: white;
+    color-scheme: dark;
 }
 
 .balance-display {
@@ -140,6 +152,7 @@ p {
 .income-expense-view {
     position: absolute;
     margin-top: 120px;
+    
     width: 90%;
     height: 70px;
     border-radius: 30px;
@@ -191,29 +204,31 @@ p {
 }
 
 .transaction-list-container {
-    position: relative;
+    margin-top : 10px;
     margin-left: 25px;
-    height: 180px;
     width: 100%;
     overflow: auto;
+    display : flex;
+    flex-direction :column;
+    margin-bottom :70px;
 }
 
 
 
 
 .transaction-list-daypicker {
+    position : relative;
     width :100%;
+    height : min-content;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-left: 20px;
     margin-right: 20px;
+    margin-top :30px;
+    
 }
 
-.transaction-list-display {
-    
-    
-}
 
 .trans-title {
     font-weight: bold;
@@ -280,6 +295,7 @@ p {
         
     display: flex;
     flex-direction: row;
+    align-items : center;
 }
 .transaction-item-info-container {
     width :max-content;
@@ -289,7 +305,7 @@ p {
 }
 
 .transaction-item-amount-container {
-    position :relative;
+    
     width: 100px;
     margin-left :10px;
     display : flex;
@@ -313,75 +329,7 @@ p {
 }
 
 
-.modal {
-    overflow :auto;
-    padding: 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-}
 
-.modal-content {
-    display :flex;
-    flex-direction : column;
-    align-items : center;
-    background-color: #fff;
-    height :100%;
-    overflow:inherit;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-
-.modal-daypicker-divider {
-    width: 100%;
-    height: 2px;
-    border: 2px;
-    border-color: black;
-    background-color: black;
-}
-
-
-.modal-title-container {
-    width: 100%;
-    height: 70px;
-    background-color: #38cfcc;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.modal-title {
-    color: white;
-    font-weight: bold;
-    font-size: 17px;
-    margin-top :10px;
-    margin-bottom :10px;
-}
-
-.modal-transaction-type-container {
-    display: flex;
-    flex-direction: row;
-    width: 90%;
-    
-    margin-top : 25px;
-    margin-bottom : 15px;
-}
-
-.modal-transaction {
-    height: 50px;
-    width: 50%;
-    border-radius: 20px;
-    border: none;
-    font-size: 18px;
-    font-weight: bold;
-}
 .active {
     background-color: #38cfcc;
     color :white;
@@ -393,126 +341,4 @@ p {
 }
 
 
-.modal-daypicker-container {
-    
-    margin-top: 10px;
-    width: 90%;
-    height: 170px;
-    border-radius: 30px;
-    background-color: white;
-    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.2);
-    transition: 0.3s;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    padding: 30px;
-    
-}
 
-.modal-daypicker-title{
-    margin :0;
-}
-
-.modal-daypicker-button-container {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.modal-daypicker-button {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    border: none;
-    outline: none;
-    transition: background-color 0.3s;
-}
-.white{
-    background-color : white;
-}
-
-.modal-daypicker-listofday {
-    width : 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top : 10px
-}
-.day-container{
-    display : flex ;
-    flex-direction : column;
-    justify-items :center;
-    align-items :center ;
-}
-.day-name{
-    border-bottom : 2px;
-}
-
-.daypicker-style {
-    height: 80px;
-}
-
-.modal-transaction-information-container {
-    height: min-content;
-    width: 90%;
-    margin-top: 25px;
-    margin-bottom: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: start;
-}
-
-.modal-transaction-information-title-size{
-    font-weight :bold;
-    font-size :17px;
-}
-.modal-input-container{
-    width :100%;
-    
-}
-
-.modal-transaction-input-field {
-    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.2);
-    transition: 0.3s;
-    border-radius :10px;
-    border :none;
-    height : 50px;
-    margin-top : 15px;
-    margin-bottom : 15px;
-    width : 100%;
-    padding-left : 10px;
-}
-
-.modal-category-list{
-    width : 90%;
-    display :flex;
-    flex-direction : row;
-    overflow :auto;
-    padding-top :10px;
-    padding-bottom :10px;
-}
-
-.modal-category-button {
-    height: 50px;
-    width: min-content;
-    border: none;
-    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.2);
-    transition: 0.3s;
-    margin-right : 30px;
-    padding-left:10px;
-    padding-right :10px;
-    border-radius :10px;
-}
-
-.add-transaction-submit-button{
-    width : 100%;
-    height :50px;
-    border-radius : 10px;
-    margin-top :15px;
-    margin-bottom :15px;
-    border : none;
-    font-weight :bold;
-}

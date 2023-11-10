@@ -1,3 +1,5 @@
+wwwroot\_content\BlazorAnimate\aos.css
+wwwroot\_content\BlazorAnimate\blazorAnimateInterop.js
 wwwroot\css\bootstrap.css
 wwwroot\css\bootstrap.css.map
 wwwroot\css\bootstrap.min.css
@@ -42,6 +44,8 @@ wwwroot\js\bootstrap.js
 wwwroot\js\bootstrap.js.map
 wwwroot\js\bootstrap.min.js
 wwwroot\js\bootstrap.min.js.map
+wwwroot\_content\MudBlazor\MudBlazor.min.css
+wwwroot\_content\MudBlazor\MudBlazor.min.js
 OpenSans-Regular.ttf
 appicon.ico
 appiconLargeTile.scale-100.png
@@ -125,6 +129,7 @@ wwwroot\down-arrow-svgrepo-com-transitem.svg
 wwwroot\Excercise.png
 wwwroot\favicon.ico
 wwwroot\Food&Dring.png
+wwwroot\heading-svgrepo-com.svg
 wwwroot\Health.png
 wwwroot\home-svgrepo-com.svg
 wwwroot\icons8-add-file-64.png
@@ -133,6 +138,8 @@ wwwroot\Js\home.js
 wwwroot\Learning.png
 wwwroot\left-chevron-svgrepo-com.svg
 wwwroot\Money.png
+wwwroot\money-bag-svgrepo-com.svg
+wwwroot\money-svgrepo-com.svg
 wwwroot\Movie.png
 wwwroot\right-chevron-svgrepo-com.svg
 wwwroot\Salary.png
