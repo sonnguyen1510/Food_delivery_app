@@ -30,25 +30,25 @@
     <AppXManifest Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-11-10T09:43:30.036</Modified>
+      <Modified>2023-11-11T02:09:26.790</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2023-11-10T09:30:19.111</Modified>
+      <Modified>2023-11-11T02:09:25.720</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\MoneyStatistic.runtimeconfig.json">
       <PackagePath>MoneyStatistic.runtimeconfig.json</PackagePath>
-      <Modified>2023-11-10T08:35:37.029</Modified>
+      <Modified>2023-11-11T02:09:25.484</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\MoneyStatistic.dll">
       <PackagePath>MoneyStatistic.dll</PackagePath>
-      <Modified>2023-11-10T09:43:28.319</Modified>
+      <Modified>2023-11-11T02:09:22.933</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>MoneyStatistic.exe</PackagePath>
-      <Modified>2023-11-10T09:43:28.337</Modified>
+      <Modified>2023-11-11T02:09:22.960</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\NguyenXuanSon\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.13\runtimes\win-x64\lib\net7.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -1926,6 +1926,14 @@
       <PackagePath>BlazorAnimate.dll</PackagePath>
       <Modified>2020-09-10T14:11:52.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\.nuget\packages\communitytoolkit.mvvm\8.2.2\lib\net6.0\CommunityToolkit.Mvvm.dll">
+      <PackagePath>CommunityToolkit.Mvvm.dll</PackagePath>
+      <Modified>2023-10-24T20:16:06.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\.nuget\packages\currietechnologies.razor.sweetalert2\5.5.0\lib\net7.0\CurrieTechnologies.Razor.SweetAlert2.dll">
+      <PackagePath>CurrieTechnologies.Razor.SweetAlert2.dll</PackagePath>
+      <Modified>2023-03-29T15:17:48.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\NguyenXuanSon\.nuget\packages\microsoft.aspnet.webapi.client\6.0.0\lib\netstandard2.0\System.Net.Http.Formatting.dll">
       <PackagePath>System.Net.Http.Formatting.dll</PackagePath>
       <Modified>2023-10-20T20:33:52.000</Modified>
@@ -2260,7 +2268,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\MoneyStatistic.deps.json">
       <PackagePath>MoneyStatistic.deps.json</PackagePath>
-      <Modified>2023-11-10T09:43:29.737</Modified>
+      <Modified>2023-11-11T02:09:26.389</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\NguyenXuanSon\.nuget\packages\humanizer.core\2.14.1\lib\net6.0\Humanizer.dll">
       <PackagePath>Humanizer.dll</PackagePath>
@@ -2473,6 +2481,142 @@
     <AppxPackagedFile Include="C:\Users\NguyenXuanSon\.nuget\packages\bootstrap\5.3.2\contentFiles\any\any\wwwroot\js\bootstrap.min.js.map">
       <PackagePath>wwwroot\js\bootstrap.min.js.map</PackagePath>
       <Modified>2023-09-14T15:48:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\.nuget\packages\currietechnologies.razor.sweetalert2\5.5.0\staticwebassets\bootstrap4Theme.css">
+      <PackagePath>wwwroot\_content\CurrieTechnologies.Razor.SweetAlert2\bootstrap4Theme.css</PackagePath>
+      <Modified>2023-03-29T15:15:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\.nuget\packages\currietechnologies.razor.sweetalert2\5.5.0\staticwebassets\bootstrap4Theme.js">
+      <PackagePath>wwwroot\_content\CurrieTechnologies.Razor.SweetAlert2\bootstrap4Theme.js</PackagePath>
+      <Modified>2023-03-29T15:15:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\.nuget\packages\currietechnologies.razor.sweetalert2\5.5.0\staticwebassets\bootstrap4Theme.min.css">
+      <PackagePath>wwwroot\_content\CurrieTechnologies.Razor.SweetAlert2\bootstrap4Theme.min.css</PackagePath>
+      <Modified>2023-03-29T15:15:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\.nuget\packages\currietechnologies.razor.sweetalert2\5.5.0\staticwebassets\bootstrap4Theme.min.js">
+      <PackagePath>wwwroot\_content\CurrieTechnologies.Razor.SweetAlert2\bootstrap4Theme.min.js</PackagePath>
+      <Modified>2023-03-29T15:15:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\.nuget\packages\currietechnologies.razor.sweetalert2\5.5.0\staticwebassets\borderlessTheme.css">
+      <PackagePath>wwwroot\_content\CurrieTechnologies.Razor.SweetAlert2\borderlessTheme.css</PackagePath>
+      <Modified>2023-03-29T15:15:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\.nuget\packages\currietechnologies.razor.sweetalert2\5.5.0\staticwebassets\borderlessTheme.js">
+      <PackagePath>wwwroot\_content\CurrieTechnologies.Razor.SweetAlert2\borderlessTheme.js</PackagePath>
+      <Modified>2023-03-29T15:15:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\.nuget\packages\currietechnologies.razor.sweetalert2\5.5.0\staticwebassets\borderlessTheme.min.css">
+      <PackagePath>wwwroot\_content\CurrieTechnologies.Razor.SweetAlert2\borderlessTheme.min.css</PackagePath>
+      <Modified>2023-03-29T15:15:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\.nuget\packages\currietechnologies.razor.sweetalert2\5.5.0\staticwebassets\borderlessTheme.min.js">
+      <PackagePath>wwwroot\_content\CurrieTechnologies.Razor.SweetAlert2\borderlessTheme.min.js</PackagePath>
+      <Modified>2023-03-29T15:15:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\.nuget\packages\currietechnologies.razor.sweetalert2\5.5.0\staticwebassets\bulmaTheme.css">
+      <PackagePath>wwwroot\_content\CurrieTechnologies.Razor.SweetAlert2\bulmaTheme.css</PackagePath>
+      <Modified>2023-03-29T15:15:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\.nuget\packages\currietechnologies.razor.sweetalert2\5.5.0\staticwebassets\bulmaTheme.js">
+      <PackagePath>wwwroot\_content\CurrieTechnologies.Razor.SweetAlert2\bulmaTheme.js</PackagePath>
+      <Modified>2023-03-29T15:15:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\.nuget\packages\currietechnologies.razor.sweetalert2\5.5.0\staticwebassets\bulmaTheme.min.css">
+      <PackagePath>wwwroot\_content\CurrieTechnologies.Razor.SweetAlert2\bulmaTheme.min.css</PackagePath>
+      <Modified>2023-03-29T15:15:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\.nuget\packages\currietechnologies.razor.sweetalert2\5.5.0\staticwebassets\bulmaTheme.min.js">
+      <PackagePath>wwwroot\_content\CurrieTechnologies.Razor.SweetAlert2\bulmaTheme.min.js</PackagePath>
+      <Modified>2023-03-29T15:15:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\.nuget\packages\currietechnologies.razor.sweetalert2\5.5.0\staticwebassets\darkTheme.css">
+      <PackagePath>wwwroot\_content\CurrieTechnologies.Razor.SweetAlert2\darkTheme.css</PackagePath>
+      <Modified>2023-03-29T15:15:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\.nuget\packages\currietechnologies.razor.sweetalert2\5.5.0\staticwebassets\darkTheme.js">
+      <PackagePath>wwwroot\_content\CurrieTechnologies.Razor.SweetAlert2\darkTheme.js</PackagePath>
+      <Modified>2023-03-29T15:15:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\.nuget\packages\currietechnologies.razor.sweetalert2\5.5.0\staticwebassets\darkTheme.min.css">
+      <PackagePath>wwwroot\_content\CurrieTechnologies.Razor.SweetAlert2\darkTheme.min.css</PackagePath>
+      <Modified>2023-03-29T15:15:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\.nuget\packages\currietechnologies.razor.sweetalert2\5.5.0\staticwebassets\darkTheme.min.js">
+      <PackagePath>wwwroot\_content\CurrieTechnologies.Razor.SweetAlert2\darkTheme.min.js</PackagePath>
+      <Modified>2023-03-29T15:15:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\.nuget\packages\currietechnologies.razor.sweetalert2\5.5.0\staticwebassets\defaultTheme.css">
+      <PackagePath>wwwroot\_content\CurrieTechnologies.Razor.SweetAlert2\defaultTheme.css</PackagePath>
+      <Modified>2023-03-29T15:15:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\.nuget\packages\currietechnologies.razor.sweetalert2\5.5.0\staticwebassets\defaultTheme.js">
+      <PackagePath>wwwroot\_content\CurrieTechnologies.Razor.SweetAlert2\defaultTheme.js</PackagePath>
+      <Modified>2023-03-29T15:15:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\.nuget\packages\currietechnologies.razor.sweetalert2\5.5.0\staticwebassets\defaultTheme.min.css">
+      <PackagePath>wwwroot\_content\CurrieTechnologies.Razor.SweetAlert2\defaultTheme.min.css</PackagePath>
+      <Modified>2023-03-29T15:15:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\.nuget\packages\currietechnologies.razor.sweetalert2\5.5.0\staticwebassets\defaultTheme.min.js">
+      <PackagePath>wwwroot\_content\CurrieTechnologies.Razor.SweetAlert2\defaultTheme.min.js</PackagePath>
+      <Modified>2023-03-29T15:15:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\.nuget\packages\currietechnologies.razor.sweetalert2\5.5.0\staticwebassets\materialUITheme.css">
+      <PackagePath>wwwroot\_content\CurrieTechnologies.Razor.SweetAlert2\materialUITheme.css</PackagePath>
+      <Modified>2023-03-29T15:15:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\.nuget\packages\currietechnologies.razor.sweetalert2\5.5.0\staticwebassets\materialUITheme.js">
+      <PackagePath>wwwroot\_content\CurrieTechnologies.Razor.SweetAlert2\materialUITheme.js</PackagePath>
+      <Modified>2023-03-29T15:15:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\.nuget\packages\currietechnologies.razor.sweetalert2\5.5.0\staticwebassets\materialUITheme.min.css">
+      <PackagePath>wwwroot\_content\CurrieTechnologies.Razor.SweetAlert2\materialUITheme.min.css</PackagePath>
+      <Modified>2023-03-29T15:15:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\.nuget\packages\currietechnologies.razor.sweetalert2\5.5.0\staticwebassets\materialUITheme.min.js">
+      <PackagePath>wwwroot\_content\CurrieTechnologies.Razor.SweetAlert2\materialUITheme.min.js</PackagePath>
+      <Modified>2023-03-29T15:15:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\.nuget\packages\currietechnologies.razor.sweetalert2\5.5.0\staticwebassets\minimalTheme.css">
+      <PackagePath>wwwroot\_content\CurrieTechnologies.Razor.SweetAlert2\minimalTheme.css</PackagePath>
+      <Modified>2023-03-29T15:15:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\.nuget\packages\currietechnologies.razor.sweetalert2\5.5.0\staticwebassets\minimalTheme.js">
+      <PackagePath>wwwroot\_content\CurrieTechnologies.Razor.SweetAlert2\minimalTheme.js</PackagePath>
+      <Modified>2023-03-29T15:15:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\.nuget\packages\currietechnologies.razor.sweetalert2\5.5.0\staticwebassets\minimalTheme.min.css">
+      <PackagePath>wwwroot\_content\CurrieTechnologies.Razor.SweetAlert2\minimalTheme.min.css</PackagePath>
+      <Modified>2023-03-29T15:15:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\.nuget\packages\currietechnologies.razor.sweetalert2\5.5.0\staticwebassets\minimalTheme.min.js">
+      <PackagePath>wwwroot\_content\CurrieTechnologies.Razor.SweetAlert2\minimalTheme.min.js</PackagePath>
+      <Modified>2023-03-29T15:15:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\.nuget\packages\currietechnologies.razor.sweetalert2\5.5.0\staticwebassets\sweetAlert2.js">
+      <PackagePath>wwwroot\_content\CurrieTechnologies.Razor.SweetAlert2\sweetAlert2.js</PackagePath>
+      <Modified>2023-03-29T15:15:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\.nuget\packages\currietechnologies.razor.sweetalert2\5.5.0\staticwebassets\sweetAlert2.min.js">
+      <PackagePath>wwwroot\_content\CurrieTechnologies.Razor.SweetAlert2\sweetAlert2.min.js</PackagePath>
+      <Modified>2023-03-29T15:15:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\.nuget\packages\currietechnologies.razor.sweetalert2\5.5.0\staticwebassets\wordpressAdminTheme.css">
+      <PackagePath>wwwroot\_content\CurrieTechnologies.Razor.SweetAlert2\wordpressAdminTheme.css</PackagePath>
+      <Modified>2023-03-29T15:15:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\.nuget\packages\currietechnologies.razor.sweetalert2\5.5.0\staticwebassets\wordpressAdminTheme.js">
+      <PackagePath>wwwroot\_content\CurrieTechnologies.Razor.SweetAlert2\wordpressAdminTheme.js</PackagePath>
+      <Modified>2023-03-29T15:15:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\.nuget\packages\currietechnologies.razor.sweetalert2\5.5.0\staticwebassets\wordpressAdminTheme.min.css">
+      <PackagePath>wwwroot\_content\CurrieTechnologies.Razor.SweetAlert2\wordpressAdminTheme.min.css</PackagePath>
+      <Modified>2023-03-29T15:15:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\.nuget\packages\currietechnologies.razor.sweetalert2\5.5.0\staticwebassets\wordpressAdminTheme.min.js">
+      <PackagePath>wwwroot\_content\CurrieTechnologies.Razor.SweetAlert2\wordpressAdminTheme.min.js</PackagePath>
+      <Modified>2023-03-29T15:15:44.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\NguyenXuanSon\.nuget\packages\mudblazor\6.11.0\staticwebassets\MudBlazor.min.css">
       <PackagePath>wwwroot\_content\MudBlazor\MudBlazor.min.css</PackagePath>

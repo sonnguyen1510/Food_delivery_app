@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "T5efnxFIgxOguYaGVOzR1uYOCHmYfTF59sYw0/eVOB3mLUaVzvp2OEkf/DzoochMaLP8wmx54jdzDMGrOiuOxQ==",
+  "dgSpecHash": "dZ9eRqqtcR55sVaG9RGlzO1MOL4T86nyIvEvhYrMraM32r21XcGahH6Rpa1dd+4/QTMfBsO0ZiCWj5Em6PZIOg==",
   "success": true,
   "projectFilePath": "C:\\Users\\NguyenXuanSon\\Documents\\GitHub\\Food_delivery_app\\MoneyStatistic\\MoneyStatistic\\MoneyStatistic.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,8 @@
     "C:\\Users\\NguyenXuanSon\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
     "C:\\Users\\NguyenXuanSon\\.nuget\\packages\\blazoranimate\\3.0.0\\blazoranimate.3.0.0.nupkg.sha512",
     "C:\\Users\\NguyenXuanSon\\.nuget\\packages\\bootstrap\\5.3.2\\bootstrap.5.3.2.nupkg.sha512",
+    "C:\\Users\\NguyenXuanSon\\.nuget\\packages\\communitytoolkit.mvvm\\8.2.2\\communitytoolkit.mvvm.8.2.2.nupkg.sha512",
+    "C:\\Users\\NguyenXuanSon\\.nuget\\packages\\currietechnologies.razor.sweetalert2\\5.5.0\\currietechnologies.razor.sweetalert2.5.5.0.nupkg.sha512",
     "C:\\Users\\NguyenXuanSon\\.nuget\\packages\\googlegson\\2.9.1.1\\googlegson.2.9.1.1.nupkg.sha512",
     "C:\\Users\\NguyenXuanSon\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\NguyenXuanSon\\.nuget\\packages\\microsoft.aspnet.webapi.client\\6.0.0\\microsoft.aspnet.webapi.client.6.0.0.nupkg.sha512",

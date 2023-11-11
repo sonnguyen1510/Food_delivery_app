@@ -1,6 +1,7 @@
 ﻿@page "/"
 
 @using BlazorAnimate;
+@using CurrieTechnologies.Razor.SweetAlert2;
 @using Database.MoneyManagerService
 
 @using System.Net.Http; 
@@ -8,6 +9,7 @@
 @using MoneyStatistic.Database.JSON;
 @using MudBlazor
 
+@inject SweetAlertService Swal;
 
 <head>
     <link rel="stylesheet" href="./css/Home.css" />
@@ -82,7 +84,7 @@
                 {
                     @foreach (var item in userTransactions)
                     {
-                        <div class="transaction-item-container divider">
+                        <div class="transaction-item-container divider" @onmousedown="()=>StartTimer(item)" @onmouseup="StopTimer">
                             <div class="transaction-item-info-container">
                                 <div class="transaction-icon-container">
                                     <div class="transaction-icon">
@@ -301,7 +303,7 @@
             </div>
         </div>
     }
-
+    <script src="_content/CurrieTechnologies.Razor.SweetAlert2/sweetAlert2.min.js"></script>
 </body>
 
 @code {
@@ -356,13 +358,6 @@
     */
     // Inject the DbContext
 
-    [Inject]
-    private NavigationManager NavigationManager { get; set; }
-
-    private void NavigateToNewPage()
-    {
-        NavigationManager.NavigateTo("/add_transaction");
-    }
 
     protected override async Task OnInitializedAsync()
     {
@@ -373,13 +368,49 @@
         userTransactions = await client.GetFromJsonAsync<List<UserTransaction>>(apiUrl);
     }
 
-    private async void  ReloadTransactionList()
+    private async Task  ReloadTransactionList()
     {
         // Define the API endpoint URL
         var apiUrl = "https://localhost:7040/transaction/GetAllTransaction";
 
         // Send an HTTP GET request to the API
         userTransactions = await client.GetFromJsonAsync<List<UserTransaction>>(apiUrl);
+    }
+
+    private async Task DeleteTransaction(UserTransaction item)
+    {
+        // Define the API endpoint URL
+        var apiUrl = $"https://localhost:7040/transaction/Delete/{item.Id}";
+
+        // Post data to the server
+        var response = await client.DeleteAsync(apiUrl);
+
+        // Handle the response as needed
+        if (response.IsSuccessStatusCode)
+        {
+            // Request was successful
+            var result = await response.Content.ReadFromJsonAsync<Result>();
+            ReloadTransactionList();
+            await Swal.FireAsync(new SweetAlertOptions
+                {
+                    Title = "Success!",
+                    Text = "This Transaction has been deleted!",
+                    Icon = "success"
+                });
+            cleanAddList();
+            // Handle the result
+        }
+        else
+        {
+            await Swal.FireAsync(new SweetAlertOptions
+                {
+                    Title = "failed!",
+                    Text = "Deleted fail!",
+                    Icon = "error"
+                });
+            // Request failed
+            // Handle the error
+        }
     }
 
 
@@ -451,14 +482,73 @@
 
         }
     }
+    //DELETE TRANSACTION ITEM
+
+    private System.Timers.Timer longClickTimer;
+    private bool isLongClick;
+
+    private async Task StartTimer(UserTransaction item)
+    {
+        isLongClick = false;
+        longClickTimer = new System.Timers.Timer(1000); // Change the duration as needed
+        longClickTimer.Elapsed += (sender, e) => OnLongClick(item);
+        longClickTimer.Start();
+    }
+
+    private void StopTimer()
+    {
+        longClickTimer?.Stop();
+        if (!isLongClick)
+        {
+            // Perform regular click action if not a long click
+            // Add your regular click logic here
+
+        }
+    }
+
+    private async void OnLongClick(UserTransaction item)
+    {
+        isLongClick = true;
+        longClickTimer?.Stop();
+        // Perform long click action
+        // Add your long click logic here
+
+        await Swal.FireAsync(new SweetAlertOptions
+            {
+                Title = "Would you like to delete this transaction ?",
+                ShowConfirmButton = true,
+                ShowCancelButton = true,
+                ConfirmButtonText = "Delete",
+                CancelButtonColor = "white",
+                ConfirmButtonColor = "red",
+
+            }).ContinueWith(async (swalTask) =>
+    {
+        SweetAlertResult result = swalTask.Result;
+        if (!string.IsNullOrEmpty(result.Value))
+        {
+            await DeleteTransaction(item);
+            await Swal.FireAsync(
+              "Deleted",
+              "Your transaction record has been deleted.",
+              SweetAlertIcon.Success
+              );
+        }
+        });
+    }
+
+    public void Dispose()
+    {
+        longClickTimer?.Dispose();
+    }
 
     //-MODAL
 
-    private String TransactionType = "income";
-    private String TransactionTitle;
-    private decimal TransactionAmount;
-    private String CategoryChoosed = "Bussiness";
-    private int CurrentDay = DateTime.Now.Day;
+    private String TransactionType { get; set; } = "income";
+    private String TransactionTitle { get; set; }="";
+    private decimal TransactionAmount { get; set; } = 0;
+    private String CategoryChoosed { get; set; } = "Bussiness";
+    private int CurrentDay { get; set; } = DateTime.Now.Day;
 
 
     private int selectedHour { get; set; } = DateTime.Now.Hour;
@@ -567,12 +657,24 @@
         {
             // Request was successful
             var result = await response.Content.ReadFromJsonAsync<Result>();
-            ReloadTransactionList();
+            await ReloadTransactionList();
+            await Swal.FireAsync(new SweetAlertOptions
+                {
+                    Title = "Success!",
+                    Text = "You clicked the button!",
+                    Icon = "success"
+                });
             cleanAddList();
             // Handle the result
         }
         else
         {
+            await Swal.FireAsync(new SweetAlertOptions
+                {
+                    Title = "failed!",
+                    Text = "Something went wrong!",
+                    Icon = "error"
+                });
             // Request failed
             // Handle the error
         }

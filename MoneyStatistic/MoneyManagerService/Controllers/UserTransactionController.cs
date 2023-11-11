@@ -37,7 +37,7 @@ namespace MoneyManagerService.Controllers
             List<UserTransaction> transactions; 
             try
             {
-                transactions = db.UserTransactions.Where(item => item.UserId == id).ToList();
+                transactions = db.UserTransactions.Where(item => item.UserId == id && item.Status == true).ToList();
             }catch (Exception ex)
             {
                 transactions = null;
@@ -53,7 +53,7 @@ namespace MoneyManagerService.Controllers
             List<UserTransaction> transactions;
             try
             {
-                transactions = db.UserTransactions.Where(item => item.UserId == id && item.TransType.Equals("expense")).ToList();
+                transactions = db.UserTransactions.Where(item => item.UserId == id && item.TransType.Equals("expense") && item.Status == true).ToList();
             }
             catch (Exception ex)
             {
@@ -70,7 +70,7 @@ namespace MoneyManagerService.Controllers
             List<UserTransaction> transactions;
             try
             {
-                transactions = db.UserTransactions.Where(item => item.UserId == id && item.TransType.Equals("income")).ToList();
+                transactions = db.UserTransactions.Where(item => item.UserId == id && item.TransType.Equals("income") && item.Status == true).ToList();
             }
             catch (Exception ex)
             {
@@ -120,8 +120,36 @@ namespace MoneyManagerService.Controllers
 
         // DELETE api/<UserTransactionController>/5
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public Result Delete(int id)
         {
+            try
+            {
+                UserTransaction user = db.UserTransactions.First(item => item.Id == id);
+                if(user == null)
+                {
+                    return new Result { status = 404, message = "Cannot find user", result = "failed" };
+                }
+                else
+                {
+                    user.Status = false;
+                    db.Entry(user).State = EntityState.Modified;
+
+                    
+                    try
+                    {
+                        db.SaveChanges();
+                        return new Result { status = 202, message = "Delete transaction success", result = "success" };
+                    }
+                    catch (DbUpdateConcurrencyException)
+                    {
+                        return new Result { status = 404, message = "Delete transaction fail", result = "failed" };
+                    }
+                }
+
+            }catch (Exception ex)
+            {
+                return new Result { status = 404, message = "Delete transaction fail", result = "failed" };
+            }
         }
     }
 }
