@@ -290,6 +290,11 @@ select {
 }
 
     select.hour {
+        color: white;
+    }
+
+    select.minute {
+        color: white;
     }
 
 span {

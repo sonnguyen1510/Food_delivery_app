@@ -61,4 +61,6 @@ INSERT INTO UserTransaction
 VALUES ('07','Salary','income','Salary','12:00:00.0000000','2021-05-12',1600,'U789012',1);
 
 select * from UserTransaction
-select * from
+select CreDate,Amount 
+from UserTransaction 
+where CreDate <= '2021-06-12' AND CreDate >= '2021-06-09'

@@ -66,12 +66,15 @@
     public String AnalysisStatus = InactiveColor;
 
 
+    
+
+
     public void RouteToHome()
     {
         HomeStatus = ActiveColor;
         UserStatus = InactiveColor;
         AnalysisStatus = InactiveColor;
-        NavigationManager.NavigateTo("/");
+        NavigationManager.NavigateTo("/home");
     }
 
     public void RouteToAnalysis()

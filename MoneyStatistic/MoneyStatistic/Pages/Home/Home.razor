@@ -1,4 +1,5 @@
 ﻿@page "/"
+@page "/home"
 
 @using BlazorAnimate;
 @using CurrieTechnologies.Razor.SweetAlert2;
@@ -72,12 +73,7 @@
                 <div class="">
                     <p class="trans-title"> Transaction</p>
                 </div>
-                <div class="daypicker">
-                    <p class="daypicker-title">From</p>
-                    <input class="daypicker-dialog" type="date" @bind="selectedStartDate" @oninput="HandleStartDateChange" />
-                    <p class="daypicker-title">To</p>
-                    <input class="daypicker-dialog" type="date" @bind="selectedEndDate" @oninput="HandleEndDateChange" />
-                </div>
+                
             </div>
             <div class="transaction-list-container">
                 @if (userTransactions != null)
@@ -317,10 +313,12 @@
     public String DayStatus = "Good Morning";
     public double Balance = 7872.20;
     private DateTime CurrentMonth = DateTime.Now;
-    private List<UserTransaction> userTransactions;
+    private List<UserTransaction> userTransactions = null;
     HttpClient client = new HttpClient();
     private bool showDialog = false;
 
+    //API
+    private int PORT = 7040;
 
     /* Unmerged change from project 'FoodDelivery (net7.0-windows10.0.19041.0)'
     Before:
@@ -361,56 +359,106 @@
 
     protected override async Task OnInitializedAsync()
     {
-        // Define the API endpoint URL
-        var apiUrl = "https://localhost:7040/transaction/GetAllTransaction";
+        while (true)
+        {
+            try
+            {
+                // Define the API endpoint URL
+                var apiUrl = $"https://localhost:{PORT}/transaction/GetAllTransaction";
 
-        // Send an HTTP GET request to the API
-        userTransactions = await client.GetFromJsonAsync<List<UserTransaction>>(apiUrl);
+                // Send an HTTP GET request to the API
+                userTransactions = await client.GetFromJsonAsync<List<UserTransaction>>(apiUrl);
+                break;
+            }
+
+            catch (Exception)
+            {
+                // Handle any other unexpected exceptions
+                await Swal.FireAsync(new SweetAlertOptions
+                    {
+                        Title = "The Internet?",
+                        Text = "Can't connect to server, please try again!",
+                        Icon = "question",
+
+                    });
+            }
+        }
     }
 
     private async Task  ReloadTransactionList()
     {
-        // Define the API endpoint URL
-        var apiUrl = "https://localhost:7040/transaction/GetAllTransaction";
+        while(true){
+            try
+            {
+                // Define the API endpoint URL
+                var apiUrl = $"https://localhost:{PORT}/transaction/GetAllTransaction";
 
-        // Send an HTTP GET request to the API
-        userTransactions = await client.GetFromJsonAsync<List<UserTransaction>>(apiUrl);
+                // Send an HTTP GET request to the API
+                userTransactions = await client.GetFromJsonAsync<List<UserTransaction>>(apiUrl);
+                break;
+            }
+
+            catch (Exception)
+            {
+                // Handle any other unexpected exceptions
+                await Swal.FireAsync(new SweetAlertOptions
+                    {
+                        Title = "Connect error?",
+                        Text = "Can't connect to server, please try again!",
+                        Icon = "question",
+
+                    });
+            }
+        }
     }
 
     private async Task DeleteTransaction(UserTransaction item)
     {
-        // Define the API endpoint URL
-        var apiUrl = $"https://localhost:7040/transaction/Delete/{item.Id}";
+        try{
+            // Define the API endpoint URL
+            var apiUrl = $"https://localhost:{PORT}/transaction/Delete/{item.Id}";
 
-        // Post data to the server
-        var response = await client.DeleteAsync(apiUrl);
+            // Post data to the server
+            var response = await client.DeleteAsync(apiUrl);
 
-        // Handle the response as needed
-        if (response.IsSuccessStatusCode)
-        {
-            // Request was successful
-            var result = await response.Content.ReadFromJsonAsync<Result>();
-            ReloadTransactionList();
-            await Swal.FireAsync(new SweetAlertOptions
+            // Handle the response as needed
+            if (response.IsSuccessStatusCode)
+            {
+                // Request was successful
+                var result = await response.Content.ReadFromJsonAsync<Result>();
+                await ReloadTransactionList();
+                await Swal.FireAsync(new SweetAlertOptions
                 {
                     Title = "Success!",
                     Text = "This Transaction has been deleted!",
                     Icon = "success"
                 });
-            cleanAddList();
-            // Handle the result
-        }
-        else
-        {
-            await Swal.FireAsync(new SweetAlertOptions
+                cleanAddList();
+                // Handle the result
+            }
+            else
+            {
+                await Swal.FireAsync(new SweetAlertOptions
                 {
                     Title = "failed!",
                     Text = "Deleted fail!",
                     Icon = "error"
                 });
-            // Request failed
-            // Handle the error
+                // Request failed
+                // Handle the error
+            }
         }
+        catch (Exception)
+        {
+            await Swal.FireAsync(new SweetAlertOptions
+                {
+                    Title = "Connect error?",
+                    Text = "Can't connect to server, please try again!",
+                    Icon = "question",
+
+                });
+        };
+        
     }
 
 
@@ -487,7 +535,7 @@
     private System.Timers.Timer longClickTimer;
     private bool isLongClick;
 
-    private async Task StartTimer(UserTransaction item)
+    private void StartTimer(UserTransaction item)
     {
         isLongClick = false;
         longClickTimer = new System.Timers.Timer(1000); // Change the duration as needed
@@ -519,22 +567,18 @@
                 ShowConfirmButton = true,
                 ShowCancelButton = true,
                 ConfirmButtonText = "Delete",
-                CancelButtonColor = "white",
+
                 ConfirmButtonColor = "red",
 
             }).ContinueWith(async (swalTask) =>
-    {
-        SweetAlertResult result = swalTask.Result;
-        if (!string.IsNullOrEmpty(result.Value))
-        {
-            await DeleteTransaction(item);
-            await Swal.FireAsync(
-              "Deleted",
-              "Your transaction record has been deleted.",
-              SweetAlertIcon.Success
-              );
-        }
-        });
+                {
+                SweetAlertResult result = swalTask.Result;
+                if (!string.IsNullOrEmpty(result.Value))
+                {
+                    await DeleteTransaction(item);
+
+                }
+            });
     }
 
     public void Dispose()
@@ -636,48 +680,64 @@
 
     private async void addTransaction()
     {
-        // Create an instance of your data model
-        var data = new UserTransactionBody
+        
+            try
             {
-                Title = TransactionTitle,
-                TransType = TransactionType,
-                TransIcon = CategoryChoosed,
-                CreTime = $"{selectedHour}:{selectedMinute}:00",
-                CreDate = $"{CurrentDay}-{currentDate.Month}-{currentDate.Year}",
-                Amount = TransactionAmount,
-                UserId = 2,
-                Status = true
-            };
+                // Create an instance of your data model
+                var data = new UserTransactionBody
+                    {
+                        Title = TransactionTitle,
+                        TransType = TransactionType,
+                        TransIcon = CategoryChoosed,
+                        CreTime = $"{selectedHour}:{selectedMinute}:00",
+                        CreDate = $"{CurrentDay}-{currentDate.Month}-{currentDate.Year}",
+                        Amount = TransactionAmount,
+                        UserId = 2,
+                        Status = true
+                    };
 
-        // Post data to the server
-        var response = await client.PostAsJsonAsync<UserTransactionBody>("https://localhost:7040/transaction/AddTransaction", data);
+                // Post data to the server
+                var response = await client.PostAsJsonAsync<UserTransactionBody>("https://localhost:7040/transaction/AddTransaction", data);
 
-        // Handle the response as needed
-        if (response.IsSuccessStatusCode)
-        {
-            // Request was successful
-            var result = await response.Content.ReadFromJsonAsync<Result>();
-            await ReloadTransactionList();
-            await Swal.FireAsync(new SweetAlertOptions
+                // Handle the response as needed
+                if (response.IsSuccessStatusCode)
                 {
-                    Title = "Success!",
-                    Text = "You clicked the button!",
-                    Icon = "success"
-                });
-            cleanAddList();
-            // Handle the result
-        }
-        else
-        {
-            await Swal.FireAsync(new SweetAlertOptions
+                    // Request was successful
+                    var result = await response.Content.ReadFromJsonAsync<Result>();
+                    await ReloadTransactionList();
+                    await Swal.FireAsync(new SweetAlertOptions
+                        {
+                            Title = "Success!",
+                            Text = "You clicked the button!",
+                            Icon = "success"
+                        });
+                    cleanAddList();
+                    // Handle the result
+                }
+                else
                 {
-                    Title = "failed!",
-                    Text = "Something went wrong!",
-                    Icon = "error"
-                });
-            // Request failed
-            // Handle the error
-        }
+                    await Swal.FireAsync(new SweetAlertOptions
+                        {
+                            Title = "failed!",
+                            Text = "Something went wrong!",
+                            Icon = "error"
+                        });
+                    // Request failed
+                    // Handle the error
+                }
+                
+            }
+            catch (Exception)
+            {
+                await Swal.FireAsync(new SweetAlertOptions
+                    {
+                        Title = "Connect error?",
+                        Text = "Can't connect to server, please try again!",
+                        Icon = "question",
+
+                    });
+            }
+        
     }
 
 

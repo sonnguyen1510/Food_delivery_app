@@ -1,8 +1,10 @@
-﻿using CurrieTechnologies.Razor.SweetAlert2;
+﻿using Blazorise;
+using CurrieTechnologies.Razor.SweetAlert2;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
-
-
+using Blazorise;
+using Blazorise.Bootstrap;
+using Blazorise.Icons.FontAwesome;
 
 namespace MoneyStatistic
 {
@@ -19,6 +21,13 @@ namespace MoneyStatistic
                 });
 
             builder.Services.AddSweetAlert2();
+            builder.Services.AddBlazorise(options =>
+            {
+                options.Immediate = true;
+            })
+            .AddBootstrapProviders()
+            .AddFontAwesomeIcons();
+            
             builder.Services.AddMauiBlazorWebView();
             
             

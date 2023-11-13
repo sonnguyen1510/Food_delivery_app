@@ -11,6 +11,7 @@
     flex-direction: column;
     margin-bottom: 50px;
     position: fixed;
+    
 }
 
 p {
@@ -31,7 +32,7 @@ p {
 }
 
 .user-avatar {
-    margin-left: 30px;
+    
     margin-right: 30px;
     width: 70px;
     height: 70px;
@@ -96,7 +97,8 @@ p {
 
     width: 100%;
     
-    margin: 25px;
+    margin-top :25px;
+    margin-bottom :25px;
 }
 
 .display-transaction {
@@ -223,7 +225,7 @@ p {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-left: 20px;
+    
     margin-right: 20px;
     margin-top :30px;
     

@@ -233,6 +233,10 @@
       "PackagePath": "staticwebassets\\css\\AddTransaction.css"
     },
     {
+      "Id": "C:\\Users\\NguyenXuanSon\\Documents\\GitHub\\Food_delivery_app\\MoneyStatistic\\MoneyStatistic\\wwwroot\\css\\Analysis.css",
+      "PackagePath": "staticwebassets\\css\\Analysis.css"
+    },
+    {
       "Id": "C:\\Users\\NguyenXuanSon\\Documents\\GitHub\\Food_delivery_app\\MoneyStatistic\\MoneyStatistic\\wwwroot\\css\\Bottomnav.css",
       "PackagePath": "staticwebassets\\css\\Bottomnav.css"
     },

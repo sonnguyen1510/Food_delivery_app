@@ -27,7 +27,7 @@ namespace MoneyManagerService.Controllers
         [HttpGet]
         public List<UserTransaction> GetAllTransaction()
         {
-            return db.UserTransactions.ToList();
+            return db.UserTransactions.Where(item =>item.Status == true).ToList();
         }
 
         // GET api/<UserTransactionController>/5
@@ -106,7 +106,7 @@ namespace MoneyManagerService.Controllers
                 db.SaveChanges();
                 return new Result { status = 202, message = "Add transaction success", result = "success" };
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 return new Result { status = 404, message = "Add transaction fail", result = "failed" };
             }

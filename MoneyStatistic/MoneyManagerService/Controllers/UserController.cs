@@ -69,7 +69,7 @@ namespace MoneyManagerService.Controllers
                 db.SaveChanges();
                 return new Result { status = 202, message = "Add transaction success", result = "success" };
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 return new Result { status = 404, message = "Add transaction fail", result = "failed" };
             }
