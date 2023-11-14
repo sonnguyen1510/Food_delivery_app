@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Models.EF.JSON;
 using Models.EF.MoneyManagerService;
@@ -9,25 +10,41 @@ using System.Collections.Generic;
 
 namespace MoneyManagerService.Controllers
 {
-    
+
     [Route("transaction/[action]")]
     [ApiController]
     [Produces("application/json")]
     public class UserTransactionController : ControllerBase
     {
-        
-         
+
+
         private MoneyManagerContext db;
         public UserTransactionController(MoneyManagerContext database) {
             db = database;
         }
-         
+
 
         // GET: api/<UserTransactionController>
         [HttpGet]
         public List<UserTransaction> GetAllTransaction()
         {
-            return db.UserTransactions.Where(item =>item.Status == true).ToList();
+            return db.UserTransactions.Where(item => item.Status == true).ToList();
+        }
+        // GET: api/<UserTransactionController>
+        [HttpGet]
+        public List<UserTransaction> GetTransactionByRangeofDay([FromQuery] string StartDay, [FromQuery] string EndDay)
+        {
+            DateTime Start = DateTime.Parse(StartDay);
+            DateTime End = DateTime.Parse(EndDay);
+            return db.UserTransactions.Where(item => (item.CreDate <= End && item.CreDate >= Start) && item.Status == true).ToList();
+        }
+
+        [HttpGet("{id}")]
+        public List<UserTransaction> GetTransactionByRangeofDay([FromQuery] string StartDay, [FromQuery] string EndDay, int id)
+        {
+            DateTime Start = DateTime.Parse(StartDay);
+            DateTime End = DateTime.Parse(EndDay);
+            return db.UserTransactions.Where(item => (item.CreDate <= End && item.CreDate >= Start) && item.Id == id && item.Status == true).ToList();
         }
 
         // GET api/<UserTransactionController>/5

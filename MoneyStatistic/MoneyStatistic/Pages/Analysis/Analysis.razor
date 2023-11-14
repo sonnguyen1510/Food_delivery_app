@@ -4,7 +4,9 @@
 @using System.Net.Http;
 @using System.Net.Http.Json;
 @using MoneyStatistic.Database.JSON;
-
+@using MoneyStatistic.Pages.Analysis.Object;
+@using System;
+@using System.Globalization;
 
 
 
@@ -34,66 +36,65 @@
                     <button class="transaction active" @onclick="SetExpense">Expense</button>
                 }
             </div>
-            <div>
-                <Chart @ref="barChart" Type="ChartType.Bar" TItem="double" Clicked="@OnClicked" />
-            </div>
-            <div class="transaction-container">
-                <div class="transaction-list-daypicker">
-                    <div class="">
-                        <p class="trans-title"> Transaction</p>
-                    </div>
-
+            <div class="transaction-analysis-container">
+                <div>
+                    <Chart @ref="barChart" Type="ChartType.Bar" TItem="double" Clicked="@OnClicked" />
                 </div>
-                <div class="transaction-list-container-analysis">
-                    @if (userTransactions != null)
-                    {
-                        @foreach (var item in userTransactions)
+                <div class="transaction-container">
+                    <div class="transaction-list-daypicker">
+                        <div class="">
+                            <p class="trans-title"> Transaction</p>
+                        </div>
+
+                    </div>
+                    <div class="transaction-list-container-analysis">
+                        @if (userTransactions != null)
                         {
-                            if (TransactionType.Equals("income"))
+                            @foreach (var item in userTransactions)
                             {
-                                if (item.TransType.Equals("income"))
+                                if (TransactionType.Equals("income"))
                                 {
-                                    <div class="transaction-item-container divider">
-                                        <div class="transaction-item-info-container">
+                                    if (item.TransType.Equals("income"))
+                                    {
+                                        <div class="transaction-item-container divider">
+                                            <div class="transaction-item-info-container">
 
-                                            <div class="user-detail">
-                                                <p class="user-name">@item.Title</p>
+                                                <div class="user-detail">
+                                                    <p class="user-name">@item.Title</p>
+                                                </div>
+                                            </div>
+                                            <div class="transaction-item-amount-container">
+                                                <div class="income-transaction-item-container">
+                                                    <p class="number-style income-money">+$@item.Amount</p>
+
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="transaction-item-amount-container">
-                                            <div class="income-transaction-item-container">
-                                                <p class="number-style income-money">+$@item.Amount</p>
+                                    }
+                                }
+                                else
+                                {
+                                    if (item.TransType.Equals("expense"))
+                                    {
+                                        <div class="transaction-item-container divider">
+                                            <div class="transaction-item-info-container">
 
+                                                <div class="user-detail">
+                                                    <p class="user-name">@item.Title</p>
+                                                </div>
+                                            </div>
+                                            <div class="transaction-item-amount-container">
+                                                <div class="expense-transaction-item-container">
+                                                    <p class="number-style expense-money">-$@item.Amount</p>
+
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    }
                                 }
                             }
-                            else
-                            {
-                                if (item.TransType.Equals("expense"))
-                                {
-                                    <div class="transaction-item-container divider">
-                                        <div class="transaction-item-info-container">
-
-                                            <div class="user-detail">
-                                                <p class="user-name">@item.Title</p>
-                                            </div>
-                                        </div>
-                                        <div class="transaction-item-amount-container">
-                                            <div class="expense-transaction-item-container">
-                                                <p class="number-style expense-money">-$@item.Amount</p>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                }
-                            }
-
                         }
-                    }
-
-
+                    </div>
                 </div>
             </div>
         </div>
@@ -107,6 +108,9 @@
 
 @code {
     private List<UserTransaction> userTransactions { get; set; } = null;
+
+    private List<Transaction_byWeek> Transaction_data { get; set; } 
+
     HttpClient client = new HttpClient();
     private String TransactionType { get; set; } = "income";
 
@@ -173,13 +177,18 @@
             try
             {
                 // Define the API endpoint URL
-                var apiUrl = $"https://localhost:{PORT}/transaction/GetAllTransaction";
+                var apiUrl = $"https://localhost:{PORT}/transaction/GetALlTransaction";
 
                 // Send an HTTP GET request to the API
                 userTransactions = await client.GetFromJsonAsync<List<UserTransaction>>(apiUrl);
 
                 Labels = GenerateLabels("06-2021");
+                /**
+                 userTransactions.ForEach(item =>
+                {
 
+                });
+                 */
 
                 break;
             }
@@ -197,6 +206,91 @@
             }
 
         }
+    }
+
+    private async Task<List<UserTransaction>> getTransaction(string StartDay , string EndDay)
+    {
+        // Define the API endpoint URL
+        var apiUrl = $"https://localhost:{PORT}/transaction/GetTransactionByRangeofDay?StartDay={StartDay}&EndDay={EndDay}";
+
+        // Send an HTTP GET request to the API
+        return await client.GetFromJsonAsync<List<UserTransaction>>(apiUrl);
+
+    }
+
+    public async void generateTransactionList(DateTime Date)
+    {
+        String[] DayInformation = Date.ToString("MM-yyyy").Split('-');
+
+        DateTime startDate = new DateTime(int.Parse(DayInformation[1]), int.Parse(DayInformation[0]), 1);
+
+        DateTime endDate = startDate.AddMonths(1).AddDays(-1);
+
+        int startDay = startDate.Day;
+        int endDay = endDate.Day;
+        int current = startDay;
+
+        Transaction_data = new List<Transaction_byWeek>();
+
+        for(int i = 1; i <=5; i++)
+        {
+            if (current + 6 < endDay)
+            {
+                Transaction_byWeek TrBW = new Transaction_byWeek();
+                TrBW.startDate = $"{current}-{int.Parse(DayInformation[0])}-{int.Parse(DayInformation[1])}";
+                TrBW.endDate = $"{current + 6}-{int.Parse(DayInformation[0])}-{int.Parse(DayInformation[1])}";
+
+                Transaction_data.Add(TrBW);
+            }
+            else
+            {
+                Transaction_byWeek TrBW = new Transaction_byWeek();
+                TrBW.startDate = $"{current}-{int.Parse(DayInformation[0])}-{int.Parse(DayInformation[1])}";
+                TrBW.endDate = $"{endDay}-{int.Parse(DayInformation[0])}-{int.Parse(DayInformation[1])}";
+
+                Transaction_data.Add(TrBW);
+            }
+        }
+
+        List<UserTransaction> users = await getTransaction(startDate.ToString("dd-MM-yyyy"), endDate.ToString("dd-MM-yyyy"));
+
+
+        users.ForEach(item =>{
+            Transaction_data.ForEach(trans =>
+            {
+                if (IsCurrentDayInRange(trans.startDate,trans.endDate,item.CreDate?.ToString("dd-MM-yyyy")))
+                {
+                    if (item.TransType.Equals("income"))
+                    {
+                        Transaction_byDay Tr_BD = new Transaction_byDay();
+                        Tr_BD.IncomeTransaction.Add(item);
+                        trans.transaction_ByDays.Add(Tr_BD);
+                    }
+                    else
+                    {
+                        Transaction_byDay Tr_BD = new Transaction_byDay();
+                        Tr_BD.ExpenseTransaction.Add(item);
+                        trans.transaction_ByDays.Add(Tr_BD);
+                    }
+                }
+            });
+        });
+    }
+
+    public static bool IsCurrentDayInRange(string startDay, string endDay, string currentDay)
+    {
+        DateTime startDate, endDate, currentDate;
+
+        if (DateTime.TryParseExact(startDay, "dd-MM-yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None, out startDate)
+            && DateTime.TryParseExact(endDay, "dd-MM-yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None, out endDate)
+            && DateTime.TryParseExact(currentDay, "dd-MM-yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None, out currentDate))
+        {
+            // Check if the current day is between start and end days
+            return currentDate >= startDate && currentDate <= endDate;
+        }
+
+        // If parsing fails for any date string, return false
+        return false;
     }
 
     private void SetIncome()

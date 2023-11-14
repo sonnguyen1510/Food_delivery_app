@@ -15,8 +15,9 @@
     z-index: 1;
     
 }
-.function-title{
-    background-color :white;
+.function-title {
+    margin : 0;
+    
 }
 
 
@@ -30,19 +31,22 @@
 .bottom-item-align {
     display: flex;
     flex-direction: column;
-    justify-content: stretch;
+    justify-content: center;
     margin: 0;
-    
+   
 }
 
 .svg-container {
     display: flex;
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
+    height :25px;
+    
 }
 
 .bottom-nav-text {
     color: #9e9e9e;
+    
 }
 
 p {
