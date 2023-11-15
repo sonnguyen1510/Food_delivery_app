@@ -6,12 +6,16 @@ using System.Threading.Tasks;
 
 namespace MoneyStatistic.Pages.Analysis.Object
 {
-    internal class Transaction_byWeek
+    public class Transaction_byWeek
     {
         public string startDate {  get; set; }
         public string endDate { get; set; }
 
         public List<Transaction_byDay> transaction_ByDays { get; set; } = new List<Transaction_byDay>();
+
+        public int numOfIncome { get; set; } = 0;
+
+        public int numOfExpense { get; set; } = 0;
 
         public decimal TotalIncome { get; set; } = 0;
 

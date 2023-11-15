@@ -48,49 +48,80 @@
 
                     </div>
                     <div class="transaction-list-container-analysis">
-                        @if (userTransactions != null)
+                        @if (Transaction_data != null)
                         {
-                            @foreach (var item in userTransactions)
+                            @foreach(var Weekittem in Transaction_data)                               
                             {
-                                if (TransactionType.Equals("income"))
+                                if (Weekittem.transaction_ByDays.Count != 0)
                                 {
-                                    if (item.TransType.Equals("income"))
+                                    @if (TransactionType.Equals("income") && Weekittem.numOfIncome !=0)
                                     {
-                                        <div class="transaction-item-container divider">
-                                            <div class="transaction-item-info-container">
-
-                                                <div class="user-detail">
-                                                    <p class="user-name">@item.Title</p>
-                                                </div>
+                                        <div class="Transaction-analysis-weekitem-container income-border">
+                                            <div class="Transaction-analysis-weekitem-title-container incomeTitle">
+                                                <p class="Transaction-analysis-weekitem-weeknum">Week</p>
+                                                <p class="Transaction-analysis-weekitem-title">@ConvertDateFormat(Weekittem.startDate) - @ConvertDateFormat(Weekittem.endDate) </p>
                                             </div>
-                                            <div class="transaction-item-amount-container">
-                                                <div class="income-transaction-item-container">
-                                                    <p class="number-style income-money">+$@item.Amount</p>
+                                            <div class="Transaction-analysis-weekitem-information-container">
 
-                                                </div>
-                                            </div>
+                                            @foreach (var Dayitem in Weekittem.transaction_ByDays)
+                                            {
+                                                @foreach (var trans in Dayitem.IncomeTransaction)
+                                                {
+                                                    <div class="transaction-item-container divider">
+                                                        <div class="transaction-item-info-container">
+                                                            <div class="user-detail">
+                                                                <p class="user-name">@trans.Title</p>
+                                                                <p class="status-day">@trans.CreDate?.ToString("yyyy-MM-dd")</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="transaction-item-amount-container">
+                                                            <div class="income-transaction-item-container">
+                                                                    <p class="number-style income-money">+@trans.Amount$</p>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                }
+                                            }
                                         </div>
-                                    }
+                                    </div>
                                 }
                                 else
                                 {
-                                    if (item.TransType.Equals("expense"))
-                                    {
-                                        <div class="transaction-item-container divider">
-                                            <div class="transaction-item-info-container">
-
-                                                <div class="user-detail">
-                                                    <p class="user-name">@item.Title</p>
-                                                </div>
+                                        if (TransactionType.Equals("expense") && Weekittem.numOfExpense != 0)
+                                        {
+                                        <div class="Transaction-analysis-weekitem-container expense-border">
+                                            <div class="Transaction-analysis-weekitem-title-container expenseTitle">
+                                                    <p class="Transaction-analysis-weekitem-weeknum">Week</p>
+                                                <p class="Transaction-analysis-weekitem-title">@ConvertDateFormat(Weekittem.startDate) - @ConvertDateFormat(Weekittem.endDate) </p>
                                             </div>
-                                            <div class="transaction-item-amount-container">
-                                                <div class="expense-transaction-item-container">
-                                                    <p class="number-style expense-money">-$@item.Amount</p>
+                                            <div class="Transaction-analysis-weekitem-information-container">
+                                            @foreach (var Dayitem in Weekittem.transaction_ByDays)
+                                            {
+                                                @foreach (var trans in Dayitem.ExpenseTransaction)
+                                                {
+                                                    <div class="transaction-item-container divider">
+                                                        <div class="transaction-item-info-container">
 
-                                                </div>
-                                            </div>
+                                                            <div class="user-detail">
+                                                                <p class="user-name">@trans.Title</p>
+                                                                <p class="status-day">@trans.CreDate?.ToString("yyyy-MM-dd")</p>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="transaction-item-amount-container">
+                                                            <div class="expense-transaction-item-container">
+                                                                <p class="number-style expense-money">-@trans.Amount$</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                }
+                                            }
+                                            
                                         </div>
+                                    </div>
                                     }
+                                }
                                 }
                             }
                         }
@@ -109,7 +140,7 @@
 @code {
     private List<UserTransaction> userTransactions { get; set; } = null;
 
-    private List<Transaction_byWeek> Transaction_data { get; set; } 
+    private List<Transaction_byWeek> Transaction_data { get; set; } = new List<Transaction_byWeek>();
 
     HttpClient client = new HttpClient();
     private String TransactionType { get; set; } = "income";
@@ -136,30 +167,55 @@
 
     private BarChartDataset<double> GetBarChartDataset()
     {
-        return new()
-            {
-                Label = $"{TransactionType} money",
-                Data = RandomizeData(),
-                BackgroundColor = backgroundColors,
-                BorderColor = borderColors,
-                BorderWidth = 1
-            };
+        if (TransactionType.Equals("expense"))
+        {
+            return new()
+                {
+                    Label = $"{TransactionType} money",
+                    Data = GetData(),
+                    BackgroundColor = ExpenseColors,
+                    BorderColor = ExpenseborderColors,
+                    BorderWidth = 1
+                };
+        }
+        else
+        {
+            return new()
+                {
+                    Label = $"{TransactionType} money",
+                    Data = GetData(),
+                    BackgroundColor = IncomeColors,
+                    BorderColor = IncomeborderColors,
+                    BorderWidth = 1
+                };
+        }
     }
 
+
     string[] Labels = null;
-    List<string> backgroundColors = new List<string> { ChartColor.FromRgba(255, 99, 132, 0.2f), ChartColor.FromRgba(54, 162, 235, 0.2f), ChartColor.FromRgba(255, 206, 86, 0.2f), ChartColor.FromRgba(75, 192, 192, 0.2f), ChartColor.FromRgba(153, 102, 255, 0.2f)};
-    List<string> borderColors = new List<string> { ChartColor.FromRgba(255, 99, 132, 1f), ChartColor.FromRgba(54, 162, 235, 1f), ChartColor.FromRgba(255, 206, 86, 1f), ChartColor.FromRgba(75, 192, 192, 1f), ChartColor.FromRgba(153, 102, 255, 1f) };
+    List<string> ExpenseColors = new List<string> { ChartColor.FromRgba(255, 99, 132, 0.2f)};
+    List<string> ExpenseborderColors = new List<string> { ChartColor.FromRgba(255, 99, 132, 1f) };
 
-    List<double> RandomizeData()
+    List<string> IncomeColors = new List<string> { ChartColor.FromRgba(147, 250, 165, 0.2f) };
+    List<string> IncomeborderColors = new List<string> { ChartColor.FromRgba(46, 204, 113, 1f) };
+
+    List<double> GetData()
     {
-        var r = new Random(DateTime.Now.Millisecond);
+        List<double> data = new List<double>();
 
-        return new List<double> {
-            r.Next( 3, 50 ) * r.NextDouble(),
-            r.Next( 3, 50 ) * r.NextDouble(),
-            r.Next( 3, 50 ) * r.NextDouble(),
-            r.Next( 3, 50 ) * r.NextDouble(),
-            r.Next( 3, 50 ) * r.NextDouble(),};
+        Transaction_data.ForEach(item =>
+        {
+            if (TransactionType.Equals("income"))
+            {
+                data.Add((double)item.TotalIncome);
+            }
+            else
+            {
+                data.Add((double)item.TotalExpense);
+            }
+        });
+
+        return data;
     }
 
     Task OnClicked(ChartMouseEventArgs e)
@@ -176,13 +232,10 @@
         {
             try
             {
-                // Define the API endpoint URL
-                var apiUrl = $"https://localhost:{PORT}/transaction/GetALlTransaction";
-
-                // Send an HTTP GET request to the API
-                userTransactions = await client.GetFromJsonAsync<List<UserTransaction>>(apiUrl);
-
+                await generateTransactionList("06-2021");
                 Labels = GenerateLabels("06-2021");
+
+                await HandleRedraw();
                 /**
                  userTransactions.ForEach(item =>
                 {
@@ -210,21 +263,40 @@
 
     private async Task<List<UserTransaction>> getTransaction(string StartDay , string EndDay)
     {
-        // Define the API endpoint URL
-        var apiUrl = $"https://localhost:{PORT}/transaction/GetTransactionByRangeofDay?StartDay={StartDay}&EndDay={EndDay}";
+        while(true) {
+            try
+            {
 
-        // Send an HTTP GET request to the API
-        return await client.GetFromJsonAsync<List<UserTransaction>>(apiUrl);
+                // Define the API endpoint URL
+                var apiUrl = $"https://localhost:{PORT}/transaction/GetTransactionByRangeofDay?StartDay={StartDay}&EndDay={EndDay}";
+
+                // Send an HTTP GET request to the API
+                return await client.GetFromJsonAsync<List<UserTransaction>>(apiUrl);
+            }
+            catch (Exception)
+            {
+                // Handle any other unexpected exceptions
+                await Swal.FireAsync(new SweetAlertOptions
+                    {
+                        Title = "The Internet?",
+                        Text = "Can't connect to server, please try again!",
+                        Icon = "question",
+
+                    });
+            }
+        }
 
     }
 
-    public async void generateTransactionList(DateTime Date)
+    public async Task generateTransactionList(string Date)
     {
-        String[] DayInformation = Date.ToString("MM-yyyy").Split('-');
+        String[] DayInformation = Date.Split('-');
 
         DateTime startDate = new DateTime(int.Parse(DayInformation[1]), int.Parse(DayInformation[0]), 1);
 
         DateTime endDate = startDate.AddMonths(1).AddDays(-1);
+
+        userTransactions = await getTransaction(startDate.ToString("dd-MM-yyyy"), endDate.ToString("dd-MM-yyyy"));
 
         int startDay = startDate.Day;
         int endDay = endDate.Day;
@@ -239,69 +311,118 @@
                 Transaction_byWeek TrBW = new Transaction_byWeek();
                 TrBW.startDate = $"{current}-{int.Parse(DayInformation[0])}-{int.Parse(DayInformation[1])}";
                 TrBW.endDate = $"{current + 6}-{int.Parse(DayInformation[0])}-{int.Parse(DayInformation[1])}";
-
                 Transaction_data.Add(TrBW);
+                current = current + 7;
             }
             else
             {
                 Transaction_byWeek TrBW = new Transaction_byWeek();
                 TrBW.startDate = $"{current}-{int.Parse(DayInformation[0])}-{int.Parse(DayInformation[1])}";
                 TrBW.endDate = $"{endDay}-{int.Parse(DayInformation[0])}-{int.Parse(DayInformation[1])}";
-
                 Transaction_data.Add(TrBW);
+                current = current + 7;
             }
         }
 
-        List<UserTransaction> users = await getTransaction(startDate.ToString("dd-MM-yyyy"), endDate.ToString("dd-MM-yyyy"));
+        //List<UserTransaction> users = await getTransaction(startDate.ToString("dd-MM-yyyy"), endDate.ToString("dd-MM-yyyy"));
 
 
-        users.ForEach(item =>{
-            Transaction_data.ForEach(trans =>
+        userTransactions.ForEach(item =>{
+            for (int i = 0 ; i < 5; i++)
             {
-                if (IsCurrentDayInRange(trans.startDate,trans.endDate,item.CreDate?.ToString("dd-MM-yyyy")))
+                if (IsCurrentDayInRange(Transaction_data[i].startDate, Transaction_data[i].endDate, item.CreDate?.ToString("dd-MM-yyyy")))
                 {
                     if (item.TransType.Equals("income"))
                     {
                         Transaction_byDay Tr_BD = new Transaction_byDay();
                         Tr_BD.IncomeTransaction.Add(item);
-                        trans.transaction_ByDays.Add(Tr_BD);
+                        Transaction_data[i].transaction_ByDays.Add(Tr_BD);
+                        Transaction_data[i].numOfIncome = Transaction_data[i].numOfIncome + 1;
                     }
                     else
                     {
                         Transaction_byDay Tr_BD = new Transaction_byDay();
                         Tr_BD.ExpenseTransaction.Add(item);
-                        trans.transaction_ByDays.Add(Tr_BD);
+                        Transaction_data[i].transaction_ByDays.Add(Tr_BD);
+                        Transaction_data[i].numOfExpense = Transaction_data[i].numOfExpense + 1;
                     }
                 }
-            });
+            }
         });
+
+        for (int i = 0 ; i <5 ; i++)
+        {
+            Transaction_data[i].TotalWeekIncome();
+            Transaction_data[i].TotalWeekExpense();
+        }
     }
 
     public static bool IsCurrentDayInRange(string startDay, string endDay, string currentDay)
     {
-        DateTime startDate, endDate, currentDate;
+        int[] startDateData = SplitDateString(startDay);
+        int[] endDateData = SplitDateString(endDay);
+        int[] currentDateData = SplitDateString(currentDay);
 
-        if (DateTime.TryParseExact(startDay, "dd-MM-yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None, out startDate)
-            && DateTime.TryParseExact(endDay, "dd-MM-yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None, out endDate)
-            && DateTime.TryParseExact(currentDay, "dd-MM-yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None, out currentDate))
+        if (currentDateData[2] >= startDateData[2] && currentDateData[2] <= endDateData[2])
         {
             // Check if the current day is between start and end days
-            return currentDate >= startDate && currentDate <= endDate;
-        }
+            if (currentDateData[1] >= startDateData[1] && currentDateData[1] <= endDateData[1])
+            {
+                if (currentDateData[0] >= startDateData[0] && currentDateData[0] <= endDateData[0])
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            else
+            {
+                return false;
+            }
 
-        // If parsing fails for any date string, return false
-        return false;
+        }
+        else
+        {
+            return false;
+        }
     }
 
-    private void SetIncome()
+    public static string ConvertDateFormat(string inputDateString)
+    {
+        String[] splitData = inputDateString.Split("-");
+        return $"{splitData[0]}/{splitData[1]}/{splitData[2]}";
+    }
+
+    public static int[] SplitDateString(string dateString)
+    {
+        string[] dateParts = dateString.Split('-');
+
+        if (dateParts.Length == 3 &&
+            int.TryParse(dateParts[0], out int day) &&
+            int.TryParse(dateParts[1], out int month) &&
+            int.TryParse(dateParts[2], out int year))
+        {
+            return new int[] { day, month, year };
+        }
+        else
+        {
+            // Handle invalid date string
+            throw new ArgumentException("Invalid date string format");
+        }
+    }
+
+    private async Task SetIncome()
     {
         TransactionType = "income";
-        
+        await HandleRedraw();
     }
 
-    private void SetExpense()
+    private async Task SetExpense()
     {
         TransactionType = "expense";
+        await HandleRedraw();
     }
 
     public string[] GenerateLabels(string monthYear)

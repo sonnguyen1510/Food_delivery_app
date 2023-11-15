@@ -60,6 +60,18 @@ VALUES ('06','Food&Dring','expense','Food&Dring','09:24:00.0000000','2021-05-02'
 INSERT INTO UserTransaction
 VALUES ('07','Salary','income','Salary','12:00:00.0000000','2021-05-12',1600,'U789012',1);
 
+INSERT INTO UserTransaction
+VALUES ('Salary','income','Salary','11:25:00.0000000','2021-06-23',4000,1,1);
+
+INSERT INTO UserTransaction
+VALUES ('Mother money','income','Money','11:25:00.0000000','2021-06-24',1000,1,1);
+
+INSERT INTO UserTransaction
+VALUES ('Bussiness','income','Bussiness','11:25:00.0000000','2021-06-25',2400,1,1);
+
+INSERT INTO UserTransaction
+VALUES ('Bussiness','income','Bussiness','11:25:00.0000000','2021-06-21',3000,1,1);
+
 select * from UserTransaction
 select CreDate,Amount 
 from UserTransaction 

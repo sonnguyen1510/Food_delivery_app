@@ -5,7 +5,9 @@ C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneySt
 C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\Azure.Identity.dll
 C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\BlazorAnimate.dll
 C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\Blazorise.dll
+C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\Blazorise.Bootstrap.dll
 C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\Blazorise.Charts.dll
+C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\Blazorise.Icons.FontAwesome.dll
 C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\Blazorise.Licensing.dll
 C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\CommunityToolkit.Mvvm.dll
 C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\CurrieTechnologies.Razor.SweetAlert2.dll

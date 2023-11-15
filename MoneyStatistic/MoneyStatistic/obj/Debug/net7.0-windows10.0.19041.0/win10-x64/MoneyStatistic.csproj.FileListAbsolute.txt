@@ -1,3 +1,4 @@
+C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Private.CoreLib.dll
 C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\MoneyStatistic.exe
 C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Platforms\Windows\App.xbf
 C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\MoneyStatistic.deps.json
@@ -10,7 +11,9 @@ C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneySt
 C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Azure.Identity.dll
 C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\BlazorAnimate.dll
 C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Blazorise.dll
+C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Blazorise.Bootstrap.dll
 C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Blazorise.Charts.dll
+C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Blazorise.Icons.FontAwesome.dll
 C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Blazorise.Licensing.dll
 C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\CommunityToolkit.Mvvm.dll
 C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\CurrieTechnologies.Razor.SweetAlert2.dll
@@ -185,7 +188,6 @@ C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneySt
 C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Numerics.Vectors.dll
 C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Numerics.dll
 C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.ObjectModel.dll
-C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Private.CoreLib.dll
 C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Private.DataContractSerialization.dll
 C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Private.Uri.dll
 C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Private.Xml.Linq.dll
@@ -676,5 +678,3 @@ C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneySt
 C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\qualifiers.txt.intermediate
 C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\MultipleQualifiersPerDimensionFound.txt
 C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\ProjectArchitectures.txt
-C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Blazorise.Bootstrap.dll
-C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Blazorise.Icons.FontAwesome.dll

@@ -34,7 +34,7 @@
                 <div class="display-transaction">
                     <div class="display-transaction-detail">
                         <p style="color : white">Balance</p>
-                        <p class="balance-display">$@Balance.ToString()</p>
+                        <p class="balance-display">@Balance.ToString()$</p>
                     </div>
                     <div>
                         <input @bind=CurrentMonth class="display-transaction-daypicker" type="month">
@@ -47,7 +47,7 @@
                                 <p class="income-money title">Income</p>
                             </div>
                             <div class="income-amount">
-                                <p class="number-style income-money">$@Income.ToString()</p>
+                                <p class="number-style income-money">@Income.ToString()$</p>
                             </div>
                         </div>
                         <div>
@@ -60,7 +60,7 @@
                                 <p class="expense-money title">Expense</p>
                             </div>
                             <div class="expense-amount">
-                                <p class="number-style expense-money">$@Expense.ToString()</p>
+                                <p class="number-style expense-money">@Expense.ToString()$</p>
                             </div>
                         </div>
                         <div>
@@ -96,14 +96,14 @@
                                 @if (item.TransType.Equals("income"))
                                 {
                                     <div class="income-transaction-item-container">
-                                        <p class="number-style income-money">+$@item.Amount</p><img src="up-arrow-svgrepo-com-transitem.svg" />
+                                        <p class="number-style income-money">+@item.Amount$</p><img src="up-arrow-svgrepo-com-transitem.svg" />
 
                                     </div>
                                 }
                                 else
                                 {
                                     <div class="expense-transaction-item-container">
-                                        <p class="number-style expense-money">-$@item.Amount</p>
+                                        <p class="number-style expense-money">-@item.Amount$</p>
                                         <img src="down-arrow-svgrepo-com-transitem.svg">
                                     </div>
                                 }
