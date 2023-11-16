@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Models.EF.JSON;
 using Models.EF.MoneyManagerService;
 using Models.EF;
+using Azure.Identity;
 
 namespace MoneyManagerService.Controllers
 {
@@ -18,9 +19,9 @@ namespace MoneyManagerService.Controllers
         }
 
         [HttpGet]
-        public decimal LoginCheck([FromBody] LoginBody value)
+        public decimal LoginCheck([FromQuery] string Username, [FromQuery] string password)
         {
-            User user = db.Users.Where(item=>item.Username == value.Username && item.Password == value.Password).FirstOrDefault();
+            User user = db.Users.Where(item=>item.Username == Username && item.Password == password).FirstOrDefault();
             if (user == null)
             {
                 return -1;

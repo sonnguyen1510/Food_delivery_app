@@ -1,0 +1,119 @@
+﻿
+@using MoneyStatistic.Data;
+@inject AppDbContext DbContext
+@using System.Net.Http;
+@using System.Net.Http.Json;
+@inject SweetAlertService Swal;
+
+<head>
+    <link rel="stylesheet" href="./css/Login.css" />
+</head>
+<body>
+    <div class="screen">
+        <div class="container">
+           <div class="Login-title-container">
+               Login
+           </div>
+           <div class="Login-input-field-container">               
+               <div class="input-username-container">
+                    <div class="input-username">
+                        Username
+                    </div>
+                    <div>
+                        <img class="input-field-username-icon" src="user-svgrepo-com.svg" />
+                        <input class="input-field-username" @bind = "username" type="text" placeholder="Type your username"/>
+                    </div>
+               </div>
+               
+                <div class="input-password-container">
+                    <div class="input-password">
+                        Password
+                    </div>
+                    <div>
+                        <img class="input-field-password-icon" src="lock-alt-svgrepo-com.svg"/>
+                        <input class="input-field-password" @bind ="password"  type="password" placeholder="Type your password" />
+                    </div>
+               </div>
+           </div>
+            <div class="retrieve-password-container">
+                <a class="retrieve-password"></a>
+                <a class="signup-account"></a>
+           </div>
+            <div class="sign-in-button-container">
+                <button Class="sign-in-button" @onclick = "login">LOGIN</button>
+           </div>
+            <div class="sign-in-group-button-container">
+                <div class="sign-in-group-method">
+                   Or Sign Up Using
+               </div>
+               <div>
+                    <img class="facebook-signup-button" src="Facebook_Logo.png" />
+                    <img class="twitter-signup-button" src="X-Logo.png" />
+                    <img class="google-signup-button" src="google_icon.png" />
+               </div>
+           </div>
+            <div class="sign-up-button-container">
+
+           </div>
+        </div>
+    </div>
+</body>
+
+
+@code {
+    public string password { get; set; }
+
+    public string username { get; set; }
+
+    HttpClient client = new HttpClient();
+
+    [Inject]
+    NavigationManager navigationManager { get; set; }
+
+    private int PORT = 7040;
+
+    public async Task login()
+    {
+        while (true)
+        {
+            try
+            {
+                // Define the API endpoint URL
+                var apiUrl = $"https://localhost:{PORT}/Login/Login/LoginCheck?Username={username}&password={password}";
+
+                // Send an HTTP GET request to the API
+                int Id = await client.GetFromJsonAsync<int>(apiUrl);
+
+                if(Id < 0)
+                {
+                    await Swal.FireAsync(new SweetAlertOptions
+                        {
+                            Title = "Login Fail",
+                            Text = "Username or password are incorrrect!",
+                            Icon = "error",
+
+                        });
+                }
+                else
+                {  
+                    navigationManager.NavigateTo($"/mainpage/{Id}");
+                }
+                break;
+            }
+
+            catch (Exception)
+            {
+                // Handle any other unexpected exceptions
+                await Swal.FireAsync(new SweetAlertOptions
+                    {
+                        Title = "The Internet?",
+                        Text = "Can't connect to server, please try again!",
+                        Icon = "question",
+
+                    });
+
+                break;
+            }
+        }
+    }
+}

@@ -2152,6 +2152,9 @@
     <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\wwwroot\css\Home.css">
       <PackagePath>wwwroot\css\Home.css</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\wwwroot\css\Login.css">
+      <PackagePath>wwwroot\css\Login.css</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\wwwroot\css\MainLayout.css">
       <PackagePath>wwwroot\css\MainLayout.css</PackagePath>
     </AppxPackagedFile>
@@ -2191,11 +2194,17 @@
     <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\wwwroot\Excercise.png">
       <PackagePath>wwwroot\Excercise.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\wwwroot\Facebook_Logo.png">
+      <PackagePath>wwwroot\Facebook_Logo.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\wwwroot\favicon.ico">
       <PackagePath>wwwroot\favicon.ico</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\wwwroot\Food&amp;Dring.png">
       <PackagePath>wwwroot\Food&amp;Dring.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\wwwroot\google_icon.png">
+      <PackagePath>wwwroot\google_icon.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\wwwroot\heading-svgrepo-com.svg">
       <PackagePath>wwwroot\heading-svgrepo-com.svg</PackagePath>
@@ -2220,6 +2229,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\wwwroot\left-chevron-svgrepo-com.svg">
       <PackagePath>wwwroot\left-chevron-svgrepo-com.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\wwwroot\lock-alt-svgrepo-com.svg">
+      <PackagePath>wwwroot\lock-alt-svgrepo-com.svg</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\wwwroot\Money.png">
       <PackagePath>wwwroot\Money.png</PackagePath>
@@ -2253,6 +2265,12 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\wwwroot\user-alt-1-svgrepo-com.svg">
       <PackagePath>wwwroot\user-alt-1-svgrepo-com.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\wwwroot\user-svgrepo-com.svg">
+      <PackagePath>wwwroot\user-svgrepo-com.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\wwwroot\X-Logo.png">
+      <PackagePath>wwwroot\X-Logo.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-100.png">
       <PackagePath>splashSplashScreen.scale-100.png</PackagePath>

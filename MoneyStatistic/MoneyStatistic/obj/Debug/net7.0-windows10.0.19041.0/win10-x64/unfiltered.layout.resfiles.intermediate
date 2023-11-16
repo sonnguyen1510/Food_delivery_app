@@ -191,6 +191,7 @@ wwwroot\css\bootstrap\bootstrap.min.css
 wwwroot\css\bootstrap\bootstrap.min.css.map
 wwwroot\css\Bottomnav.css
 wwwroot\css\Home.css
+wwwroot\css\Login.css
 wwwroot\css\MainLayout.css
 wwwroot\css\open-iconic\font\css\open-iconic-bootstrap.min.css
 wwwroot\css\open-iconic\font\fonts\open-iconic.eot
@@ -204,8 +205,10 @@ wwwroot\css\open-iconic\README.md
 wwwroot\down-arrow-svgrepo-com.svg
 wwwroot\down-arrow-svgrepo-com-transitem.svg
 wwwroot\Excercise.png
+wwwroot\Facebook_Logo.png
 wwwroot\favicon.ico
 wwwroot\Food&Dring.png
+wwwroot\google_icon.png
 wwwroot\heading-svgrepo-com.svg
 wwwroot\Health.png
 wwwroot\home-svgrepo-com.svg
@@ -214,6 +217,7 @@ wwwroot\index.html
 wwwroot\Js\home.js
 wwwroot\Learning.png
 wwwroot\left-chevron-svgrepo-com.svg
+wwwroot\lock-alt-svgrepo-com.svg
 wwwroot\Money.png
 wwwroot\money-bag-svgrepo-com.svg
 wwwroot\money-svgrepo-com.svg
@@ -225,3 +229,5 @@ wwwroot\up-arrow-svgrepo-com.svg
 wwwroot\up-arrow-svgrepo-com-transitem.svg
 wwwroot\user_default.png
 wwwroot\user-alt-1-svgrepo-com.svg
+wwwroot\user-svgrepo-com.svg
+wwwroot\X-Logo.png

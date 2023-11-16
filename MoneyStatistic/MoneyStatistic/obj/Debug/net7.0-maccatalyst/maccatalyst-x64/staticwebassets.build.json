@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "wVqQeFGsWLvi/CTclSjPSfIwh1+sF8DCKJM6xdpMPpE=",
+  "Hash": "yv9pmSshQftFVmFJ054eiwH6Wjmc+11U8Hwt381G3aA=",
   "Source": "MoneyStatistic",
   "BasePath": "/",
   "Mode": "Root",
@@ -2312,6 +2312,23 @@
       "OriginalItemSpec": "wwwroot\\css\\Home.css"
     },
     {
+      "Identity": "C:\\Users\\NguyenXuanSon\\Documents\\GitHub\\Food_delivery_app\\MoneyStatistic\\MoneyStatistic\\wwwroot\\css\\Login.css",
+      "SourceId": "MoneyStatistic",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\NguyenXuanSon\\Documents\\GitHub\\Food_delivery_app\\MoneyStatistic\\MoneyStatistic\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "css/Login.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Login.css"
+    },
+    {
       "Identity": "C:\\Users\\NguyenXuanSon\\Documents\\GitHub\\Food_delivery_app\\MoneyStatistic\\MoneyStatistic\\wwwroot\\css\\MainLayout.css",
       "SourceId": "MoneyStatistic",
       "SourceType": "Discovered",
@@ -2533,6 +2550,23 @@
       "OriginalItemSpec": "wwwroot\\Excercise.png"
     },
     {
+      "Identity": "C:\\Users\\NguyenXuanSon\\Documents\\GitHub\\Food_delivery_app\\MoneyStatistic\\MoneyStatistic\\wwwroot\\Facebook_Logo.png",
+      "SourceId": "MoneyStatistic",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\NguyenXuanSon\\Documents\\GitHub\\Food_delivery_app\\MoneyStatistic\\MoneyStatistic\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "Facebook_Logo.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Facebook_Logo.png"
+    },
+    {
       "Identity": "C:\\Users\\NguyenXuanSon\\Documents\\GitHub\\Food_delivery_app\\MoneyStatistic\\MoneyStatistic\\wwwroot\\favicon.ico",
       "SourceId": "MoneyStatistic",
       "SourceType": "Discovered",
@@ -2565,6 +2599,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Food&Dring.png"
+    },
+    {
+      "Identity": "C:\\Users\\NguyenXuanSon\\Documents\\GitHub\\Food_delivery_app\\MoneyStatistic\\MoneyStatistic\\wwwroot\\google_icon.png",
+      "SourceId": "MoneyStatistic",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\NguyenXuanSon\\Documents\\GitHub\\Food_delivery_app\\MoneyStatistic\\MoneyStatistic\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "google_icon.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\google_icon.png"
     },
     {
       "Identity": "C:\\Users\\NguyenXuanSon\\Documents\\GitHub\\Food_delivery_app\\MoneyStatistic\\MoneyStatistic\\wwwroot\\heading-svgrepo-com.svg",
@@ -2701,6 +2752,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\left-chevron-svgrepo-com.svg"
+    },
+    {
+      "Identity": "C:\\Users\\NguyenXuanSon\\Documents\\GitHub\\Food_delivery_app\\MoneyStatistic\\MoneyStatistic\\wwwroot\\lock-alt-svgrepo-com.svg",
+      "SourceId": "MoneyStatistic",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\NguyenXuanSon\\Documents\\GitHub\\Food_delivery_app\\MoneyStatistic\\MoneyStatistic\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "lock-alt-svgrepo-com.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lock-alt-svgrepo-com.svg"
     },
     {
       "Identity": "C:\\Users\\NguyenXuanSon\\Documents\\GitHub\\Food_delivery_app\\MoneyStatistic\\MoneyStatistic\\wwwroot\\Money.png",
@@ -2888,6 +2956,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\user-alt-1-svgrepo-com.svg"
+    },
+    {
+      "Identity": "C:\\Users\\NguyenXuanSon\\Documents\\GitHub\\Food_delivery_app\\MoneyStatistic\\MoneyStatistic\\wwwroot\\user-svgrepo-com.svg",
+      "SourceId": "MoneyStatistic",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\NguyenXuanSon\\Documents\\GitHub\\Food_delivery_app\\MoneyStatistic\\MoneyStatistic\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "user-svgrepo-com.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\user-svgrepo-com.svg"
+    },
+    {
+      "Identity": "C:\\Users\\NguyenXuanSon\\Documents\\GitHub\\Food_delivery_app\\MoneyStatistic\\MoneyStatistic\\wwwroot\\X-Logo.png",
+      "SourceId": "MoneyStatistic",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\NguyenXuanSon\\Documents\\GitHub\\Food_delivery_app\\MoneyStatistic\\MoneyStatistic\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "X-Logo.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\X-Logo.png"
     }
   ]
 }

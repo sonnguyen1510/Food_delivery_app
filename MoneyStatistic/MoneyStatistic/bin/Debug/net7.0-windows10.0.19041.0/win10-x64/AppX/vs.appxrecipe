@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-11-16T03:55:44.601</Modified>
+      <Modified>2023-11-16T09:45:52.647</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2023-11-15T09:02:05.675</Modified>
+      <Modified>2023-11-16T07:55:34.239</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\MoneyStatistic.runtimeconfig.json">
       <PackagePath>MoneyStatistic.runtimeconfig.json</PackagePath>
@@ -44,11 +44,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\MoneyStatistic.dll">
       <PackagePath>MoneyStatistic.dll</PackagePath>
-      <Modified>2023-11-16T03:55:42.710</Modified>
+      <Modified>2023-11-16T09:45:50.740</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>MoneyStatistic.exe</PackagePath>
-      <Modified>2023-11-16T03:55:42.726</Modified>
+      <Modified>2023-11-16T09:45:50.753</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\NguyenXuanSon\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.13\runtimes\win-x64\lib\net7.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -2300,7 +2300,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\MoneyStatistic.deps.json">
       <PackagePath>MoneyStatistic.deps.json</PackagePath>
-      <Modified>2023-11-16T03:55:44.320</Modified>
+      <Modified>2023-11-16T09:45:52.347</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\NguyenXuanSon\.nuget\packages\humanizer.core\2.14.1\lib\net6.0\Humanizer.dll">
       <PackagePath>Humanizer.dll</PackagePath>
@@ -2870,6 +2870,10 @@
       <PackagePath>wwwroot\css\Home.css</PackagePath>
       <Modified>2023-11-13T04:25:16.932</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\wwwroot\css\Login.css">
+      <PackagePath>wwwroot\css\Login.css</PackagePath>
+      <Modified>2023-11-16T07:18:08.490</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\wwwroot\css\MainLayout.css">
       <PackagePath>wwwroot\css\MainLayout.css</PackagePath>
       <Modified>2023-11-08T03:35:25.215</Modified>
@@ -2922,6 +2926,10 @@
       <PackagePath>wwwroot\Excercise.png</PackagePath>
       <Modified>2023-11-07T01:52:17.824</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\wwwroot\Facebook_Logo.png">
+      <PackagePath>wwwroot\Facebook_Logo.png</PackagePath>
+      <Modified>2023-11-16T07:02:40.147</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\wwwroot\favicon.ico">
       <PackagePath>wwwroot\favicon.ico</PackagePath>
       <Modified>2023-11-07T01:52:17.841</Modified>
@@ -2929,6 +2937,10 @@
     <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\wwwroot\Food&amp;Dring.png">
       <PackagePath>wwwroot\Food&amp;Dring.png</PackagePath>
       <Modified>2023-11-07T01:52:17.824</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\wwwroot\google_icon.png">
+      <PackagePath>wwwroot\google_icon.png</PackagePath>
+      <Modified>2023-11-16T07:02:12.956</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\wwwroot\heading-svgrepo-com.svg">
       <PackagePath>wwwroot\heading-svgrepo-com.svg</PackagePath>
@@ -2961,6 +2973,10 @@
     <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\wwwroot\left-chevron-svgrepo-com.svg">
       <PackagePath>wwwroot\left-chevron-svgrepo-com.svg</PackagePath>
       <Modified>2023-11-09T07:22:11.771</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\wwwroot\lock-alt-svgrepo-com.svg">
+      <PackagePath>wwwroot\lock-alt-svgrepo-com.svg</PackagePath>
+      <Modified>2023-11-16T06:51:11.625</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\wwwroot\Money.png">
       <PackagePath>wwwroot\Money.png</PackagePath>
@@ -3004,7 +3020,15 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\wwwroot\user-alt-1-svgrepo-com.svg">
       <PackagePath>wwwroot\user-alt-1-svgrepo-com.svg</PackagePath>
-      <Modified>2023-11-07T01:52:17.841</Modified>
+      <Modified>2023-11-16T06:48:58.928</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\wwwroot\user-svgrepo-com.svg">
+      <PackagePath>wwwroot\user-svgrepo-com.svg</PackagePath>
+      <Modified>2023-11-16T06:52:58.520</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\wwwroot\X-Logo.png">
+      <PackagePath>wwwroot\X-Logo.png</PackagePath>
+      <Modified>2023-11-16T07:03:01.674</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-100.png">
       <PackagePath>splashSplashScreen.scale-100.png</PackagePath>
