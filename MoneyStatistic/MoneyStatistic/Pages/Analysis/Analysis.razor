@@ -54,7 +54,7 @@
                             {
                                 if (Weekittem.transaction_ByDays.Count != 0)
                                 {
-                                    @if (TransactionType.Equals("income") && Weekittem.numOfIncome !=0)
+                                    @if (TransactionType.Equals("income") && Weekittem.numOfIncome != 0)
                                     {
                                         <div class="Transaction-analysis-weekitem-container income-border">
                                             <div class="Transaction-analysis-weekitem-title-container incomeTitle">
@@ -63,65 +63,64 @@
                                             </div>
                                             <div class="Transaction-analysis-weekitem-information-container">
 
-                                            @foreach (var Dayitem in Weekittem.transaction_ByDays)
-                                            {
-                                                @foreach (var trans in Dayitem.IncomeTransaction)
+                                                @foreach (var Dayitem in Weekittem.transaction_ByDays)
                                                 {
-                                                    <div class="transaction-item-container divider">
-                                                        <div class="transaction-item-info-container">
-                                                            <div class="user-detail">
-                                                                <p class="user-name">@trans.Title</p>
-                                                                <p class="status-day">@trans.CreDate?.ToString("yyyy-MM-dd")</p>
+                                                    @foreach (var trans in Dayitem.IncomeTransaction)
+                                                    {
+                                                        <div class="transaction-item-container divider">
+                                                            <div class="transaction-item-info-container">
+                                                                <div class="user-detail">
+                                                                    <p class="user-name">@trans.Title</p>
+                                                                    <p class="status-day">@trans.CreDate?.ToString("yyyy-MM-dd")</p>
+                                                                </div>
                                                             </div>
-                                                        </div>
-                                                        <div class="transaction-item-amount-container">
-                                                            <div class="income-transaction-item-container">
+                                                            <div class="transaction-item-amount-container">
+                                                                <div class="income-transaction-item-container">
                                                                     <p class="number-style income-money">+@trans.Amount$</p>
 
+                                                                </div>
                                                             </div>
                                                         </div>
-                                                    </div>
+                                                    }
                                                 }
-                                            }
+                                            </div>
                                         </div>
-                                    </div>
-                                }
-                                else
-                                {
+                                    }
+                                    else
+                                    {
                                         if (TransactionType.Equals("expense") && Weekittem.numOfExpense != 0)
                                         {
-                                        <div class="Transaction-analysis-weekitem-container expense-border">
-                                            <div class="Transaction-analysis-weekitem-title-container expenseTitle">
-                                                    <p class="Transaction-analysis-weekitem-weeknum">Week</p>
-                                                <p class="Transaction-analysis-weekitem-title">@ConvertDateFormat(Weekittem.startDate) - @ConvertDateFormat(Weekittem.endDate) </p>
-                                            </div>
-                                            <div class="Transaction-analysis-weekitem-information-container">
-                                            @foreach (var Dayitem in Weekittem.transaction_ByDays)
-                                            {
-                                                @foreach (var trans in Dayitem.ExpenseTransaction)
+                                            <div class="Transaction-analysis-weekitem-container expense-border">
+                                                <div class="Transaction-analysis-weekitem-title-container expenseTitle">
+                                                        <p class="Transaction-analysis-weekitem-weeknum">Week</p>
+                                                    <p class="Transaction-analysis-weekitem-title">@ConvertDateFormat(Weekittem.startDate) - @ConvertDateFormat(Weekittem.endDate) </p>
+                                                </div>
+                                                <div class="Transaction-analysis-weekitem-information-container">
+                                                @foreach (var Dayitem in Weekittem.transaction_ByDays)
                                                 {
-                                                    <div class="transaction-item-container divider">
-                                                        <div class="transaction-item-info-container">
+                                                    @foreach (var trans in Dayitem.ExpenseTransaction)
+                                                    {
+                                                        <div class="transaction-item-container divider">
+                                                            <div class="transaction-item-info-container">
 
-                                                            <div class="user-detail">
-                                                                <p class="user-name">@trans.Title</p>
-                                                                <p class="status-day">@trans.CreDate?.ToString("yyyy-MM-dd")</p>
+                                                                <div class="user-detail">
+                                                                    <p class="user-name">@trans.Title</p>
+                                                                    <p class="status-day">@trans.CreDate?.ToString("yyyy-MM-dd")</p>
 
+                                                                </div>
+                                                            </div>
+                                                            <div class="transaction-item-amount-container">
+                                                                <div class="expense-transaction-item-container">
+                                                                    <p class="number-style expense-money">-@trans.Amount$</p>
+                                                                </div>
                                                             </div>
                                                         </div>
-                                                        <div class="transaction-item-amount-container">
-                                                            <div class="expense-transaction-item-container">
-                                                                <p class="number-style expense-money">-@trans.Amount$</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                }
-                                            }
-                                            
-                                        </div>
-                                    </div>
+                                                    }
+                                                }     
+                                                </div>
+                                            </div>
+                                        }
                                     }
-                                }
                                 }
                             }
                         }

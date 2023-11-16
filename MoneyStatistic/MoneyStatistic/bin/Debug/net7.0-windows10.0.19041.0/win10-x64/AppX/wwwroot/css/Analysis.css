@@ -63,7 +63,7 @@
 }
 
 .Transaction-analysis-weekitem-title{
-    
+    margin-right : 5px
 }
 
 
@@ -88,7 +88,7 @@
     flex-direction: column;
     border: 2px solid #000; /* 2px width, solid black color border */
     margin-bottom : 15px;
-    border-radius: 5px;
+    border-radius: 8px;
 
     
 }
@@ -107,6 +107,6 @@
 
 .Transaction-analysis-weekitem-weeknum{
     font-weight : bold;
-    font-size : 20px;
+    font-size : 25px;
     margin-left : 10px;
 }

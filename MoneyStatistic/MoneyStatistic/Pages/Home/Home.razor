@@ -34,7 +34,7 @@
                 <div class="display-transaction">
                     <div class="display-transaction-detail">
                         <p style="color : white">Balance</p>
-                        <p class="balance-display">@Balance.ToString()$</p>
+                        <p class="balance-display">@Sum().ToString()$</p>
                     </div>
                     <div>
                         <input @bind=CurrentMonth class="display-transaction-daypicker" type="month">
@@ -47,7 +47,7 @@
                                 <p class="income-money title">Income</p>
                             </div>
                             <div class="income-amount">
-                                <p class="number-style income-money">@Income.ToString()$</p>
+                                <p class="number-style income-money">@SumIncome().ToString()$</p>
                             </div>
                         </div>
                         <div>
@@ -60,7 +60,7 @@
                                 <p class="expense-money title">Expense</p>
                             </div>
                             <div class="expense-amount">
-                                <p class="number-style expense-money">@Expense.ToString()$</p>
+                                <p class="number-style expense-money">@SumExpense().ToString()$</p>
                             </div>
                         </div>
                         <div>
@@ -73,7 +73,6 @@
                 <div class="">
                     <p class="trans-title"> Transaction</p>
                 </div>
-                
             </div>
             <div class="transaction-list-container">
                 @if (userTransactions != null)
@@ -112,9 +111,6 @@
 
                     }
                 }
-
-
-
             </div>
         </div>
     </div>
@@ -304,8 +300,7 @@
 
 @code {
     private bool eventHandlerRegistered = false;
-    public double Income = 5000;
-    public double Expense = 2000;
+
 
     private DateTime selectedStartDate = DateTime.Now;
     private String selectedStringStartDate;
@@ -316,6 +311,53 @@
     private List<UserTransaction> userTransactions = null;
     HttpClient client = new HttpClient();
     private bool showDialog = false;
+
+    public decimal SumIncome()
+    {
+        if (userTransactions == null)
+        {
+            return 0;
+        }
+        else
+        {
+            decimal Income = 0;
+            userTransactions.ForEach(item =>
+            {
+                if (item.TransType.Equals("income"))
+                {
+                    Income += item?.Amount ?? 0;
+                }
+            });
+            return Income;
+        }
+    }
+
+    public decimal SumExpense()
+    {
+        if (userTransactions == null)
+        {
+            return 0;
+        }
+        else
+        {
+            decimal Expense = 0;
+            userTransactions.ForEach(item =>
+            {
+                if (item.TransType.Equals("expense"))
+                {
+                    Expense += item?.Amount ?? 0 ;
+                }
+            });
+            return Expense;
+        }
+    }
+
+    public decimal Sum(){
+
+        return SumIncome() - SumExpense();
+    }
+        
+    
 
     //API
     private int PORT = 7040;
