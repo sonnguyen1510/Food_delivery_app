@@ -79,7 +79,7 @@
             try
             {
                 // Define the API endpoint URL
-                var apiUrl = $"https://localhost:{PORT}/Login/Login/LoginCheck?Username={username}&password={password}";
+                var apiUrl = $"https://172.16.3.32:{PORT}/Login/Login/LoginCheck?Username={username}&password={password}";
 
                 // Send an HTTP GET request to the API
                 int Id = await client.GetFromJsonAsync<int>(apiUrl);
