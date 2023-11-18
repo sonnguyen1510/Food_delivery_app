@@ -1,4 +1,5 @@
-﻿namespace MoneyStatistic
+﻿
+namespace MoneyStatistic
 {
     public partial class MainPage : ContentPage
     {

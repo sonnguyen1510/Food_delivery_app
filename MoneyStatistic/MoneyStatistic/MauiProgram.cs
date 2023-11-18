@@ -1,6 +1,5 @@
 ﻿using Blazorise;
 using CurrieTechnologies.Razor.SweetAlert2;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using Blazorise.Bootstrap;
 using Blazorise.Icons.FontAwesome;

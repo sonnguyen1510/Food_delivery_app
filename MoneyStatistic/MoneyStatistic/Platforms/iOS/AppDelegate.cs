@@ -1,4 +1,6 @@
 ﻿using Foundation;
+using Microsoft.Maui;
+using Microsoft.Maui.Hosting;
 
 namespace MoneyStatistic
 {
@@ -6,5 +8,6 @@ namespace MoneyStatistic
     public class AppDelegate : MauiUIApplicationDelegate
     {
         protected override MauiApp CreateMauiApp() => MauiProgram.CreateMauiApp();
+
     }
 }

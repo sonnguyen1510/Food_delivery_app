@@ -38,7 +38,7 @@
                         <p class="balance-display">@Sum().ToString()$</p>
                     </div>
                     <div>
-                        <input @bind=CurrentMonth class="display-transaction-daypicker" type="month">
+                        <input @bind="CurrentMonth" class="display-transaction-daypicker" @oninput="change" type="month">                   
                     </div>
                 </div>
                 <div class="income-expense-view">
@@ -298,6 +298,11 @@
     <script src="_content/CurrieTechnologies.Razor.SweetAlert2/sweetAlert2.min.js"></script>
 </body>
 
+@functions{
+
+   
+}
+
 @code {
     private bool eventHandlerRegistered = false;
 
@@ -314,6 +319,30 @@
     //API
     private int PORT = 5050;
     private string HOST = "172.16.3.32";
+
+    public async void change(ChangeEventArgs newMonth)
+    {
+        while (true)
+        {
+            try
+            {
+                await generateTransactionList(ChangeFormatYM_To_MY(newMonth.Value.ToString()));
+                StateHasChanged();
+                break;
+            }
+
+            catch (Exception)
+            {
+                // Handle any other unexpected exceptions
+                await Swal.FireAsync(new SweetAlertOptions
+                    {
+                        Title = "The Internet?",
+                        Text = "Can't connect to server, please try again!",
+                        Icon = "question",
+                    });
+            }
+        }
+    }
 
     public decimal SumIncome()
     {
@@ -803,5 +832,12 @@
         string[] alterTime = time.Split(":");
 
         return $"{alterTime[0]}:{alterTime[1]}";
+    }
+
+    private string ChangeFormatYM_To_MY(string current)
+    {
+        string[] alterMonth = current.Split("-");
+
+        return $"{alterMonth[1]}-{alterMonth[0]}";
     }
 }

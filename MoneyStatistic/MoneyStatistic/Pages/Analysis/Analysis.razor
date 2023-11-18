@@ -41,7 +41,7 @@
                         <p class="trans-title"> Spending statistics</p>
                     </div>
                     <div>
-                        <input @bind=CurrentMonth class="month-picker" type="month">
+                        <input @bind=CurrentMonth class="month-picker" @oninput="change" type="month">
                     </div>
                 </div>
                 <div>
@@ -200,7 +200,30 @@
         }
     }
 
+    public async void change(ChangeEventArgs newMonth)
+    {
+        while (true)
+        {
+            try
+            {
+                await generateTransactionList(ChangeFormatYM_To_MY(newMonth.Value.ToString()));
+                await HandleRedraw();
+                StateHasChanged();
+                break;
+            }
 
+            catch (Exception)
+            {
+                // Handle any other unexpected exceptions
+                await Swal.FireAsync(new SweetAlertOptions
+                    {
+                        Title = "The Internet?",
+                        Text = "Can't connect to server, please try again!",
+                        Icon = "question",
+                    });
+            }
+        }
+    }
 
 
     string[] Labels = null;
@@ -463,5 +486,12 @@
         }
 
         return labels;
+    }
+
+    private string ChangeFormatYM_To_MY(string current)
+    {
+        string[] alterMonth = current.Split("-");
+
+        return $"{alterMonth[1]}-{alterMonth[0]}";
     }
 }
