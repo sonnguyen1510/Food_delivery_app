@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\NguyenXuanSon\\Documents\\GitHub\\Food_delivery_app\\MoneyStatistic\\MoneyStatistic\\MoneyStatistic.csproj": {}
+    "E:\\Money_manager\\Money_manager_app\\MoneyStatistic\\MoneyStatistic\\MoneyStatistic.csproj": {}
   },
   "projects": {
-    "C:\\Users\\NguyenXuanSon\\Documents\\GitHub\\Food_delivery_app\\MoneyStatistic\\MoneyStatistic\\MoneyStatistic.csproj": {
+    "E:\\Money_manager\\Money_manager_app\\MoneyStatistic\\MoneyStatistic\\MoneyStatistic.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\NguyenXuanSon\\Documents\\GitHub\\Food_delivery_app\\MoneyStatistic\\MoneyStatistic\\MoneyStatistic.csproj",
+        "projectUniqueName": "E:\\Money_manager\\Money_manager_app\\MoneyStatistic\\MoneyStatistic\\MoneyStatistic.csproj",
         "projectName": "MoneyStatistic",
-        "projectPath": "C:\\Users\\NguyenXuanSon\\Documents\\GitHub\\Food_delivery_app\\MoneyStatistic\\MoneyStatistic\\MoneyStatistic.csproj",
-        "packagesPath": "C:\\Users\\NguyenXuanSon\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\NguyenXuanSon\\Documents\\GitHub\\Food_delivery_app\\MoneyStatistic\\MoneyStatistic\\obj\\",
+        "projectPath": "E:\\Money_manager\\Money_manager_app\\MoneyStatistic\\MoneyStatistic\\MoneyStatistic.csproj",
+        "packagesPath": "C:\\Users\\sonng\\.nuget\\packages\\",
+        "outputPath": "E:\\Money_manager\\Money_manager_app\\MoneyStatistic\\MoneyStatistic\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\NguyenXuanSon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\sonng\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

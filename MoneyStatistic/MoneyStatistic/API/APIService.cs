@@ -14,7 +14,7 @@ namespace MoneyStatistic.API
     public class APIService
     {
         private static int PORT = 5050;
-        private static string HOST = "172.16.3.32";
+        private static string HOST = "192.168.0.121";
 
 
         private static HttpClient client = new HttpClient();
@@ -25,6 +25,15 @@ namespace MoneyStatistic.API
 
                 // Send an HTTP GET request to the API
                 return await client.GetFromJsonAsync<List<UserTransaction>>(apiUrl);
+        }
+
+        public static async Task<List<UserTransaction>> getTransactionByYear(string year)
+        {
+            // Define the API endpoint URL
+            string apiUrl = "http://" + HOST + $":{PORT}/transaction/GetTransactionByRangeofDay?year={year}";
+
+            // Send an HTTP GET request to the API
+            return await client.GetFromJsonAsync<List<UserTransaction>>(apiUrl);
         }
 
         public static async Task<List<UserTransaction>> getAllTransaction()

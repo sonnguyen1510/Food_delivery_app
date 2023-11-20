@@ -38,8 +38,23 @@
                         <p class="balance-display">@Sum().ToString()$</p>
                     </div>
                     <div>
-                        <input @bind="CurrentMonth" class="display-transaction-daypicker" @oninput="change" type="month">                   
+                        @if(@selectedTransactionViewType == 1)
+                        {
+                            <input @bind="CurrentMonth" class="display-transaction-daypicker" @oninput="change" type="month">
+                        }
+                        else
+                        {
+                            <input class="display-transaction-daypicker" type="number" min="1900" max="2099" step="1" @bind="@selectedYear" @oninput="changeYear" />
+
+                        }
+
                     </div>
+                </div>
+                <div class = "transaction-transaction-type">
+                    <Select TValue="int" SelectedValue="@selectedTransactionViewType" SelectedValueChanged="@OnSelectedValueChanged">
+                        <SelectItem Value="1">Month</SelectItem>
+                        <SelectItem Value="2">Year</SelectItem>
+                    </Select>
                 </div>
                 <div class="income-expense-view">
                     <div class="income-container">
@@ -300,7 +315,21 @@
 
 @functions{
 
-   
+    public async Task OnSelectedValueChanged(int value)
+    {
+        selectedTransactionViewType = value;
+        if(selectedTransactionViewType == 2)
+        {
+            await generateTransactionListByYear(selectedYear.ToString());
+            StateHasChanged();
+        }
+        else
+        {
+            await generateTransactionList(CurrentMonth.ToString("MM-yyyy"));
+            StateHasChanged();
+        }
+
+    }
 }
 
 @code {
@@ -315,10 +344,9 @@
     private DateTime CurrentMonth { get; set; } = DateTime.Now;
     private List<UserTransaction> userTransactions = null;
     private bool showDialog = false;
-
+    private int selectedTransactionViewType{ get; set; }= 1;
     //API
-    private int PORT = 5050;
-    private string HOST = "172.16.3.32";
+    private int selectedYear { get; set; } = DateTime.Now.Year;
 
     public async void change(ChangeEventArgs newMonth)
     {
@@ -340,6 +368,32 @@
                         Text = "Can't connect to server, please try again!",
                         Icon = "question",
                     });
+            break;
+            }
+        }
+    }
+
+    public async void changeYear(ChangeEventArgs newMonth)
+    {
+        while (true)
+        {
+            try
+            {
+                await generateTransactionListByYear(selectedYear.ToString());
+                StateHasChanged();
+                break;
+            }
+
+            catch (Exception)
+            {
+                // Handle any other unexpected exceptions
+                await Swal.FireAsync(new SweetAlertOptions
+                    {
+                        Title = "The Internet?",
+                        Text = "Can't connect to server, please try again!",
+                        Icon = "question",
+                    });
+                break;
             }
         }
     }
@@ -439,13 +493,18 @@
         userTransactions = await APIService.getTransactionByRange(startDate.ToString("dd-MM-yyyy"), endDate.ToString("dd-MM-yyyy"));
     }
 
+    public async Task generateTransactionListByYear(string year)
+    {
+        userTransactions = await APIService.getTransactionByYear(year);
+    }
+
     protected override async Task OnInitializedAsync()
     {
         while (true)
         {
             try
             {
-                await generateTransactionList(CurrentMonth.ToString("MM-yyyy"));
+                //await generateTransactionList(CurrentMonth.ToString("MM-yyyy"));
                 break;
             }
 

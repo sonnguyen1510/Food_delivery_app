@@ -1,0 +1,1 @@
+E:\Money_manager\Money_manager_app\MoneyStatistic\MoneyStatistic\MoneyStatistic.csproj;x64

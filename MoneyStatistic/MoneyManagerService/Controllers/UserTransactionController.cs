@@ -39,6 +39,12 @@ namespace MoneyManagerService.Controllers
             return db.UserTransactions.Where(item => (item.CreDate <= End && item.CreDate >= Start) && item.Status == true).ToList();
         }
 
+        [HttpGet]
+        public List<UserTransaction> getTransactionByYear([FromQuery] string year)
+        {
+            return db.UserTransactions.Where(item => (item.CreDate.Value.Year.ToString().Equals(year)) && item.Status == true).ToList();
+        }
+
         [HttpGet("{id}")]
         public List<UserTransaction> GetTransactionByRangeofDay([FromQuery] string StartDay, [FromQuery] string EndDay, int id)
         {
@@ -46,6 +52,8 @@ namespace MoneyManagerService.Controllers
             DateTime End = DateTime.Parse(EndDay);
             return db.UserTransactions.Where(item => (item.CreDate <= End && item.CreDate >= Start) && item.Id == id && item.Status == true).ToList();
         }
+
+
 
         // GET api/<UserTransactionController>/5
         [HttpGet("{id}")]
