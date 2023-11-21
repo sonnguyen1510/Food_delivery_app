@@ -1,4 +1,6 @@
+<a name="readme-top"></a>
 # MONEY MANAGER MAUI app
+<img src="Appimage/appicon.png" alt="Logo" width="180" height="180">
 
 ### Built With
 
@@ -9,5 +11,10 @@
 * ![CSS](https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white)
 * ![XMAL](https://img.shields.io/badge/Xamarin-3498DB?style=for-the-badge&logo=xamarin&logoColor=white)
 * ![.NET](https://img.shields.io/badge/.NET-5C2D91?style=for-the-badge&logo=.net&logoColor=white)
+
 ### Resource
+
 * Sweet Alert : https://sweetalert2.github.io/#download
+* Blazorise : https://blazorise.com
+* SVG Icon : https://www.svgrepo.com/
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
