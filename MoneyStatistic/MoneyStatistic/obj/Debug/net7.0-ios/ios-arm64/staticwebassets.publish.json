@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "KQWeT60ikWP3vPsLUR/U+h7ydJo22iHXTtfVXOWBgY8=",
+  "Hash": "g1bMSzZuyexIOSVv2/QMsCJtke8R/2ufW128Hwo4lGE=",
   "Source": "MoneyStatistic",
   "BasePath": "/",
   "Mode": "Root",
@@ -2497,6 +2497,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\README.md"
+    },
+    {
+      "Identity": "C:\\Users\\NguyenXuanSon\\Documents\\GitHub\\Food_delivery_app\\MoneyStatistic\\MoneyStatistic\\wwwroot\\css\\user.cs",
+      "SourceId": "MoneyStatistic",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\NguyenXuanSon\\Documents\\GitHub\\Food_delivery_app\\MoneyStatistic\\MoneyStatistic\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "css/user.cs",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\user.cs"
+    },
+    {
+      "Identity": "C:\\Users\\NguyenXuanSon\\Documents\\GitHub\\Food_delivery_app\\MoneyStatistic\\MoneyStatistic\\wwwroot\\css\\user.css",
+      "SourceId": "MoneyStatistic",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\NguyenXuanSon\\Documents\\GitHub\\Food_delivery_app\\MoneyStatistic\\MoneyStatistic\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "css/user.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\user.css"
     },
     {
       "Identity": "C:\\Users\\NguyenXuanSon\\Documents\\GitHub\\Food_delivery_app\\MoneyStatistic\\MoneyStatistic\\wwwroot\\down-arrow-svgrepo-com.svg",

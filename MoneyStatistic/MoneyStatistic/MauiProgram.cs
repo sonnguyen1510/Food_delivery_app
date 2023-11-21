@@ -3,6 +3,7 @@ using CurrieTechnologies.Razor.SweetAlert2;
 using Microsoft.Extensions.Logging;
 using Blazorise.Bootstrap;
 using Blazorise.Icons.FontAwesome;
+using MudBlazor.Services;
 
 namespace MoneyStatistic
 {
@@ -19,6 +20,7 @@ namespace MoneyStatistic
                 });
 
             builder.Services.AddSweetAlert2();
+            builder.Services.AddMudServices();
             builder.Services.AddBlazorise(options =>
             {
                 options.Immediate = true;

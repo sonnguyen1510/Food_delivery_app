@@ -3433,23 +3433,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\sonng\\.nuget\\packages\\": {},
+    "C:\\Users\\NguyenXuanSon\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Money_manager\\Money_manager_app\\MoneyStatistic\\MoneyManagerService\\MoneyManagerService.csproj",
+      "projectUniqueName": "C:\\Users\\NguyenXuanSon\\Documents\\GitHub\\Food_delivery_app\\MoneyStatistic\\MoneyManagerService\\MoneyManagerService.csproj",
       "projectName": "MoneyManagerService",
-      "projectPath": "E:\\Money_manager\\Money_manager_app\\MoneyStatistic\\MoneyManagerService\\MoneyManagerService.csproj",
-      "packagesPath": "C:\\Users\\sonng\\.nuget\\packages\\",
-      "outputPath": "E:\\Money_manager\\Money_manager_app\\MoneyStatistic\\MoneyManagerService\\obj\\",
+      "projectPath": "C:\\Users\\NguyenXuanSon\\Documents\\GitHub\\Food_delivery_app\\MoneyStatistic\\MoneyManagerService\\MoneyManagerService.csproj",
+      "packagesPath": "C:\\Users\\NguyenXuanSon\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\NguyenXuanSon\\Documents\\GitHub\\Food_delivery_app\\MoneyStatistic\\MoneyManagerService\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\sonng\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\NguyenXuanSon\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -3465,8 +3465,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "E:\\Money_manager\\Money_manager_app\\MoneyStatistic\\Models\\Models.csproj": {
-              "projectPath": "E:\\Money_manager\\Money_manager_app\\MoneyStatistic\\Models\\Models.csproj"
+            "C:\\Users\\NguyenXuanSon\\Documents\\GitHub\\Food_delivery_app\\MoneyStatistic\\Models\\Models.csproj": {
+              "projectPath": "C:\\Users\\NguyenXuanSon\\Documents\\GitHub\\Food_delivery_app\\MoneyStatistic\\Models\\Models.csproj"
             }
           }
         }

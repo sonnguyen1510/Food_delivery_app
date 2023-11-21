@@ -14,7 +14,7 @@ namespace MoneyStatistic.API
     public class APIService
     {
         private static int PORT = 5050;
-        private static string HOST = "192.168.0.121";
+        private static string HOST = "172.16.3.32";
 
 
         private static HttpClient client = new HttpClient();
@@ -30,7 +30,7 @@ namespace MoneyStatistic.API
         public static async Task<List<UserTransaction>> getTransactionByYear(string year)
         {
             // Define the API endpoint URL
-            string apiUrl = "http://" + HOST + $":{PORT}/transaction/GetTransactionByRangeofDay?year={year}";
+            string apiUrl = "http://" + HOST + $":{PORT}/transaction/getTransactionByYear?year={year}";
 
             // Send an HTTP GET request to the API
             return await client.GetFromJsonAsync<List<UserTransaction>>(apiUrl);
@@ -48,7 +48,7 @@ namespace MoneyStatistic.API
 
         public static async Task<HttpResponseMessage> DeleteTransactionAsync(UserTransaction transaction) {
             // Define the API endpoint URL
-            var apiUrl = "https://" + HOST + $":{PORT}/transaction/Delete/{transaction.Id}";
+            var apiUrl = "http://" + HOST + $":{PORT}/transaction/Delete/{transaction.Id}";
 
             // Post data to the server
             return await client.DeleteAsync(apiUrl);

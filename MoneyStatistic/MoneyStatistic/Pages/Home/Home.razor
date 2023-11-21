@@ -11,31 +11,32 @@
 @using MoneyStatistic.Database.JSON;
 @using MudBlazor
 
+
+
 @inject SweetAlertService Swal;
 
 <head>
     <link rel="stylesheet" href="./css/Home.css" />
     <link rel="stylesheet" href="./css/AddTransaction.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <link href="_content/MudBlazor/MudBlazor.min.css" rel="stylesheet" />
 </head>
 <body>
     <div class="screen">
         <div class="container">
-            <div class="user-detail-container">
-                <div class="user-avatar">
-                    <img src="user_default.png" />
-                </div>
-                <div class="user-detail">
-                    <p class="status-day">@DayStatus</p>
-                    <p class="user-name">@Username</p>
-                </div>
-                <div class="add-transaction" @onclick="addTransiaction"><img class="add-transaction-img" src="icons8-add-file-64.png" /></div>
-            </div>
+            
 
             <div class="transaction-display-container">
                 <div class="display-transaction">
                     <div class="display-transaction-detail">
                         <p style="color : white">Balance</p>
                         <p class="balance-display">@Sum().ToString()$</p>
+                        <div class="transaction-transaction-type">
+                            <Select Class="transaction-type-item" TValue="int" SelectedValue="@selectedTransactionViewType" SelectedValueChanged="@OnSelectedValueChanged">
+                                <SelectItem Value="1">Month</SelectItem>
+                                <SelectItem Value="2">Year</SelectItem>
+                            </Select>
+                        </div>
                     </div>
                     <div>
                         @if(@selectedTransactionViewType == 1)
@@ -44,18 +45,18 @@
                         }
                         else
                         {
-                            <input class="display-transaction-daypicker" type="number" min="1900" max="2099" step="1" @bind="@selectedYear" @oninput="changeYear" />
+                            <select class="display-transaction-daypicker" id="year" @bind="SelectedYear" @oninput = "changeYear">
+                                @for (int year = StartYear; year <= EndYear; year++)
+                                {
+                                    <option class="black-text" value="@year">@year</option>
+                                }
+                            </select>
 
                         }
 
                     </div>
                 </div>
-                <div class = "transaction-transaction-type">
-                    <Select TValue="int" SelectedValue="@selectedTransactionViewType" SelectedValueChanged="@OnSelectedValueChanged">
-                        <SelectItem Value="1">Month</SelectItem>
-                        <SelectItem Value="2">Year</SelectItem>
-                    </Select>
-                </div>
+                
                 <div class="income-expense-view">
                     <div class="income-container">
                         <div class="income-info">
@@ -126,8 +127,13 @@
 
                     }
                 }
+                
+            </div>
+            <div class="floating-action-button">
+                <MudFab Color="MudBlazor.Color.Tertiary" StartIcon="@Icons.Material.Filled.Add" OnClick="addTransiaction" />
             </div>
         </div>
+        
     </div>
     <!-- Modal -->
     
@@ -311,6 +317,7 @@
         </div>
     }
     <script src="_content/CurrieTechnologies.Razor.SweetAlert2/sweetAlert2.min.js"></script>
+    <script src="_content/MudBlazor/MudBlazor.min.js"></script>
 </body>
 
 @functions{
@@ -338,8 +345,7 @@
 
     private DateTime selectedStartDate = DateTime.Now;
     private String selectedStringStartDate;
-    public String Username = "Billy";
-    public String DayStatus = "Good Morning";
+
 
     private DateTime CurrentMonth { get; set; } = DateTime.Now;
     private List<UserTransaction> userTransactions = null;
@@ -347,6 +353,15 @@
     private int selectedTransactionViewType{ get; set; }= 1;
     //API
     private int selectedYear { get; set; } = DateTime.Now.Year;
+
+    [Parameter]
+    public int StartYear { get; set; } = DateTime.Now.Year - 10; // Default: 10 years ago
+
+    [Parameter]
+    public int EndYear { get; set; } = DateTime.Now.Year + 10; // Default: 10 years from now
+
+    [Parameter]
+    public int SelectedYear { get; set; } = DateTime.Now.Year; // Default: current year
 
     public async void change(ChangeEventArgs newMonth)
     {
@@ -368,18 +383,19 @@
                         Text = "Can't connect to server, please try again!",
                         Icon = "question",
                     });
-            break;
+                break;
             }
         }
     }
 
-    public async void changeYear(ChangeEventArgs newMonth)
+    public async void changeYear(ChangeEventArgs newYear)
     {
+        selectedYear = int.Parse((string)newYear.Value);
         while (true)
         {
             try
             {
-                await generateTransactionListByYear(selectedYear.ToString());
+                await generateTransactionListByYear(newYear.Value.ToString());
                 StateHasChanged();
                 break;
             }
@@ -504,7 +520,7 @@
         {
             try
             {
-                //await generateTransactionList(CurrentMonth.ToString("MM-yyyy"));
+                await generateTransactionList(CurrentMonth.ToString("MM-yyyy"));
                 break;
             }
 
@@ -841,11 +857,12 @@
                 await Swal.FireAsync(new SweetAlertOptions
                         {
                             Title = "Success!",
-                            Text = "You clicked the button!",
+                            Text = "Add transaction successfully!",
                             Icon = "success"
                         });
-                cleanAddList();
+
                 // Handle the result
+                StateHasChanged();
             }
             else
             {

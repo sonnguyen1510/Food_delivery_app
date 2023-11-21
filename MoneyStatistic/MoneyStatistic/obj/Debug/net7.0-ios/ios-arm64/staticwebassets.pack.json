@@ -309,6 +309,14 @@
       "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
     },
     {
+      "Id": "C:\\Users\\NguyenXuanSon\\Documents\\GitHub\\Food_delivery_app\\MoneyStatistic\\MoneyStatistic\\wwwroot\\css\\user.cs",
+      "PackagePath": "staticwebassets\\css\\user.cs"
+    },
+    {
+      "Id": "C:\\Users\\NguyenXuanSon\\Documents\\GitHub\\Food_delivery_app\\MoneyStatistic\\MoneyStatistic\\wwwroot\\css\\user.css",
+      "PackagePath": "staticwebassets\\css\\user.css"
+    },
+    {
       "Id": "C:\\Users\\NguyenXuanSon\\Documents\\GitHub\\Food_delivery_app\\MoneyStatistic\\MoneyStatistic\\wwwroot\\down-arrow-svgrepo-com-transitem.svg",
       "PackagePath": "staticwebassets\\down-arrow-svgrepo-com-transitem.svg"
     },

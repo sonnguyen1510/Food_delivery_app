@@ -1,7 +1,22 @@
 ﻿@page "/User"
 
-<h3>User</h3>
+<head>
+    <link rel="stylesheet" href="./css/user.css" />
+</head>
+<body>
+    <div class="user-detail-container">
+        <div class="user-avatar">
+            <img src="user_default.png" />
+        </div>
+        <div class="user-detail">
+            <p class="status-day">@DayStatus</p>
+            <p class="user-name">@Username</p>
+        </div>
+
+    </div>
+</body>
 
 @code {
-
+    public String Username = "Billy";
+    public String DayStatus = "Good Morning";
 }
