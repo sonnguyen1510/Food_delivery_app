@@ -195,7 +195,7 @@ p {
     flex-direction: row;
     justify-content: space-between;
     
-    margin-right: 2 0px;
+    margin-right: 20px;
     margin-top :30px;
     
 }
@@ -318,7 +318,8 @@ p {
     position: absolute;
     bottom: 0; /* Position at the bottom of the viewport */
     right: 0; /* Position at the right of the viewport */
-    margin-bottom : 90px
+    margin-bottom : 90px;
+    margin-right : 15px;
 }
 
 

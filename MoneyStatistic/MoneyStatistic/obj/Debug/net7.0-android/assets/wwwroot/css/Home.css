@@ -18,35 +18,6 @@ p {
     margin: 0px;
 }
 
-.user-detail-container {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    margin: 0;
-}
-
-.user-detail {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-}
-
-.user-avatar {
-    
-    margin-right: 30px;
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    overflow: hidden;
-    border: 5px;
-}
-
-    .user-avatar img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-
 .money-container {
 }
 
@@ -78,16 +49,6 @@ p {
     width: 30px;
 }
 
-.user-name {
-    font-weight: bold;
-    font-size: 20px;
-    margin: 0;
-}
-
-.status-day {
-    font-size: 15px;
-    margin: 0;
-}
 
 .transaction-display-container {
     position : relative;
@@ -103,7 +64,7 @@ p {
 
 .display-transaction {
     width: 100%;
-    height: 160px;
+    height: 190px;
     background-color: #38cfcc;
     border-radius: 30px;
     padding-left: 20px;
@@ -149,10 +110,20 @@ p {
     font-size: 20px;
 }
 
+.transaction-transaction-type{
+    width : 100%;
+    margin-top : 10px;
+    
+}
+.transaction-type-item {
+    background-color: white;
+    color : black;
+     
+}
+
 .income-expense-view {
     position: absolute;
-    margin-top: 120px;
-    
+    margin-top: 160px;
     width: 90%;
     height: 70px;
     border-radius: 30px;
@@ -224,7 +195,7 @@ p {
     flex-direction: row;
     justify-content: space-between;
     
-    margin-right: 2 0px;
+    margin-right: 20px;
     margin-top :30px;
     
 }
@@ -337,6 +308,18 @@ p {
 
 .inactive {
     background-color: white
+}
+
+.black-text{
+    color : black
+}
+
+.floating-action-button {
+    position: absolute;
+    bottom: 0; /* Position at the bottom of the viewport */
+    right: 0; /* Position at the right of the viewport */
+    margin-bottom : 90px;
+    margin-right : 15px;
 }
 
 

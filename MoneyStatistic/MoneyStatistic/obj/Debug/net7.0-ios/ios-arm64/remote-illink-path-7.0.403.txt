@@ -1,0 +1,1 @@
+\Users\transviettravel\Library\Caches\Xamarin\XMA\SDKs\dotnet\sdk\7.0.403\Sdks\Microsoft.NET.ILLink.Tasks\build\..\tools\net7.0\illink.dll

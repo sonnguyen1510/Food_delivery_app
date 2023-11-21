@@ -1588,11 +1588,14 @@
     <AppxPackagedFile Include="C:\Users\NguyenXuanSon\.nuget\packages\microsoft.graphics.win2d\1.0.5.1\lib\net5.0-windows10.0.17763.0\Microsoft.Graphics.Canvas.Interop.dll">
       <PackagePath>Microsoft.Graphics.Canvas.Interop.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\.nuget\packages\microsoft.identity.client\4.47.2\lib\net5.0-windows10.0.17763\Microsoft.Identity.Client.dll">
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\.nuget\packages\microsoft.identity.client\4.57.0\lib\net6.0-windows7.0\Microsoft.Identity.Client.dll">
       <PackagePath>Microsoft.Identity.Client.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\.nuget\packages\microsoft.identity.client.extensions.msal\2.19.3\lib\netcoreapp2.1\Microsoft.Identity.Client.Extensions.Msal.dll">
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\.nuget\packages\microsoft.identity.client.extensions.msal\4.57.0\lib\netstandard2.0\Microsoft.Identity.Client.Extensions.Msal.dll">
       <PackagePath>Microsoft.Identity.Client.Extensions.Msal.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\.nuget\packages\microsoft.identity.client.nativeinterop\0.13.12\lib\netstandard2.0\Microsoft.Identity.Client.NativeInterop.dll">
+      <PackagePath>Microsoft.Identity.Client.NativeInterop.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\NguyenXuanSon\.nuget\packages\microsoft.identitymodel.abstractions\6.24.0\lib\net6.0\Microsoft.IdentityModel.Abstractions.dll">
       <PackagePath>Microsoft.IdentityModel.Abstractions.dll</PackagePath>
@@ -1710,6 +1713,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\NguyenXuanSon\.nuget\packages\microsoft.graphics.win2d\1.0.5.1\runtimes\win10-x64\native\Microsoft.Graphics.Canvas.dll">
       <PackagePath>Microsoft.Graphics.Canvas.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\.nuget\packages\microsoft.identity.client.nativeinterop\0.13.12\runtimes\win-x64\native\msalruntime.dll">
+      <PackagePath>msalruntime.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\NguyenXuanSon\.nuget\packages\microsoft.web.webview2\1.0.864.35\runtimes\win-x64\native\WebView2Loader.dll">
       <PackagePath>WebView2Loader.dll</PackagePath>

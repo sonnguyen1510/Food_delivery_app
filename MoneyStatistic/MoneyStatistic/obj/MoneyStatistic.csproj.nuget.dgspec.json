@@ -135,6 +135,10 @@
               "target": "Package",
               "version": "[7.0.0, )"
             },
+            "Microsoft.Identity.Client.Extensions.Msal": {
+              "target": "Package",
+              "version": "[4.57.0, )"
+            },
             "Microsoft.Maui.Graphics": {
               "target": "Package",
               "version": "[7.0.96, )",
@@ -311,6 +315,10 @@
               "target": "Package",
               "version": "[7.0.0, )"
             },
+            "Microsoft.Identity.Client.Extensions.Msal": {
+              "target": "Package",
+              "version": "[4.57.0, )"
+            },
             "Microsoft.Maui.Graphics": {
               "target": "Package",
               "version": "[7.0.96, )",
@@ -431,6 +439,10 @@
             "Microsoft.Extensions.Logging.Debug": {
               "target": "Package",
               "version": "[7.0.0, )"
+            },
+            "Microsoft.Identity.Client.Extensions.Msal": {
+              "target": "Package",
+              "version": "[4.57.0, )"
             },
             "Microsoft.Maui.Graphics": {
               "target": "Package",
@@ -554,6 +566,10 @@
               "target": "Package",
               "version": "[7.0.0, )"
             },
+            "Microsoft.Identity.Client.Extensions.Msal": {
+              "target": "Package",
+              "version": "[4.57.0, )"
+            },
             "Microsoft.Maui.Graphics": {
               "target": "Package",
               "version": "[7.0.96, )",
@@ -640,7 +656,7 @@
         "android-x86": {
           "#import": []
         },
-        "ios-arm64": {
+        "iossimulator-arm64": {
           "#import": []
         },
         "maccatalyst-x64": {

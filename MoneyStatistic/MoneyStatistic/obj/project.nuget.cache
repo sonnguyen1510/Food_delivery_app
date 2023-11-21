@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "2S8uZ0yIrAsPPa4arPt47epOqZw6Bf/PEcpv6SeiXcFRPPu8P5o8i/LinYEfvRfX+K158T8rqK8WXgHo2Fjbug==",
+  "dgSpecHash": "lLd70fWtFKjTE7DHYyX1IlpZgZREsJnkKG7uegFfC6soZLf4R06UFQHLmt7dS/YbvEpHS0DIA/nTV0f2P3UA3g==",
   "success": true,
   "projectFilePath": "C:\\Users\\NguyenXuanSon\\Documents\\GitHub\\Food_delivery_app\\MoneyStatistic\\MoneyStatistic\\MoneyStatistic.csproj",
   "expectedPackageFiles": [
@@ -65,8 +65,9 @@
     "C:\\Users\\NguyenXuanSon\\.nuget\\packages\\microsoft.extensions.options\\7.0.1\\microsoft.extensions.options.7.0.1.nupkg.sha512",
     "C:\\Users\\NguyenXuanSon\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512",
     "C:\\Users\\NguyenXuanSon\\.nuget\\packages\\microsoft.graphics.win2d\\1.0.5.1\\microsoft.graphics.win2d.1.0.5.1.nupkg.sha512",
-    "C:\\Users\\NguyenXuanSon\\.nuget\\packages\\microsoft.identity.client\\4.47.2\\microsoft.identity.client.4.47.2.nupkg.sha512",
-    "C:\\Users\\NguyenXuanSon\\.nuget\\packages\\microsoft.identity.client.extensions.msal\\2.19.3\\microsoft.identity.client.extensions.msal.2.19.3.nupkg.sha512",
+    "C:\\Users\\NguyenXuanSon\\.nuget\\packages\\microsoft.identity.client\\4.57.0\\microsoft.identity.client.4.57.0.nupkg.sha512",
+    "C:\\Users\\NguyenXuanSon\\.nuget\\packages\\microsoft.identity.client.extensions.msal\\4.57.0\\microsoft.identity.client.extensions.msal.4.57.0.nupkg.sha512",
+    "C:\\Users\\NguyenXuanSon\\.nuget\\packages\\microsoft.identity.client.nativeinterop\\0.13.12\\microsoft.identity.client.nativeinterop.0.13.12.nupkg.sha512",
     "C:\\Users\\NguyenXuanSon\\.nuget\\packages\\microsoft.identitymodel.abstractions\\6.24.0\\microsoft.identitymodel.abstractions.6.24.0.nupkg.sha512",
     "C:\\Users\\NguyenXuanSon\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\6.24.0\\microsoft.identitymodel.jsonwebtokens.6.24.0.nupkg.sha512",
     "C:\\Users\\NguyenXuanSon\\.nuget\\packages\\microsoft.identitymodel.logging\\6.24.0\\microsoft.identitymodel.logging.6.24.0.nupkg.sha512",
@@ -169,6 +170,7 @@
     "C:\\Users\\NguyenXuanSon\\.nuget\\packages\\system.io.compression\\4.3.0\\system.io.compression.4.3.0.nupkg.sha512",
     "C:\\Users\\NguyenXuanSon\\.nuget\\packages\\system.io.compression.zipfile\\4.3.0\\system.io.compression.zipfile.4.3.0.nupkg.sha512",
     "C:\\Users\\NguyenXuanSon\\.nuget\\packages\\system.io.filesystem\\4.3.0\\system.io.filesystem.4.3.0.nupkg.sha512",
+    "C:\\Users\\NguyenXuanSon\\.nuget\\packages\\system.io.filesystem.accesscontrol\\5.0.0\\system.io.filesystem.accesscontrol.5.0.0.nupkg.sha512",
     "C:\\Users\\NguyenXuanSon\\.nuget\\packages\\system.io.filesystem.primitives\\4.3.0\\system.io.filesystem.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\NguyenXuanSon\\.nuget\\packages\\system.io.pipelines\\7.0.0\\system.io.pipelines.7.0.0.nupkg.sha512",
     "C:\\Users\\NguyenXuanSon\\.nuget\\packages\\system.linq\\4.3.0\\system.linq.4.3.0.nupkg.sha512",
@@ -307,10 +309,10 @@
     "C:\\Users\\NguyenXuanSon\\.nuget\\packages\\xamarin.kotlin.stdlib.jdk8\\1.7.20.1\\xamarin.kotlin.stdlib.jdk8.1.7.20.1.nupkg.sha512",
     "C:\\Users\\NguyenXuanSon\\.nuget\\packages\\xamarin.kotlinx.coroutines.android\\1.6.4.1\\xamarin.kotlinx.coroutines.android.1.6.4.1.nupkg.sha512",
     "C:\\Users\\NguyenXuanSon\\.nuget\\packages\\xamarin.kotlinx.coroutines.core.jvm\\1.6.4.1\\xamarin.kotlinx.coroutines.core.jvm.1.6.4.1.nupkg.sha512",
-    "C:\\Users\\NguyenXuanSon\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\7.0.13\\microsoft.aspnetcore.app.runtime.win-x64.7.0.13.nupkg.sha512",
-    "C:\\Users\\NguyenXuanSon\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\7.0.13\\microsoft.netcore.app.runtime.win-x64.7.0.13.nupkg.sha512",
     "C:\\Users\\NguyenXuanSon\\.nuget\\packages\\microsoft.windows.sdk.net.ref\\10.0.19041.29\\microsoft.windows.sdk.net.ref.10.0.19041.29.nupkg.sha512",
-    "C:\\Users\\NguyenXuanSon\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\7.0.13\\microsoft.windowsdesktop.app.runtime.win-x64.7.0.13.nupkg.sha512"
+    "C:\\Users\\NguyenXuanSon\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\7.0.13\\microsoft.aspnetcore.app.runtime.win-x64.7.0.13.nupkg.sha512",
+    "C:\\Users\\NguyenXuanSon\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\7.0.13\\microsoft.windowsdesktop.app.runtime.win-x64.7.0.13.nupkg.sha512",
+    "C:\\Users\\NguyenXuanSon\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\7.0.13\\microsoft.netcore.app.runtime.win-x64.7.0.13.nupkg.sha512"
   ],
   "logs": []
 }
