@@ -1,18 +1,61 @@
-﻿@inherits LayoutComponentBase
+﻿@using MoneyStatistic.Database.SQLiteDB;
+
+@inherits LayoutComponentBase
+
+@inject userDB database  ;
 <head>
     <link rel="stylesheet" href="./css/MainLayout.css">
 </head>
 <div class="page">
-    <div class="bottom-0">
-        <Bottomnav></Bottomnav>
-    </div>
+    @if(userLoginStatus == null)
+    {
+        <div class="login-container">
+            <Login LoginFunction="@Login"></Login>
+        </div>
+    }
+    else
+    {
+        <div class="bottom-0">
+            <Bottomnav></Bottomnav>
+        </div>
 
-    <main>
-        <MudThemeProvider />
-        <MudDialogProvider />
-        <MudSnackbarProvider />
-        <article class="content px-4">
-            @Body
-        </article>
-    </main>
+        <main>
+            <MudThemeProvider />
+            <MudDialogProvider />
+            <MudSnackbarProvider />
+            <article class="content px-4">
+                @Body
+            </article>
+        </main>
+    }
 </div>
+
+@code {
+    private UserLoginStatus userLoginStatus { set; get; } = null;
+
+    protected override async Task OnInitializedAsync()
+    {
+        userLoginStatus = await database.GetFirstItemAsync();
+
+        if(userLoginStatus != null)
+        {
+            StateHasChanged();
+        }
+    }
+
+    public async void Login(MoneyStatistic.Database.MoneyManagerService.User user)
+    {
+        UserLoginStatus userLoginstatus = new UserLoginStatus
+            {
+                Id = user.Id,
+                fullname = user.Fullname,
+                Username = user.Username,
+                status = true
+            };
+
+        await database.addItem(userLoginstatus);
+        userLoginStatus = userLoginstatus; 
+
+        StateHasChanged();
+    }
+}

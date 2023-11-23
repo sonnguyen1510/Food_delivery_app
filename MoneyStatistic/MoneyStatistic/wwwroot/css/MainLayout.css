@@ -74,3 +74,11 @@ main {
         padding-right: 1.5rem !important;
     }
 }
+
+.login-containe{
+    display : flex;
+    height : 100%;
+    flex-direction : column;
+    align-items : center ;
+    
+}

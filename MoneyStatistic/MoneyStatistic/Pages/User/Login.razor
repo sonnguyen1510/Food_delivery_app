@@ -1,12 +1,12 @@
 ﻿
-@using MoneyStatistic.Data;
-@inject AppDbContext DbContext
-@using System.Net.Http;
-@using System.Net.Http.Json;
+@using MoneyStatistic.API;
+
+
 @inject SweetAlertService Swal;
 
 <head>
     <link rel="stylesheet" href="./css/Login.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
 </head>
 <body>
     <div class="screen">
@@ -57,6 +57,7 @@
            </div>
         </div>
     </div>
+    <script src="_content/CurrieTechnologies.Razor.SweetAlert2/sweetAlert2.min.js"></script>
 </body>
 
 
@@ -65,26 +66,22 @@
 
     public string username { get; set; }
 
-    HttpClient client = new HttpClient();
+
+    [Parameter]
+    public Action<MoneyStatistic.Database.MoneyManagerService.User> LoginFunction { get; set; }
 
     [Inject]
     NavigationManager navigationManager { get; set; }
 
-    private int PORT = 7040;
 
     public async Task login()
     {
-        while (true)
-        {
+        
             try
             {
-                // Define the API endpoint URL
-                var apiUrl = $"https://172.16.3.32:{PORT}/Login/Login/LoginCheck?Username={username}&password={password}";
+                MoneyStatistic.Database.MoneyManagerService.User user = await APIService.Login(username, password);
 
-                // Send an HTTP GET request to the API
-                int Id = await client.GetFromJsonAsync<int>(apiUrl);
-
-                if(Id < 0)
+                if(user.Id < 0)
                 {
                     await Swal.FireAsync(new SweetAlertOptions
                         {
@@ -96,9 +93,9 @@
                 }
                 else
                 {  
-                    navigationManager.NavigateTo($"/mainpage/{Id}");
+                    LoginFunction?.Invoke(user);
                 }
-                break;
+                
             }
 
             catch (Exception)
@@ -112,8 +109,8 @@
 
                     });
 
-                break;
+                   
             }
-        }
+        
     }
 }

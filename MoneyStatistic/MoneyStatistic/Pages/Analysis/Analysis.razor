@@ -3,17 +3,19 @@
 @using MoneyStatistic.API;
 @using MoneyStatistic.Database.MoneyManagerService;
 @using MoneyStatistic.Database.JSON;
+@using MoneyStatistic.Database.SQLiteDB;
 @using MoneyStatistic.Pages.Analysis.Object;
 @using System;
 @using System.Globalization;
 
 
-
+@inject userDB database ;
 @inject SweetAlertService Swal;
 
 <head>
     <link rel="stylesheet" href="./css/Analysis.css" />
     <link rel="stylesheet" href="./css/Home.css" />
+    <link rel="stylesheet" href="./css/user.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
 
@@ -154,10 +156,11 @@
 
     private String TransactionType { get; set; } = "income";
 
+    private UserLoginStatus userLoginStatus { set; get; } = null;
     //API
 
 
-    Chart<double> barChart;
+    Chart<double> barChart ;
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
@@ -202,10 +205,12 @@
 
     public async void change(ChangeEventArgs newMonth)
     {
+
         while (true)
         {
             try
             {
+                Labels = GenerateLabels(ChangeFormatYM_To_MY(newMonth.Value.ToString()));
                 await generateTransactionList(ChangeFormatYM_To_MY(newMonth.Value.ToString()));
                 await HandleRedraw();
                 StateHasChanged();
@@ -226,7 +231,7 @@
     }
 
 
-    string[] Labels = null;
+    string[] Labels { get; set; } = GenerateLabels(DateTime.Now.ToString("MM-yyyy"));
     List<string> ExpenseColors = new List<string> { ChartColor.FromRgba(255, 99, 132, 0.2f)};
     List<string> ExpenseborderColors = new List<string> { ChartColor.FromRgba(255, 99, 132, 1f) };
 
@@ -269,11 +274,11 @@
 
     protected override async Task OnInitializedAsync()
     {
+        userLoginStatus = await database.GetFirstItemAsync();
         while (true)
         {
             try
             {
-
                 await generateTransactionList(CurrentMonth.ToString("MM-yyyy"));
                 Labels = GenerateLabels(CurrentMonth.ToString("MM-yyyy"));
 
@@ -302,7 +307,7 @@
         while(true) {
             try
             {
-                return  await APIService.getTransactionByRange(StartDay, EndDay);
+                return await APIService.getTransactionByRange(StartDay, EndDay, (decimal)userLoginStatus.Id);
                 
             }
             catch (Exception)
@@ -457,7 +462,7 @@
         await HandleRedraw();
     }
 
-    public string[] GenerateLabels(string monthYear)
+    public static string[] GenerateLabels(string monthYear)
     {
         string[] labels = new string[5];
 

@@ -1,4 +1,4 @@
-﻿namespace MoneyStatistic.Database.JSON
+﻿ namespace MoneyStatistic.Database.JSON
 {
     public class LoginBody
     {

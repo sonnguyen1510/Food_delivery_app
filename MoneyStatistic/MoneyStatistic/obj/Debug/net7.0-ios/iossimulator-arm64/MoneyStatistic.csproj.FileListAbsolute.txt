@@ -69,9 +69,12 @@ C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneySt
 C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\bin\Debug\net7.0-ios\iossimulator-arm64\MudBlazor.dll
 C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\bin\Debug\net7.0-ios\iossimulator-arm64\Newtonsoft.Json.dll
 C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\bin\Debug\net7.0-ios\iossimulator-arm64\Newtonsoft.Json.Bson.dll
+C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\bin\Debug\net7.0-ios\iossimulator-arm64\SQLite-net.dll
 C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\bin\Debug\net7.0-ios\iossimulator-arm64\SQLitePCLRaw.batteries_v2.dll
+C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\bin\Debug\net7.0-ios\iossimulator-arm64\SQLitePCLRaw.nativelibrary.dll
 C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\bin\Debug\net7.0-ios\iossimulator-arm64\SQLitePCLRaw.core.dll
 C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\bin\Debug\net7.0-ios\iossimulator-arm64\SQLitePCLRaw.lib.e_sqlite3.ios.dll
+C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\bin\Debug\net7.0-ios\iossimulator-arm64\SQLitePCLRaw.provider.dynamic_cdecl.dll
 C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\bin\Debug\net7.0-ios\iossimulator-arm64\SQLitePCLRaw.provider.internal.dll
 C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\bin\Debug\net7.0-ios\iossimulator-arm64\System.CodeDom.dll
 C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\bin\Debug\net7.0-ios\iossimulator-arm64\System.Configuration.ConfigurationManager.dll
@@ -424,9 +427,12 @@ C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneySt
 C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\obj\Debug\net7.0-ios\iossimulator-arm64\resourcestamps\netstandard.stamp
 C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\obj\Debug\net7.0-ios\iossimulator-arm64\resourcestamps\Newtonsoft.Json.Bson.stamp
 C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\obj\Debug\net7.0-ios\iossimulator-arm64\resourcestamps\Newtonsoft.Json.stamp
+C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\obj\Debug\net7.0-ios\iossimulator-arm64\resourcestamps\SQLite-net.stamp
 C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\obj\Debug\net7.0-ios\iossimulator-arm64\resourcestamps\SQLitePCLRaw.batteries_v2.stamp
 C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\obj\Debug\net7.0-ios\iossimulator-arm64\resourcestamps\SQLitePCLRaw.core.stamp
 C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\obj\Debug\net7.0-ios\iossimulator-arm64\resourcestamps\SQLitePCLRaw.lib.e_sqlite3.ios.stamp
+C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\obj\Debug\net7.0-ios\iossimulator-arm64\resourcestamps\SQLitePCLRaw.nativelibrary.stamp
+C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\obj\Debug\net7.0-ios\iossimulator-arm64\resourcestamps\SQLitePCLRaw.provider.dynamic_cdecl.stamp
 C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\obj\Debug\net7.0-ios\iossimulator-arm64\resourcestamps\SQLitePCLRaw.provider.internal.stamp
 C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\obj\Debug\net7.0-ios\iossimulator-arm64\resourcestamps\System.AppContext.stamp
 C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\obj\Debug\net7.0-ios\iossimulator-arm64\resourcestamps\System.Buffers.stamp

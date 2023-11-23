@@ -76,3 +76,6 @@ select * from UserTransaction
 select CreDate,Amount 
 from UserTransaction 
 where CreDate <= '2021-06-12' AND CreDate >= '2021-06-09'
+
+
+select * from [user]

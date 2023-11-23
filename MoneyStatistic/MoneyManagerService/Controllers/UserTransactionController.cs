@@ -45,12 +45,18 @@ namespace MoneyManagerService.Controllers
             return db.UserTransactions.Where(item => (item.CreDate.Value.Year.ToString().Equals(year)) && item.Status == true).ToList();
         }
 
+        [HttpGet("{userid}")]
+        public List<UserTransaction> getTransactionByYear([FromQuery] string year,int userid)
+        {
+            return db.UserTransactions.Where(item => (item.CreDate.Value.Year.ToString().Equals(year)) &&item.UserId == userid && item.Status == true).ToList();
+        }
+
         [HttpGet("{id}")]
         public List<UserTransaction> GetTransactionByRangeofDay([FromQuery] string StartDay, [FromQuery] string EndDay, int id)
         {
             DateTime Start = DateTime.Parse(StartDay);
             DateTime End = DateTime.Parse(EndDay);
-            return db.UserTransactions.Where(item => (item.CreDate <= End && item.CreDate >= Start) && item.Id == id && item.Status == true).ToList();
+            return db.UserTransactions.Where(item => (item.CreDate <= End && item.CreDate >= Start) && item.UserId == id && item.Status == true).ToList();
         }
 
 

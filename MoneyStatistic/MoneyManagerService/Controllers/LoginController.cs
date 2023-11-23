@@ -19,15 +19,10 @@ namespace MoneyManagerService.Controllers
         }
 
         [HttpGet]
-        public decimal LoginCheck([FromQuery] string Username, [FromQuery] string password)
+        public User LoginCheck([FromQuery] string Username, [FromQuery] string password)
         {
-            User user = db.Users.Where(item=>item.Username == Username && item.Password == password).FirstOrDefault();
-            if (user == null)
-            {
-                return -1;
-            }
-            else
-                return user.Id;
+            return db.Users.Where(item=>item.Username == Username && item.Password == password).FirstOrDefault();
+            
         }
     }
 }

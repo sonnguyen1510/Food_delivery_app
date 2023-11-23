@@ -4,6 +4,8 @@ using Microsoft.Extensions.Logging;
 using Blazorise.Bootstrap;
 using Blazorise.Icons.FontAwesome;
 using MudBlazor.Services;
+using MoneyStatistic.Database.SQLiteDB;
+
 
 namespace MoneyStatistic
 {
@@ -18,6 +20,8 @@ namespace MoneyStatistic
                 {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                 });
+
+            builder.Services.AddSingleton<userDB>();
 
             builder.Services.AddSweetAlert2();
             builder.Services.AddMudServices();

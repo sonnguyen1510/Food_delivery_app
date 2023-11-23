@@ -1,22 +1,66 @@
 ﻿@page "/User"
+@using MoneyStatistic.Database.SQLiteDB;
+
+
+@inject userDB database ;
+@inject SweetAlertService Swal;
 
 <head>
     <link rel="stylesheet" href="./css/user.css" />
 </head>
 <body>
-    <div class="user-detail-container">
-        <div class="user-avatar">
-            <img src="user_default.png" />
-        </div>
-        <div class="user-detail">
-            <p class="status-day">@DayStatus</p>
-            <p class="user-name">@Username</p>
-        </div>
+    <div class="user-container">
+        <div class="user-detail-container">
+            <div class="user-avatar">
+                <img src="user_default.png" />
+            </div>
+            <div class="user-detail">
+                <p class="status-day">@DayStatus</p>
+                <p class="user-name">@Username</p>
+            </div>
 
+        </div>
+        <div class="user-logout-button-container">
+            <button @onclick = "Logout" class="user-logout-button">LOGOUT</button>
+        </div>
     </div>
+
 </body>
 
 @code {
-    public String Username = "Billy";
+    private UserLoginStatus userLoginStatus { set; get; } = null;
+    public String Username { get; set; } = "Test";
     public String DayStatus = "Good Morning";
+
+    [Inject]
+    NavigationManager navigationManager { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        userLoginStatus = await database.GetFirstItemAsync();
+
+        Username = userLoginStatus?.fullname ?? "John";
+        StateHasChanged();
+    }
+
+    private async Task Logout()
+    {
+        await Swal.FireAsync(new SweetAlertOptions
+            {
+                Title = "Are you sure?",
+                Text = "You won't be able to revert this!",
+                Icon = "warning",
+                ShowCancelButton = true,
+                ConfirmButtonText = "Yes, delete it!",
+                CancelButtonText = "No, cancel!",
+                ReverseButtons = true
+            }).ContinueWith(async (swalTask) =>
+    {
+        SweetAlertResult result = swalTask.Result;
+        if (!string.IsNullOrEmpty(result.Value))
+        {
+            await database.DeleteItemAsync(userLoginStatus);
+        }
+        });
+    }
 }
