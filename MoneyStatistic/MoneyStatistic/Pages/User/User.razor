@@ -56,11 +56,14 @@
                 ReverseButtons = true
             }).ContinueWith(async (swalTask) =>
     {
-        SweetAlertResult result = swalTask.Result;
-        if (!string.IsNullOrEmpty(result.Value))
-        {
-            await database.DeleteItemAsync(userLoginStatus);
-        }
-        });
-    }
+            SweetAlertResult result = swalTask.Result;
+            if (!string.IsNullOrEmpty(result.Value))
+            {
+                await database.DeleteItemAsync(userLoginStatus);
+
+                navigationManager.NavigateTo("MainLayout");
+
+            }
+                });
+            }
 }

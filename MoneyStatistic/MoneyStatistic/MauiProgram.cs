@@ -22,7 +22,6 @@ namespace MoneyStatistic
                 });
 
             builder.Services.AddSingleton<userDB>();
-
             builder.Services.AddSweetAlert2();
             builder.Services.AddMudServices();
             builder.Services.AddBlazorise(options =>

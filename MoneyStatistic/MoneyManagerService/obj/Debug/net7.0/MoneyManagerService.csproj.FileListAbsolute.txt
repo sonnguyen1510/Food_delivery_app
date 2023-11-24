@@ -158,3 +158,11 @@ C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyMa
 C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyManagerService\obj\Debug\net7.0\MoneyManagerService.pdb
 C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyManagerService\obj\Debug\net7.0\MoneyManagerService.genruntimeconfig.cache
 C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyManagerService\obj\Debug\net7.0\ref\MoneyManagerService.dll
+C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyManagerService\bin\Debug\net7.0\Amazon.Lambda.APIGatewayEvents.dll
+C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyManagerService\bin\Debug\net7.0\Amazon.Lambda.ApplicationLoadBalancerEvents.dll
+C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyManagerService\bin\Debug\net7.0\Amazon.Lambda.AspNetCoreServer.dll
+C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyManagerService\bin\Debug\net7.0\Amazon.Lambda.AspNetCoreServer.Hosting.dll
+C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyManagerService\bin\Debug\net7.0\Amazon.Lambda.Core.dll
+C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyManagerService\bin\Debug\net7.0\Amazon.Lambda.Logging.AspNetCore.dll
+C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyManagerService\bin\Debug\net7.0\Amazon.Lambda.RuntimeSupport.dll
+C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyManagerService\bin\Debug\net7.0\Amazon.Lambda.Serialization.SystemTextJson.dll

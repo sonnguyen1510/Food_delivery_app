@@ -278,14 +278,14 @@ p {
 
 .transaction-item-amount-container {
     width: 100px;
-    margin-left: 10px;
+    margin-right: 10px;
     display: flex;
     flex-direction: row;
     justify-content: end;
 }
 
 .transaction-icon-container {
-    margin-right: 30px;
+    margin-right: 20px;
     width: 70px;
     height: 70px;
     border-radius: 50%;

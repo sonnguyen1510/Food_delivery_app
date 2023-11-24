@@ -1,0 +1,377 @@
+﻿@using System.Net.Http;
+@using System.Net.Http.Json;
+@using MoneyStatistic.API;
+@using MoneyStatistic.Database.JSON;
+@using MoneyStatistic.Database.SQLiteDB;
+
+
+@inject userDB database ;
+@inject SweetAlertService Swal;
+
+
+<div class="modal">
+    <div class="modal-title-container">
+        <p class="modal-title">Add Transaction</p>
+        <div class="modal-cancel-button-container">
+            <button class="modal-cancel-button" @onclick="CloseModal">Cancel</button>
+        </div>
+    </div>
+    <div class="modal-content">
+
+        <div class="modal-transaction-type-container">
+            @if (TransactionType.Equals("income"))
+            {
+                <button class="modal-transaction active" @onclick="SetIncome">Income</button>
+                <button class="modal-transaction inactive" @onclick="SetExpense">Expense</button>
+            }
+            else
+            {
+                <button class="modal-transaction inactive" @onclick="SetIncome">Income</button>
+                <button class="modal-transaction active" @onclick="SetExpense">Expense</button>
+            }
+        </div>
+        <div class="modal-daypicker-container">
+            <div class="modal-daypicker-button-container">
+                <div>
+                    <h4 class="modal-daypicker-title">@currentDate.ToString("MMMM yyyy")</h4>
+                </div>
+
+                <div>
+                    <button class="modal-daypicker-button" @onclick="DecrementWeek"><img src="left-chevron-svgrepo-com.svg" /></button>
+                    <button class="modal-daypicker-button" @onclick="IncrementWeek"><img src="right-chevron-svgrepo-com.svg" /></button>
+                </div>
+            </div>
+            <div class="modal-daypicker-divider"></div>
+            <div class="modal-daypicker-listofday">
+                @foreach (var day in GetOrderedDays(currentDate))
+                {
+                    var weekDay = @day.DayOfWeek.ToString().Substring(0, 3);
+                    if (weekDay.Equals("Sun") || weekDay.Equals("Sat"))
+                    {
+                        <div class="day-container">
+                            <div class="day-name"><p style="color :red ">@weekDay</p></div>
+                            <div class="daypicker-button-container">
+                                @if (day.Day != CurrentDay)
+                                {
+                                    <button class="modal-daypicker-button white " @onclick="()=>setDay(day.Day)">@day.Day</button>
+                                }
+                                else
+                                {
+                                    <button class="modal-daypicker-button blue " @onclick="()=>setDay(day.Day)">
+                                        @day.Day
+
+                                    </button>
+                                }
+                            </div>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="day-container">
+                            <div class="day-name"><p>@weekDay</p></div>
+                            <div class="daypicker-button-container">
+                                @if (day.Day != CurrentDay)
+                                {
+                                    <button class="modal-daypicker-button white " @onclick="()=>setDay(day.Day)"><h5>@day.Day</h5></button>
+                                }
+                                else
+                                {
+                                    <button class="modal-daypicker-button blue " @onclick="()=>setDay(day.Day)"><h5>@day.Day</h5></button>
+                                }
+                            </div>
+                        </div>
+                    }
+                }
+            </div>
+        </div>
+        <div class="modal-time-picker-container">
+            <div>
+                <p class="modal-transaction-information-title-size none-bold">Pick a time :</p>
+            </div>
+            <div class="modal-daypicker-timepicker">
+                <div class="time-picker">
+                    <select @bind="selectedHour" class="hour">
+                        @for (int i = 0; i < 24; i++)
+                        {
+                            <option value="@i">@i.ToString("00")</option>
+                        }
+                    </select>
+                    <p class="modal-daypicker-timepicker-sepreate-time">:</p>
+                    <select @bind="selectedMinute" class="minute">
+                        @for (int i = 0; i < 60; i += 5)
+                        {
+                            <option value="@i">@i.ToString("00")</option>
+                        }
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="modal-transaction-information-container">
+            <div>
+                @if (TransactionType.Equals("income"))
+                {
+                    <p class="modal-transaction-information-title-size">Income title</p>
+                }
+                else
+                {
+                    <p class="modal-transaction-information-title-size">Expense title</p>
+                }
+            </div>
+            <div class="modal-input-container">
+                <img class="modal-input-icon" src="heading-svgrepo-com.svg">
+                <input class="modal-transaction-input-field" type="text" @bind="TransactionTitle">
+            </div>
+            <div>
+                <p class="modal-transaction-information-title-size">Amount</p>
+            </div>
+            <div class="modal-input-container">
+                <img class="modal-input-icon" src="money-svgrepo-com.svg">
+                <input class="modal-transaction-input-field" type="number" @bind="TransactionAmount">
+            </div>
+            <div>
+                @if (TransactionType.Equals("income"))
+                {
+                    <p class="modal-transaction-information-title-size">Income Category</p>
+                }
+                else
+                {
+                    <p class="modal-transaction-information-title-size">Expense Category</p>
+                }
+            </div>
+            <div class="modal-category-list">
+                @if (TransactionType.Equals("income"))
+                {
+                    @foreach (var item in IncomeCategory)
+                    {
+                        if (item.Equals(CategoryChoosed))
+                        {
+                            <button @onclick="()=>pickCategory(item)" class="modal-category-button active">@item</button>
+                        }
+                        else
+                        {
+                            <button @onclick="()=>pickCategory(item)" class="modal-category-button inactive">@item</button>
+                        }
+                    }
+                }
+                else
+                {
+                    @foreach (var item in ExpenseCategory)
+                    {
+                        if (item.Equals(CategoryChoosed))
+                        {
+                            <button @onclick="()=>pickCategory(item)" class="modal-category-button active">@item</button>
+                        }
+                        else
+                        {
+                            <button @onclick="()=>pickCategory(item)" class="modal-category-button inactive">@item</button>
+                        }
+                    }
+                }
+            </div>
+            <div class="modal-input-container">
+                @if (TransactionType.Equals("income"))
+                {
+                    <button class="add-transaction-submit-button active" @onclick="addTransaction">ADD INCOME</button>
+                }
+                else
+                {
+                    <button class="add-transaction-submit-button active" @onclick="addTransaction">ADD EXPENSE</button>
+                }
+
+            </div>
+        </div>
+        <div>
+        </div>
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public int userId { get; set; }
+
+    [Parameter]
+    public Action setVisible { get; set; }
+
+    [Parameter]
+    public Action Reload { get; set; }
+
+    
+    //-MODAL
+
+    private String TransactionType { get; set; } = "income";
+    private String TransactionTitle { get; set; } = "";
+    private decimal TransactionAmount { get; set; } = 0;
+    private String CategoryChoosed { get; set; } = "Bussiness";
+    private int CurrentDay { get; set; } = DateTime.Now.Day;
+
+    private DateTime currentDate = DateTime.Now;
+    private int selectedHour { get; set; } = DateTime.Now.Hour;
+    private int selectedMinute { get; set; } = DateTime.Now.Minute;
+
+    //category
+
+    private String[] IncomeCategory = { "Bussiness", "Salary", "Money" };
+
+    private String[] ExpenseCategory = { "Food&Dring", "Health", "Excercise", "Bill", "Shopping", "Movie", "Learning" };
+
+}
+
+@functions{
+
+
+
+
+    private void CloseModal()
+    {
+        setVisible?.Invoke();
+
+    }
+
+    private void SetIncome()
+    {
+        TransactionType = "income";
+        CategoryChoosed = "Bussiness";
+    }
+
+    private void SetExpense()
+    {
+        TransactionType = "expense";
+        CategoryChoosed = "Food&Dring";
+    }
+
+
+
+    private IEnumerable<DateTime> GetOrderedDays(DateTime startDate)
+    {
+        var days = new List<DateTime>();
+        while (startDate.DayOfWeek != DayOfWeek.Monday)
+        {
+            startDate = startDate.AddDays(-1);
+        }
+
+        for (int i = 0; i < 7; i++)
+        {
+            days.Add(startDate.AddDays(i));
+        }
+
+        return days;
+    }
+
+    private void setDay(int day)
+    {
+        CurrentDay = day;
+    }
+
+    private void IncrementWeek()
+    {
+        currentDate = currentDate.AddDays(7);
+    }
+
+    private void DecrementWeek()
+    {
+        currentDate = currentDate.AddDays(-7);
+    }
+
+    private void SelectDay(int day)
+    {
+        // Handle the selected day here
+        CurrentDay = day;
+    }
+
+    private void SetHours()
+    {
+
+    }
+
+    private void SetMinutes()
+    {
+
+    }
+
+
+    private void pickCategory(String cate)
+    {
+        CategoryChoosed = cate;
+    }
+
+    private async void addTransaction()
+    {
+
+        try
+        {
+            // Create an instance of your data model
+            var data = new UserTransactionBody
+                {
+                    Title = TransactionTitle,
+                    TransType = TransactionType,
+                    TransIcon = CategoryChoosed,
+                    CreTime = $"{selectedHour}:{selectedMinute}:00",
+                    CreDate = $"{CurrentDay}-{currentDate.Month}-{currentDate.Year}",
+                    Amount = TransactionAmount,
+                    UserId = userId,
+                    Status = true
+                };
+
+            // Post data to the server
+            var response = await APIService.AddUserTransaction(data);
+
+            // Handle the response as needed
+            if (response.IsSuccessStatusCode)
+            {
+                // Request was successful
+                var result = await response.Content.ReadFromJsonAsync<Result>();
+                ReloadTransactionList();
+                await Swal.FireAsync(new SweetAlertOptions
+                    {
+                        Title = "Success!",
+                        Text = "Add transaction successfully!",
+                        Icon = "success"
+                    });
+
+                CloseModal();
+            }
+            else
+            {
+                await Swal.FireAsync(new SweetAlertOptions
+                    {
+                        Title = "failed!",
+                        Text = "Something went wrong!",
+                        Icon = "error"
+                    });
+                // Request failed
+                // Handle the error
+            }
+
+        }
+        catch (Exception)
+        {
+            await Swal.FireAsync(new SweetAlertOptions
+                {
+                    Title = "Connect error?",
+                    Text = "Can't connect to server, please try again!",
+                    Icon = "question",
+
+                });
+        }
+
+    }
+
+
+    private void cleanAddList()
+    {
+        TransactionTitle = "";
+        TransactionType = "income";
+        CategoryChoosed = "Bussiness";
+        selectedHour = DateTime.Now.Hour;
+        selectedMinute = DateTime.Now.Minute;
+        TransactionAmount = 0;
+        CurrentDay = DateTime.Now.Day;
+        currentDate = DateTime.Now;
+        StateHasChanged();
+    }
+
+    public void ReloadTransactionList()
+    {
+        Reload.Invoke();
+    }
+}

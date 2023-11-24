@@ -1,9 +1,17 @@
 {
   "version": 2,
-  "dgSpecHash": "TVipoegbc6agbgM+qa5mui5mOM7St2mo5G2FOq6AcOTFukYShfazM0vbG7M4ightaxmgpruV/ftJz/f1kMNXdA==",
+  "dgSpecHash": "uxUBzbCF5dhb0m/BjaAd3YySydXh50//ZdksDm5Bhl16WIAi9uGJjL4cKoD2hfxTL0h5icYsp7WV4ARfogmE6w==",
   "success": true,
   "projectFilePath": "C:\\Users\\NguyenXuanSon\\Documents\\GitHub\\Food_delivery_app\\MoneyStatistic\\MoneyManagerService\\MoneyManagerService.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\NguyenXuanSon\\.nuget\\packages\\amazon.lambda.apigatewayevents\\2.7.0\\amazon.lambda.apigatewayevents.2.7.0.nupkg.sha512",
+    "C:\\Users\\NguyenXuanSon\\.nuget\\packages\\amazon.lambda.applicationloadbalancerevents\\2.2.0\\amazon.lambda.applicationloadbalancerevents.2.2.0.nupkg.sha512",
+    "C:\\Users\\NguyenXuanSon\\.nuget\\packages\\amazon.lambda.aspnetcoreserver\\8.1.1\\amazon.lambda.aspnetcoreserver.8.1.1.nupkg.sha512",
+    "C:\\Users\\NguyenXuanSon\\.nuget\\packages\\amazon.lambda.aspnetcoreserver.hosting\\1.6.1\\amazon.lambda.aspnetcoreserver.hosting.1.6.1.nupkg.sha512",
+    "C:\\Users\\NguyenXuanSon\\.nuget\\packages\\amazon.lambda.core\\2.2.0\\amazon.lambda.core.2.2.0.nupkg.sha512",
+    "C:\\Users\\NguyenXuanSon\\.nuget\\packages\\amazon.lambda.logging.aspnetcore\\3.1.0\\amazon.lambda.logging.aspnetcore.3.1.0.nupkg.sha512",
+    "C:\\Users\\NguyenXuanSon\\.nuget\\packages\\amazon.lambda.runtimesupport\\1.10.0\\amazon.lambda.runtimesupport.1.10.0.nupkg.sha512",
+    "C:\\Users\\NguyenXuanSon\\.nuget\\packages\\amazon.lambda.serialization.systemtextjson\\2.4.0\\amazon.lambda.serialization.systemtextjson.2.4.0.nupkg.sha512",
     "C:\\Users\\NguyenXuanSon\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\NguyenXuanSon\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
     "C:\\Users\\NguyenXuanSon\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

@@ -93,4 +93,9 @@
       <None Include="wwwroot\Js\home.js" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="Pages\Stock\" />
+      <Folder Include="Service\" />
+    </ItemGroup>
+
 </Project>

@@ -13,7 +13,7 @@ create table UserTransaction (
 	CreTime Time,
 	CreDate Date,
 	Amount numeric(10,2),
-	[UserId] Varchar(55),
+	[UserId] numeric,
 	[status] bit
 )
 
