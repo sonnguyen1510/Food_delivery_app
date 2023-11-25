@@ -1435,6 +1435,9 @@
     <AppxPackagedFile Include="C:\Users\NguyenXuanSon\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.29\lib\net6.0\WinRT.Runtime.dll">
       <PackagePath>WinRT.Runtime.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\NguyenXuanSon\.nuget\packages\amazon.lambda.core\2.2.0\lib\net6.0\Amazon.Lambda.Core.dll">
+      <PackagePath>Amazon.Lambda.Core.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\NguyenXuanSon\.nuget\packages\azure.core\1.25.0\lib\net5.0\Azure.Core.dll">
       <PackagePath>Azure.Core.dll</PackagePath>
     </AppxPackagedFile>

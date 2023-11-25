@@ -33,32 +33,32 @@ drop table [UserTransaction]
 
 alter table [UserTransaction] add constraint UserTrans foreign key (UserId) references [User](Id)
 
-INSERT INTO [User] (Id, Fullname, Username, [Password], [Email], [Phone], [status])
-VALUES ('U123456', 'John Doe', 'johndoe123', '12345', 'john.doe@email.com', '123-456-7890', 1);
+INSERT INTO [User] ( Fullname, Username, [Password], [Email], [Phone], [status])
+VALUES ('John Doe', 'johndoe123', '12345', 'john.doe@email.com', '123-456-7890', 1);
 
-INSERT INTO [User] (Id, Fullname, Username, [Password], [Email], [Phone], [status])
-VALUES ('U789012', 'Jane Smith', 'janesmith789', '12345', 'jane.smith@email.com', '987-654-3210', 0);
+INSERT INTO [User] (Fullname, Username, [Password], [Email], [Phone], [status])
+VALUES ('Jane Smith', 'janesmith789', '12345', 'jane.smith@email.com', '987-654-3210', 0);
 
-
-INSERT INTO UserTransaction
-VALUES ('01','Food&Dring','expense','Food&Dring','00:00:00.0000000','2021-06-12',500,'U123456',1);
 
 INSERT INTO UserTransaction
-VALUES ('02','Bussiness','income','Bussiness','10:10:00.0000000','2021-06-11',1000,'U123456',1);
+VALUES ('Food&Dring','expense','Food&Dring','00:00:00.0000000','2021-06-12',500,1,1);
 
 INSERT INTO UserTransaction
-VALUES ('03','Shopping','expense','Shopping','20:30:00.0000000','2021-06-10',200,'U123456',1);
+VALUES ('Bussiness','income','Bussiness','10:10:00.0000000','2021-06-11',1000,1,1);
 
 INSERT INTO UserTransaction
-VALUES ('04','Salary','income','Salary','11:25:00.0000000','2021-06-09',3000,'U123456',1);
+VALUES ('Shopping','expense','Shopping','20:30:00.0000000','2021-06-10',200,1,1);
 
 INSERT INTO UserTransaction
-VALUES ('05','Electricity bill','expense','Bill','09:00:00.0000000','2021-06-08',1600,'U123456',1);
+VALUES ('Salary','income','Salary','11:25:00.0000000','2021-06-09',3000,2,1);
 
 INSERT INTO UserTransaction
-VALUES ('06','Food&Dring','expense','Food&Dring','09:24:00.0000000','2021-05-02',800,'U789012',1);
+VALUES ('Electricity bill','expense','Bill','09:00:00.0000000','2021-06-08',1600,2,1);
+
 INSERT INTO UserTransaction
-VALUES ('07','Salary','income','Salary','12:00:00.0000000','2021-05-12',1600,'U789012',1);
+VALUES ('Food&Dring','expense','Food&Dring','09:24:00.0000000','2021-05-02',800,2,1);
+INSERT INTO UserTransaction
+VALUES ('Salary','income','Salary','12:00:00.0000000','2021-05-12',1600,2,1);
 
 INSERT INTO UserTransaction
 VALUES ('Salary','income','Salary','11:25:00.0000000','2021-06-23',4000,1,1);

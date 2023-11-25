@@ -8,6 +8,7 @@ public class MonoPackageManager_Resources {
 		"Microsoft.Maui.Controls.Xaml.dll",
 		"Microsoft.Maui.Controls.dll",
 		"Microsoft.Maui.Essentials.dll",
+		"Amazon.Lambda.Core.dll",
 		"Azure.Core.dll",
 		"Azure.Identity.dll",
 		"BlazorAnimate.dll",

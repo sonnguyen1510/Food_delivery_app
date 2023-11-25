@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "a1JgrQdVBifuZVxuhnwwZM0Zi7tA6XvekMEOg9+6spM644dnRpEild/z8Gxt2aU4ewfG4x3GLMuqZ7HtKESHKg==",
+  "dgSpecHash": "NBUADFPu7RiQAATJokoso/GVYOFzEGV0aqyZH4KlX6qgYB5b8dPTGVhjpdUmFUsAPu8ojzQNdnTmhPLAb45Xaw==",
   "success": true,
   "projectFilePath": "C:\\Users\\NguyenXuanSon\\Documents\\GitHub\\Food_delivery_app\\MoneyStatistic\\MoneyStatistic\\MoneyStatistic.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\NguyenXuanSon\\.nuget\\packages\\amazon.lambda.core\\2.2.0\\amazon.lambda.core.2.2.0.nupkg.sha512",
     "C:\\Users\\NguyenXuanSon\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\NguyenXuanSon\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
     "C:\\Users\\NguyenXuanSon\\.nuget\\packages\\blazoranimate\\3.0.0\\blazoranimate.3.0.0.nupkg.sha512",

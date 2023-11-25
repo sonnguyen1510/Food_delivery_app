@@ -15,13 +15,13 @@ namespace MoneyStatistic.API
     {
         private static int PORT = 5050;
         private static string HOST = "172.16.3.32";
-
+        private static string Domain = "http://sonnguyen-001-site1.atempurl.com";
 
         private static HttpClient client = new HttpClient();
 
         public static async Task<List<UserTransaction>> getTransactionByRange(string StartDay , string EndDay){
             // Define the API endpoint URL
-                string apiUrl = "http://" + HOST + $":{PORT}/transaction/GetTransactionByRangeofDay?StartDay={StartDay}&EndDay={EndDay}";
+                string apiUrl = Domain+"/transaction/GetTransactionByRangeofDay?StartDay={StartDay}&EndDay={EndDay}";
 
                 // Send an HTTP GET request to the API
                 return await client.GetFromJsonAsync<List<UserTransaction>>(apiUrl);
@@ -30,7 +30,7 @@ namespace MoneyStatistic.API
         public static async Task<List<UserTransaction>> getTransactionByRange(string StartDay, string EndDay , decimal Userid)
         {
             // Define the API endpoint URL
-            string apiUrl = "http://" + HOST + $":{PORT}/transaction/GetTransactionByRangeofDay/{Userid}?StartDay={StartDay}&EndDay={EndDay}";
+            string apiUrl = Domain +"/transaction/GetTransactionByRangeofDay/{Userid}?StartDay={StartDay}&EndDay={EndDay}";
 
             // Send an HTTP GET request to the API
             return await client.GetFromJsonAsync<List<UserTransaction>>(apiUrl);
@@ -39,7 +39,7 @@ namespace MoneyStatistic.API
         public static async Task<List<UserTransaction>> getTransactionByYear(string year)
         {
             // Define the API endpoint URL
-            string apiUrl = "http://" + HOST + $":{PORT}/transaction/getTransactionByYear?year={year}";
+            string apiUrl = Domain +"/transaction/getTransactionByYear?year={year}";
 
             // Send an HTTP GET request to the API
             return await client.GetFromJsonAsync<List<UserTransaction>>(apiUrl);
@@ -48,7 +48,7 @@ namespace MoneyStatistic.API
         public static async Task<List<UserTransaction>> getTransactionByYear(string year , decimal userid)
         {
             // Define the API endpoint URL
-            string apiUrl = "http://" + HOST + $":{PORT}/transaction/getTransactionByYear/{userid}?year={year}";
+            string apiUrl = Domain+"/transaction/getTransactionByYear/{userid}?year={year}";
 
             // Send an HTTP GET request to the API
             return await client.GetFromJsonAsync<List<UserTransaction>>(apiUrl);
@@ -57,7 +57,7 @@ namespace MoneyStatistic.API
         public static async Task<List<UserTransaction>> getAllTransaction()
         {
             // Define the API endpoint URL
-            var apiUrl = "http://" + HOST + $":{PORT}/transaction/GetAllTransaction";
+            var apiUrl = Domain+"/transaction/GetAllTransaction";
 
             // Send an HTTP GET request to the API
             return await client.GetFromJsonAsync<List<UserTransaction>>(apiUrl);
@@ -66,7 +66,7 @@ namespace MoneyStatistic.API
 
         public static async Task<HttpResponseMessage> DeleteTransactionAsync(UserTransaction transaction) {
             // Define the API endpoint URL
-            var apiUrl = "http://" + HOST + $":{PORT}/transaction/Delete/{transaction.Id}";
+            var apiUrl = Domain +"/transaction/Delete/{transaction.Id}";
 
             // Post data to the server
             return await client.DeleteAsync(apiUrl);
@@ -74,13 +74,13 @@ namespace MoneyStatistic.API
 
         public static async Task<HttpResponseMessage> AddUserTransaction(UserTransactionBody data)
         {
-            return await client.PostAsJsonAsync<UserTransactionBody>("http://" + HOST + $":{PORT}/transaction/AddTransaction", data);
+            return await client.PostAsJsonAsync<UserTransactionBody>(Domain +"/transaction/AddTransaction", data);
         } 
 
         public static async Task<User> Login(string username, string password)
         {
             // Define the API endpoint URL
-            var apiUrl = "http://" + HOST + $":{PORT}/Login/LoginCheck?Username={username}&password={password}";
+            var apiUrl = Domain +"/Login/LoginCheck?Username={username}&password={password}";
 
             User user = await client.GetFromJsonAsync<User>(apiUrl);
             if(user == null)

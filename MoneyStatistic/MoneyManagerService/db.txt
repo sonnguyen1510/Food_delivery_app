@@ -1,3 +1,6 @@
 ﻿Scaffold-DbContext "Server=7-166;Database=MoneyManager;Trusted_Connection=True;TrustServerCertificate=True" Microsoft.EntityFrameworkCore.SqlServer -OutputDir EF/MoneyManagerService -t User -f
 
 Scaffold-DbContext "Server=money.csiq9islyahz.ap-southeast-2.rds.amazonaws.com;Database=moneymanager; User=admin; Password=12345678; MultipleActiveResultSets=True;TrustServerCertificate=True" Microsoft.EntityFrameworkCore.SqlServer -OutputDir EF/MoneyManagerService -t User,UserTransaction -f
+
+
+Scaffold-DbContext "Server=SQL8006.site4now.net;Database=db_aa1f83_moneymanager; User=db_aa1f83_moneymanager_admin; Password=0945898422Son; MultipleActiveResultSets=True;TrustServerCertificate=True" Microsoft.EntityFrameworkCore.SqlServer -OutputDir EF/MoneyManagerService -t User,UserTransaction -f

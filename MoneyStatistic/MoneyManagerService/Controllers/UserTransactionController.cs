@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Models.EF.JSON;
 using Models.EF.MoneyManagerService;
-
+using MoneyManagerService.EF.MoneyManagerService;
 using System.Collections.Generic;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -18,8 +18,8 @@ namespace MoneyManagerService.Controllers
     {
 
 
-        private MoneyManagerContext db;
-        public UserTransactionController(MoneyManagerContext database) {
+        private DbAa1f83MoneymanagerContext db;
+        public UserTransactionController(DbAa1f83MoneymanagerContext database) {
             db = database;
         }
 

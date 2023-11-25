@@ -4,8 +4,14 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
 -->
 <Project>
   <PropertyGroup>
-    <_PublishTargetUrl>C:\Users\NguyenXuanSon\Desktop</_PublishTargetUrl>
-    <History>False|2023-11-24T08:40:45.4669564Z;False|2023-11-24T15:40:26.3911237+07:00;</History>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>c:/bin\Release\net7.0\publish\</_PublishTargetUrl>
+    <History>True|2023-11-25T04:30:51.9574704Z;</History>
     <LastFailureDetails />
   </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="DefaultConnection">
+      <Value>Server=SQL8006.site4now.net%3bDatabase=db_aa1f83_moneymanager%3b User=db_aa1f83_moneymanager_admin%3b Password=0945898422Son%3b MultipleActiveResultSets=True%3bTrustServerCertificate=True</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
 </Project>

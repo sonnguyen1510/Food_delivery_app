@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Models.EF.JSON;
 using Models.EF.MoneyManagerService;
+using MoneyManagerService.EF.MoneyManagerService;
 
 namespace MoneyManagerService.Controllers
 {
@@ -10,8 +11,8 @@ namespace MoneyManagerService.Controllers
     [Produces("application/json")]
     public class UserController : ControllerBase
     {
-         private MoneyManagerContext db;
-         public UserController(MoneyManagerContext database)
+         private DbAa1f83MoneymanagerContext db;
+         public UserController(DbAa1f83MoneymanagerContext database)
          {
              db= database;
          }

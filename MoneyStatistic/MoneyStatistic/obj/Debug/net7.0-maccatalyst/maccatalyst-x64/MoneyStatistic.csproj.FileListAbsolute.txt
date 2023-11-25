@@ -341,3 +341,4 @@ C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneySt
 C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\MoneyStatistic.pdb
 C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\MoneyStatistic.genruntimeconfig.cache
 C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\ref\MoneyStatistic.dll
+C:\Users\NguyenXuanSon\Documents\GitHub\Food_delivery_app\MoneyStatistic\MoneyStatistic\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\Amazon.Lambda.Core.dll

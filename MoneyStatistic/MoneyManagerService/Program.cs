@@ -3,6 +3,7 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using MoneyManagerService;
+using MoneyManagerService.EF.MoneyManagerService;
 using MoneyManagerService.Midleware;
 using System.Net;
 
@@ -14,8 +15,8 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Services.AddAWSLambdaHosting(LambdaEventSource.RestApi);
-builder.Services.AddDbContext<MoneyManagerContext>();
+
+builder.Services.AddDbContext<DbAa1f83MoneymanagerContext>();
 
 
 

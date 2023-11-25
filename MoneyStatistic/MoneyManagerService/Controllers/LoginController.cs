@@ -4,6 +4,7 @@ using Models.EF.JSON;
 using Models.EF.MoneyManagerService;
 using Models.EF;
 using Azure.Identity;
+using MoneyManagerService.EF.MoneyManagerService;
 
 namespace MoneyManagerService.Controllers
 {
@@ -12,8 +13,8 @@ namespace MoneyManagerService.Controllers
     [Produces("application/json")]
     public class LoginController : ControllerBase
     {
-        private MoneyManagerContext db;
-        public LoginController(MoneyManagerContext database)
+        private DbAa1f83MoneymanagerContext db;
+        public LoginController(DbAa1f83MoneymanagerContext database)
         {
             db = database;
         }
