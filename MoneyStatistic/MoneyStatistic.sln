@@ -12,6 +12,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MoneyManagerService", "Mone
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Models", "Models\Models.csproj", "{2811D1F0-9167-40B2-8F1D-1F09008B103A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoneyManagerServer", "MoneyManagerServer\MoneyManagerServer.csproj", "{DFCE378F-7096-4162-B282-353AA26015B2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,6 +34,10 @@ Global
 		{2811D1F0-9167-40B2-8F1D-1F09008B103A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2811D1F0-9167-40B2-8F1D-1F09008B103A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2811D1F0-9167-40B2-8F1D-1F09008B103A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DFCE378F-7096-4162-B282-353AA26015B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFCE378F-7096-4162-B282-353AA26015B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFCE378F-7096-4162-B282-353AA26015B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFCE378F-7096-4162-B282-353AA26015B2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -20,8 +20,9 @@
     align-items: center;
    
     height: 100%;
-    overflow: inherit;
+    overflow: auto;
     outline : none;
+    border : 0;
     
 }
 .modal-cancel-button-container {
@@ -138,16 +139,17 @@
     border-radius: 50%;
     border: none;
     outline: none;
-    
+    text-align: center;
+    font-size : 18px;
+    font-weight : bold;
     transition: background-color 0.3s;
-    
 }
 
 .white {
     background-color: white;
 }
 
-.blue {
+.greenwhite {
     background-color: #38cfcc;
     color : white;
 }
@@ -197,7 +199,7 @@
 .modal-input-container {
     width: 100%;
     display :flex;
-    flex-direction :row;
+    flex-direction :column;
     justify-content :start;
     align-items : center;
 
@@ -213,6 +215,8 @@
     margin-bottom: 15px;
     width: 100%;
     padding-left: 40px;
+    display : flex;
+    flex-direction : column;
 }
 
 .modal-category-list {

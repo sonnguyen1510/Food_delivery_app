@@ -399,13 +399,13 @@
 
             // Post data to the server
             var response = await APIService.DeleteTransactionAsync(item);
+            Console.WriteLine(response.ToString());
 
             // Handle the response as needed
             if (response.IsSuccessStatusCode)
             {
                 // Request was successful
                 var result = await response.Content.ReadFromJsonAsync<Result>();
-                await ReloadTransactionList();
                 await Swal.FireAsync(new SweetAlertOptions
                 {
                     Title = "Success!",
@@ -413,6 +413,8 @@
                     Icon = "success"
                 });
                 // Handle the result
+                await generateTransactionList(CurrentMonth.ToString("MM-yyyy"));
+                StateHasChanged();
             }
             else
             {

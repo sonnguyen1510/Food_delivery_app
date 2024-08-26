@@ -57,7 +57,7 @@
                                 }
                                 else
                                 {
-                                    <button class="modal-daypicker-button blue " @onclick="()=>setDay(day.Day)">
+                                    <button class="modal-daypicker-button greenwhite " @onclick="()=>setDay(day.Day)">
                                         @day.Day
 
                                     </button>
@@ -72,11 +72,11 @@
                             <div class="daypicker-button-container">
                                 @if (day.Day != CurrentDay)
                                 {
-                                    <button class="modal-daypicker-button white " @onclick="()=>setDay(day.Day)"><h5>@day.Day</h5></button>
+                                    <button class="modal-daypicker-button white " @onclick="()=>setDay(day.Day)">@day.Day</button>
                                 }
                                 else
                                 {
-                                    <button class="modal-daypicker-button blue " @onclick="()=>setDay(day.Day)"><h5>@day.Day</h5></button>
+                                    <button class="modal-daypicker-button greenwhite " @onclick="()=>setDay(day.Day)">@day.Day</button>
                                 }
                             </div>
                         </div>
@@ -98,7 +98,7 @@
                     </select>
                     <p class="modal-daypicker-timepicker-sepreate-time">:</p>
                     <select @bind="selectedMinute" class="minute">
-                        @for (int i = 0; i < 60; i += 5)
+                        @for (int i = 0; i < 60; i += 1)
                         {
                             <option value="@i">@i.ToString("00")</option>
                         }
@@ -118,15 +118,34 @@
                 }
             </div>
             <div class="modal-input-container">
-                <img class="modal-input-icon" src="heading-svgrepo-com.svg">
-                <input class="modal-transaction-input-field" type="text" @bind="TransactionTitle">
+                
+                <Validation Validator="ValidationRule.IsNotEmpty">
+                    <img class="modal-input-icon" src="heading-svgrepo-com.svg">
+                    <TextEdit Class="modal-transaction-input-field" Placeholder="Enter transaction title" @bind-Text = "@TransactionTitle">
+                        <Feedback>
+                            <ValidationNone>Please enter the name.</ValidationNone>
+                            <ValidationSuccess>Name is good.</ValidationSuccess>
+                            <ValidationError>Enter valid name!</ValidationError>
+                        </Feedback>
+                    </TextEdit>
+                </Validation>
+                
             </div>
             <div>
                 <p class="modal-transaction-information-title-size">Amount</p>
             </div>
             <div class="modal-input-container">
-                <img class="modal-input-icon" src="money-svgrepo-com.svg">
-                <input class="modal-transaction-input-field" type="number" @bind="TransactionAmount">
+                
+                <Validation Validator="ValidationRule.IsNotEmpty">
+                    <img class="modal-input-icon" src="money-svgrepo-com.svg">
+                    <TextEdit Placeholder="Enter amount" Class="modal-transaction-input-field" MaskType="MaskType.RegEx" EditMask="^(\d+(.\d{0,2})?|.?\d{1,2})$" @bind-Text="@TransactionAmount">
+                        <Feedback>
+                            <ValidationNone>Please enter the email.</ValidationNone>
+                            <ValidationSuccess>Email is good.</ValidationSuccess>
+                            <ValidationError>Enter valid email!</ValidationError>
+                        </Feedback>
+                    </TextEdit>
+                </Validation>
             </div>
             <div>
                 @if (TransactionType.Equals("income"))
@@ -200,7 +219,7 @@
 
     private String TransactionType { get; set; } = "income";
     private String TransactionTitle { get; set; } = "";
-    private decimal TransactionAmount { get; set; } = 0;
+    private String TransactionAmount { get; set; } = "";
     private String CategoryChoosed { get; set; } = "Bussiness";
     private int CurrentDay { get; set; } = DateTime.Now.Day;
 
@@ -307,7 +326,7 @@
                     TransIcon = CategoryChoosed,
                     CreTime = $"{selectedHour}:{selectedMinute}:00",
                     CreDate = $"{CurrentDay}-{currentDate.Month}-{currentDate.Year}",
-                    Amount = TransactionAmount,
+                    Amount = decimal.Parse(TransactionAmount),
                     UserId = userId,
                     Status = true
                 };
@@ -364,7 +383,7 @@
         CategoryChoosed = "Bussiness";
         selectedHour = DateTime.Now.Hour;
         selectedMinute = DateTime.Now.Minute;
-        TransactionAmount = 0;
+        TransactionAmount = "";
         CurrentDay = DateTime.Now.Day;
         currentDate = DateTime.Now;
         StateHasChanged();

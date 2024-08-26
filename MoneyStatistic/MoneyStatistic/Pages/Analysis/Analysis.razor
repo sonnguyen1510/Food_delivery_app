@@ -49,12 +49,11 @@
                 <div>
                     <Chart @ref="barChart" Type="Blazorise.Charts.ChartType.Bar" TItem="double" Clicked="@OnClicked" />
                 </div>
+                <div>
+
+                </div>
                 <div class="transaction-container">
-                    <div class="transaction-list-daypicker">
-                        <div class="">
-                            <p class="trans-title"> Transaction</p>
-                        </div>
-                    </div>
+                    
                     <div class="transaction-list-container-analysis">
                         @if (Transaction_data != null)
                         {
